@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main>
+      <p>
+        <h1>Conversor de Temperaturas</h1>
+        <input type="radio" name="temp" id="cel" checked>
+        <label for="cel">De Celsius para Fahrenheint</label>
+
+        <br><br><input type="radio" name="temp" id="fah">
+        <label for="fah">De Fahrenheint para Celsius</label>
+
+        <br><br><input type="radio" name="temp" id="kev">
+        <label for="kev">De Kelvin para Celsius</label>
+
+        <br><br><input type="radio" name="temp" id="kel">
+        <label for="kel">De Celsius para Kelvin</label>
+
+        <br><br><input type="radio" name="temp" id="fa">
+        <label for="fa">De Fahrenheint para Kelvin</label>
+
+        <br><br><input type="radio" name="temp" id="ke">
+        <label for="ke">De Kelvin para Fahrenheint</label>
+
+      <br><br>Informe a temperatura para ser convertida :
+       <input type="number" name="num" id="num">
+      
+       <br><p>(Caso confirme com o espaço em branco, ele irá será reconhecido como zero)</p>
+      
+       <p>
+       <br><input type="button" value="Resultado" onclick="confirmar()">
+       </p>
+       
+      </p>
+      <div id="resultado"></div>
+    </main> 
+</body>
+<script src="script.js"></script>
+</html>
