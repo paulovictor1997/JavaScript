@@ -1,2 +1,2 @@
 # JavaScript
- Exercicíos para me aprimorar na linguagem
+ Exercícios para me aprimorar na linguagem
