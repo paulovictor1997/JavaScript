@@ -12,12 +12,12 @@ function calcular(){
         
         if (total < 18.5){
             resultado.innerHTML = `Seu IMC é de ${total.toFixed(2)}. Logo, você está abaixo do peso.`
-            
         } 
         
         if(total > 18.5 || total <=24.9){
             resultado.innerHTML = `Seu IMC é de ${total.toFixed(2)}. Logo, seu peso está ideal.`
         } 
+        
         if(total > 25 || total <=29.9){
             resultado.innerHTML = `Seu IMC ${total.toFixed(2)}. Logo, você está com sobrepeso. `
         } 
