@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F1F3F6;
+}
+
+.principal{
+    padding: 90px 165px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px 40px 40px;
+    width: 540px;
+    max-height: 650px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 0 0  rgba(0, 0, 0, 0.1);
+}
+
+.campo{
+    border: none;
+    font-weight: 500;
+    width: 460px;
+    height: 55px;
+    margin-top: 20px;
+    border-radius: 0.3rem;
+    padding: 0 30px;
+    font-size: 14px;
+    border: 1.5px solid rgb(228, 228, 228);
+}
+
+.campo::placeholder{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.button{
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    height: 55px;
+    width: 460px;
+    font-size: 1rem;
+    background-color: rgb(143, 37, 218);
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: inset 0 -3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.button:disabled{
+    background: lightgray;
+    cursor: not-allowed;
+}
+
+.button.error{
+    background-color: rgb(243, 106, 106);
+}
+
+
+.button.success{
+    background-color: rgb(38,151,107);
+}
+
+
+.container{
+    position: relative;
+}
+
+
+
+@media (hover:hover) and (pointer: fine){
+    .button:hover{
+        transform: scale(1.05);
+    }
+}
+
+.button:active{
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+@media screen and (max-width:900px) {
+    .conteudo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .principal{
+        flex-direction: column;
+        padding: 100px 25px 60px 25px;
+        text-align: center;
+    }
+
+    .form{
+        width: 330px;
+        padding: 25px;
+    }
+    
+    .campo{
+        width: 280px;
+    }
+
+    .button{
+        width: 280px;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+}
