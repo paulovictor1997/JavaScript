@@ -1,0 +1,34 @@
+//Acessando a API
+function pokeApi(param,num){
+    fetch(`https://pokeapi.co/api/v2/pokemon/${param}`)
+    .then(function (response){
+        response.json()
+        .then(function(pokemon){
+            createPokemon(pokemon,num);
+            //console.log(pokemon.stats)
+        })
+    })
+    }
+    
+    //Função criada para pegarmos os personagens,pois quando se passa o parâmetro e chamanos a função, só temos acesso a um personagem 
+    function consultarPokemon(){
+        const personagem1 = Math.round(Math.random()*150);
+        const personagem2 = Math.round(Math.random()*150);
+    
+        pokeApi(personagem1, 1);
+        pokeApi(personagem2, 2);
+    }
+    
+    
+    function createPokemon(pokemon,num){
+        //Criando os dados 
+        const item = document.querySelector(`#pokemon${num}`);
+        
+        const img = item.getElementsByTagName('img')[0];
+        img.setAttribute('src', pokemon.sprites.front_default)
+        
+        const name = item.getElementsByTagName('p')[0];
+        name.textContent = pokemon.name;
+    }
+    
+    consultarPokemon();
