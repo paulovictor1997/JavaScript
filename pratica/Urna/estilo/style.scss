@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+$background1:#dbd5c9;
+$gradient:linear-gradient(to right,#E8E8E8,#C1C1C1);
+$keyboard:#403A3A;
+$buttonkeyboard:black;
+$color1:black;
+
+@keyframes pisca {
+   0%{opacity: 0.2;}
+   50%{opacity: 1;}
+   100%{opacity: 0.2;}
+}
+
+.urna{
+    background-color: $background1;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.tela{
+    width: 500px;
+    height: 320px;
+    background: $gradient;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.teclado{
+    background-color: $keyboard;
+    margin-left: 30px;
+}
+
+.teclado--linha{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.teclado--botao{
+    width: 70px;
+    height: 40px;
+    background-color: $buttonkeyboard;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555;
+}
+
+.botao--branco{
+    background-color: white;
+    color:$color1;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.botao--corrige{
+    background-color: orange;
+    color:$color1;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.botao--confirma{
+    background-color: green;
+    color:$color1;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+    padding: 10px;
+}
+
+.d1{
+    flex: 1;
+    display: flex;
+}
+
+.d1-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.d1-1{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.d1-2{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numero{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid black ;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.pisca{
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.d1-3{
+    height: 50px;
+}
+
+.d1-4{
+    flex: 1;
+    line-height: 30px;
+}
+
+.d1-right{
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.dImage{
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.dImage img{
+ width:100%
+}
+
+.dImage .small{
+    width:80%
+}
+
+.d2{
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px solid black;
+    padding-left: 10px;
+}
+
+.aviso--grande{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aviso--maior{
+    font-size: 70px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,254 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@-webkit-keyframes pisca {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes pisca {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.urna {
+  background-color: #dbd5c9;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tela {
+  width: 500px;
+  height: 320px;
+  background: -webkit-gradient(linear, left top, right top, from(#E8E8E8), to(#C1C1C1));
+  background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.teclado {
+  background-color: #403A3A;
+  margin-left: 30px;
+}
+
+.teclado--linha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.teclado--botao {
+  width: 70px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 0px #555;
+          box-shadow: 3px 3px 0px #555;
+}
+
+.botao--branco {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.botao--corrige {
+  background-color: orange;
+  color: black;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.botao--confirma {
+  background-color: green;
+  color: black;
+  font-size: 15px;
+  width: 90px;
+  height: 50px;
+  padding: 10px;
+}
+
+.d1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d1-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+}
+
+.d1-1 {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.d1-2 {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.numero {
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+}
+
+.pisca {
+  -webkit-animation-name: pisca;
+          animation-name: pisca;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.d1-3 {
+  height: 50px;
+}
+
+.d1-4 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 30px;
+}
+
+.d1-right {
+  width: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.dImage {
+  border: 1px solid black;
+  background-color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.dImage img {
+  width: 100%;
+}
+
+.dImage .small {
+  width: 80%;
+}
+
+.d2 {
+  height: 50px;
+  font-size: 14px;
+  border-top: 2px solid black;
+  padding-left: 10px;
+}
+
+.aviso--grande {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.aviso--maior {
+  font-size: 70px;
+  font-weight: bold;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
