@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <header>
+            <img src="imagens/logo.png" alt="logo">
+            <ul class="menu">
+                <div class="menuLink">
+                    <li><a href="#"><img src="imagens/dashboard.svg" alt="dashboard"></a></li>
+                    <p>Dashbord</p>
+                </div>
+                
+                <div class="menuLink">
+                    <li><a href="#"><img src="imagens/personagens.svg" alt="personagens"></a></li>
+                    <p>Personagens</p>
+                </div>
+                
+                <div class="menuLink">
+                    <li><a href="#"><img src="imagens/nave.svg" alt="nave"></a></li>
+                    <p>Naves</p>
+                </div>
+                
+                <div class="menuLink">
+                    <li><a href="#"><img src="imagens/planetas.svg" alt="planetas"></a></li>
+                    <p>Planetas</p>
+                </div>
+            </ul>
+        </header>
+
+        <main class="conteudo">
+            <div class="cardsHeader">
+                <div class=" card cardSmall">
+                    <div class="cardConteudo">
+                        <div class="cardInfo">
+                            <p>Personagens</p>
+                            <h2 id="personagem"></h2>
+                        </div>
+                        <img src="imagens/personagens-black.svg" alt="personagens-black">
+                    </div>
+                </div>
+            
+
+            <div class="card cardLarge">
+                <div class="cardContainer">
+                    <div class="cardConteudo">
+                        <div class="cardInfo">
+                            <p>Planetas</p>
+                            <h2 id="planeta"></h2>
+                        </div>
+                        <img src="imagens/planetas-black.svg" alt="personagem">
+                    </div>
+                    <div class="cardConteudo">
+                        <div class="cardInfo">
+                            <p>Luas</p>
+                            <h2 id="lua"></h2>
+                        </div>
+                        <img src="imagens/luas-black.svg" alt="personagem">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card cardSmall">
+                <div class="cardConteudo">
+                    <div class="cardInfo">
+                        <p>Naves</p>
+                        <h2 id="nave"></h2>
+                    </div>
+                    <img src="imagens/nave-black.svg" alt="personagem">
+                </div>
+            </div>
+
+        </div>
+
+            <div class="tableInfo">
+                <div class="tabela">
+                    <h5>Filmes da franquia</h5>
+                    <p>O ano do lançamento dos filmes </p>
+                    <table id="tableFilms">
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Estreia</th>
+                                <th>Diretor</th>
+                                <th>Episódio</th>
+                            </tr>
+                        </thead>
+                
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="chart">
+                    <div id="piechart" style="width: 400px; height: 400px"></div>
+                </div>
+            </div>
+        
+        </main>
+
+        <footer>Feito por <strong>&copy;Paulo Victor</strong></footer>
+    </section>
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+</html>

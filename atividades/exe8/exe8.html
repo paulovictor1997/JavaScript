@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="conteudo">
+        <div class="principal">
+            <div class="esquerda">
+                <h1 class="titulo">Learn to code by watching others</h1>
+
+                <p class="descricao">
+                    See how experienced developers solve problems in real-time. Watching
+                    scripted tutorials is great, but understanding how developers think
+                    is invaluable.
+                </p>
+            </div>
+
+            <div class="direita">
+                <div class="trial">
+                    <span class="weight">Try it free 7 days then </span> &nbspthen$20/mo. thereafter
+                </div>
+                <!--O atributo aria-label é usado para definir uma string na tag do elemento atual. Use nos casos que a tag do texto não seja visível na tela. E pode ser usado em qualquer elemento HTML -->
+                <div class="form">
+                    <div class="container">
+                      <input aria-label="First name Input" type="text" id="name" name="name" placeholder="First Name" class="campo">
+                      
+                      <img src="imagens/icon-error.svg" alt="erro" class="erroIcon erroIcon1">
+
+                      <div class="erro erro1">First Name cannot be empty</div>
+                    </div>
+                    
+                    <div class="container">
+                        <input aria-label="Last name Input" type="text" id="lastName"name="lastName" class="campo" placeholder="Last Name">
+                        
+                        <img src="imagens/icon-error.svg" alt="erro" class="erroIcon erroIcon2">
+
+                        <div class="erro erro2">Last Name cannot be empty</div>
+                    </div>
+
+                    <div class="container">
+                        <input aria-label="email input" type="email" id="email" name="email" class="campo" placeholder="Email Address">
+                        
+                        <img src="imagens/icon-error.svg" alt="erro" class="erroIcon erroIcon3">
+
+                        <div class="erro erro3">looks like this is not an email</div>
+                    </div>
+
+                    <div class="container">
+                        <input aria-label="password Input" type="password" id="password" name="password" class="campo" placeholder="Password">
+
+                        <img src="imagens/icon-error.svg" alt="erro" class="erroIcon erroIcon4">
+
+                        <div class="erro erro4">Password cannot be empty</div>
+                    </div>
+                    
+                    <button class="button" type="button">Claim your free trial</button>
+                    <div class="termo">
+                        By clicking the button, you are agreeing to our<a href="#"> Terms and Services</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

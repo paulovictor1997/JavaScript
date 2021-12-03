@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*{
+    font-family: 'Manrope';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+$cor1:hsl(212, 23%, 69%);
+$cor2:hsl(214, 17%, 51%);
+$cor3:hsl(217,19%,35%);
+$cor4:hsl(210, 46%, 95%);
+
+body{
+    background-color: $cor1;
+}
+
+.principal{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    max-height: 25rem;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: $cor4;
+    box-shadow: -1px 3px 47px 3px rgba(0, 0, 0, 0.62);
+}
+
+.imagen{
+    height: 400px;
+    width: 400px;
+}
+
+img{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.conteudo{
+    height: 400px;
+    width: 600px;
+    padding: 20px 50px;
+}
+
+#cabecalho{
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+#descricao{
+    padding-top: 20px;
+    color: $cor3;
+}
+
+.perfil{
+    width: 230px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 30px;
+    position: relative;
+}
+
+.perfil > p{
+    color: $cor2;
+}
+
+.nome{
+    padding-left: 20px;
+}
+
+.button{
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    left: 450px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: $cor3 ;
+}
+
+.container{
+    display: none;
+}
+
+.container-show{
+    height: 40px;
+    background-color: $cor2;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 10px 20px;
+    position: absolute;
+    left: 360px;
+    top: -20px;
+}
+
+.container-show img{
+    padding-left: 10px;
+}
+
+span{
+    line-height: 20px;
+    letter-spacing: 5px;
+    color: $cor3;
+}
+
+a:hover{
+    transform: scale3d(1.5,1.5,1.5);
+}
+
+@media screen and (max-width: 800px) {
+    .principal{
+        height:140vh;
+    }
+
+    .card{
+        max-height: 50rem;
+        max-width: 25rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagen img{
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .conteudo{
+        height: 350px;
+        width: 400px;
+        padding: 20px 50px;
+    }
+
+    #cabecalho{
+        margin-top: 0px ;
+        font-size: 22px;
+    }
+
+    #descricao{
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    .perfil{
+        padding-top: 20px;
+    }
+
+    .button{
+        position: absolute;
+        left: 270px;
+        top: 30px;
+    }
+
+    .container-show{
+        position: absolute;
+        left: -50px;
+        top: 20px;
+        height: 80px;
+        width: 400px;
+        padding: 25px 50px;
+        border-radius: 9.5px;
+    }
+
+    .container-show img{
+        padding-left: 17px;
+    }
+}

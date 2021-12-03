@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  font-family: 'Manrope';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #9eafc2;
+}
+
+.principal {
+  height: 100vh;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  max-height: 25rem;
+  max-width: 65rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  background-color: #ecf2f8;
+  -webkit-box-shadow: -1px 3px 47px 3px rgba(0, 0, 0, 0.62);
+          box-shadow: -1px 3px 47px 3px rgba(0, 0, 0, 0.62);
+}
+
+.imagen {
+  height: 400px;
+  width: 400px;
+}
+
+img {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.conteudo {
+  height: 400px;
+  width: 600px;
+  padding: 20px 50px;
+}
+
+#cabecalho {
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+#descricao {
+  padding-top: 20px;
+  color: #48556a;
+}
+
+.perfil {
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 30px;
+  position: relative;
+}
+
+.perfil > p {
+  color: #6d7f97;
+}
+
+.nome {
+  padding-left: 20px;
+}
+
+.button {
+  height: 23px;
+  width: 23px;
+  position: absolute;
+  left: 450px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #48556a;
+}
+
+.container {
+  display: none;
+}
+
+.container-show {
+  height: 40px;
+  background-color: #6d7f97;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 10px;
+  padding: 10px 20px;
+  position: absolute;
+  left: 360px;
+  top: -20px;
+}
+
+.container-show img {
+  padding-left: 10px;
+}
+
+span {
+  line-height: 20px;
+  letter-spacing: 5px;
+  color: #48556a;
+}
+
+a:hover {
+  -webkit-transform: scale3d(1.5, 1.5, 1.5);
+          transform: scale3d(1.5, 1.5, 1.5);
+}
+
+@media screen and (max-width: 800px) {
+  .principal {
+    height: 140vh;
+  }
+  .card {
+    max-height: 50rem;
+    max-width: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imagen img {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .conteudo {
+    height: 350px;
+    width: 400px;
+    padding: 20px 50px;
+  }
+  #cabecalho {
+    margin-top: 0px;
+    font-size: 22px;
+  }
+  #descricao {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .perfil {
+    padding-top: 20px;
+  }
+  .button {
+    position: absolute;
+    left: 270px;
+    top: 30px;
+  }
+  .container-show {
+    position: absolute;
+    left: -50px;
+    top: 20px;
+    height: 80px;
+    width: 400px;
+    padding: 25px 50px;
+    border-radius: 9.5px;
+  }
+  .container-show img {
+    padding-left: 17px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

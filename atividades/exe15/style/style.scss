@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Roboto',sans-serif;
+}
+
+$primaryColor:#263238;
+$bodyColor:#ebf5f0;
+$color1:white;
+$color2:black;
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+body{
+    background-color: $bodyColor;
+}
+
+header{
+    width: 100%;
+    background-color: $primaryColor;
+    padding: 10px 20px;
+    top: 0px;
+    z-index: 999;
+    position: fixed;
+}
+
+
+.navbar{
+    max-width: 1200px;
+    padding: 0px 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.hamburguer{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburguer::after{
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 70%;
+    height: 5%;
+    border-radius: 5px;
+    background-color: $color1;
+}
+
+.hamburguer::before{
+    content: "";
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 70%;
+    height: 5%;
+    border-radius: 5px;
+    background-color: $color1 ;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li{
+        margin-left: 10px;
+
+        a{
+            display: block;
+            padding: 10px 15px;
+            color: $color1;
+            text-decoration: none;
+            transition: 0.5s ease ;
+            &:hover{
+                color: $color2;
+                background-color:$color1;
+                border-radius: 50px;
+            }
+        }
+    }
+
+}
+
+/*Part of content who i used in "home" and "about" */
+/*Parte do conteúdo que será utiliazada no "home" e "sobre" */
+
+.content{
+    background-color: $color1;
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.500);
+    min-width: 400px;
+    max-width: 800px;
+    margin-top: 10%;
+    
+    img{
+        margin: auto;
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+
+}
+
+.title{
+    font-family: 'Ubuntu';
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1.2em;
+    background-color: $bodyColor;
+}
+
+.description{
+    text-align: justify;
+    padding: 10px;
+}
+
+.links{
+    li{
+        list-style: none;
+
+        a{
+            text-decoration: none;
+            color: $color2;
+        }
+    }
+
+    .external::after{
+        content: '\00A0\1F517';
+    }
+}
+
+footer{
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: $bodyColor;
+    a{
+        text-decoration: none;
+        color: $color2;
+    }
+}
+
+/*Part of content who i used in the "battles"*/
+/*Parte do conteúdo que será usado na aba de "batalhas"*/
+
+.area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.battle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.item{
+    width: 300px;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: $color1;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+
+}
+
+.vs{
+    font-size: 20px;
+    margin-top: 20%;
+}
+
+.button{
+    background-color: #4cacaf;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    cursor: pointer;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:900px){
+    .hamburguer{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu{
+        position: fixed;
+        top: 0;
+        right: -100;
+        height: 100vh;
+        background-color: $primaryColor;
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        padding: 100px 20px;
+        max-width: 250px;
+        transition: 0.5s ease;
+    }
+
+    .menu.active{
+        right: 0;
+    }
+
+    ul.active:not(.menu){
+        display: none;
+    }
+
+    .content{
+        margin-top: 20%;
+    }
+
+    .area{
+        margin-top: 20%;
+    }
+
+    .button{
+        margin-top: 400px;
+    }
+    .card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    }
+
+    .vs{
+        padding: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .content{
+        margin-top: 30%;
+    }
+}
+

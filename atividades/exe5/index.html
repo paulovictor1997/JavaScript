@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de Moedas</h1>
+    </header>
+    <p>
+        <h2>Selecione abaixo para a conversão</h2>
+
+        <br><input type="radio" name="din" id="dol" checked>
+        <label for="dol">Dólar</label>
+        
+        <br><br><input type="radio" name="din" id="eur">
+        <label for="eur">Euro</label>
+
+        <br><br><input type="radio" name="din" id="lib">
+        <label for="lib">Libra</label>
+
+        <br><br><input type="number" name="number" id="numero">
+        
+        <input type="button" value="Resultado" onclick="finalizar()">
+    </p>
+
+    <div id="resultado"></div>
+    
+</body>
+    <script src="atv5.js"></script>
+</html>

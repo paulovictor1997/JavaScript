@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+$backgroundMenu : black;
+$backgrounContent: white;
+$cardsColor:gold;
+$colorParagraph:white;
+
+.container{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    background-color: $backgroundMenu;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    color: $colorParagraph;
+}
+
+.menuLink{
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.menu li > a {
+    display: block;
+    text-decoration: none;
+}
+
+
+.menu li > a:hover{
+    transform: scale3d(1.5,1.5,1.5);
+    transition: 1s;
+}
+
+.conteudo{
+    width: 100%;
+    background-color: $backgrounContent;
+}
+
+.card{
+    background-color: $backgrounContent;
+    box-shadow: 4px 4px 15px rgb(0, 0, 0.25);
+    border-radius: 15px;
+    margin: 0px 20px;
+    height: 132px;
+}
+
+.cardSmall{
+    width: 240px;
+    display: flex;
+    align-items: center;
+}
+
+.cardLarge{
+    width: 464px;
+}
+
+.card .cardConteudo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+.card > .cardContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.cardsHeader{
+    display: flex;
+    justify-content: center;
+    padding: 20px ;
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardInfo > h2{
+    font-size: 54px;
+    font-weight: bold;
+    color:$cardsColor;
+}
+
+.cardInfo > p {
+    font-size: 16px;
+}
+
+.cardLarge .cardContainer .cardConteudo:first-child{
+    border-right: 1px solid black;
+}
+
+.tabela{
+    width: 642px;
+    height: 450px;
+    padding: 30px;
+    margin: 40px;
+    background-color: $backgrounContent;
+    box-shadow: 0px 4px 15px rgb(0, 0, 0.25);
+    border-radius: 16px;
+    text-align: left;
+}
+
+.tabela > h5 {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.tabela table th{
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+}
+
+.tabela table td {
+    border-bottom: 1px solid white;
+    padding: 10px 0px;
+}
+
+.tabela > table {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.tableInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:400px;
+    height: 450px;
+    background-color: $backgrounContent;
+    box-shadow: 0px 4px 15px rgb(0, 0, 0.25);
+    border-radius: 16px;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: $backgrounContent;
+    margin-top: 20px;
+    strong{
+        font-style: italic;
+    }
+}
+
+@media(max-width:1200px){
+    .container,.conteudo{
+        width: 100%;
+    }
+
+    .cardSmall{
+        margin: 20px;
+    }
+    .cardsHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tableInfo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .tabela{
+        width: 550px;
+        height: 500px;
+        padding: 30px;
+        margin: 80px;
+        background-color: white;
+        box-shadow: 0px 4px 15px rgb(0, 0, 0.25);
+        border-radius: 16px;
+        text-align: center;
+    }
+
+    .tabela > table {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:600px){
+    header{
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardSmall{
+        width:350px;
+        margin: 20px;
+    }
+
+    .cardLarge{
+        width:350px;
+        padding: 20px;
+    }
+
+    .tabela{
+        width: 450px;
+        height: 550px;
+        padding: 30px;
+        margin: 80px;
+        background-color: white;
+        box-shadow: 0px 4px 15px rgb(0, 0, 0.25);
+        border-radius: 16px;
+        text-align: center;
+    }
+
+    .tabela > table {
+        width: 100%;
+    }
+
+
+}
+
+@media(max-width:460px){
+    header{
+        width: 450px;
+        height: 200px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardSmall{
+        width:350px;
+        margin: 20px;
+    }
+
+    .cardLarge{
+        width:350px;
+        padding: 20px;
+    }
+
+    .tabela{
+        width: 500px;
+        height: 550px;
+        padding: 30px;
+        margin: 90px;
+        background-color: white;
+        box-shadow: 0px 4px 15px rgb(0, 0, 0.25);
+        border-radius: 16px;
+        text-align: center;
+    }
+
+    .tabela > table {
+        width: 100%;
+    }
+
+
+}
