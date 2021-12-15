@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+
+#newTask{
+    height: 35px;
+    width: 80%;
+}
+
+
+button{
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+    background-color: rgb(63, 136, 160);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+ul,li{
+    list-style: none;
+}
