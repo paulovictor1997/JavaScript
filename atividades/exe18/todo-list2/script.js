@@ -6,9 +6,8 @@ const filterOption = document.querySelector('.filter-todo');
 
 //Eventos executados
 //----------------------------------------------------
-//Esses dois eventos são usados na adição e remoção local.
+//Esse evento é usado na adição local.
 document.addEventListener('DOMContentLoaded',getTodos);
-
 //----------------------------------------------------
 todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
