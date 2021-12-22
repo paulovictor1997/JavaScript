@@ -1,8 +1,7 @@
 const url = 'https://thatcopy.pw/catapi/rest/';
 const catBtn = document.getElementById('change-cat');
-const Img = document.getElementById('cat');
+const catImg = document.getElementById('cat');
 
-const getData = async () =>
 const getCats = async () =>{
     try{
         const data = await fetch(url);
