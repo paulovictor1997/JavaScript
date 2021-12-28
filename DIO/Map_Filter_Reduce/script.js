@@ -43,3 +43,4 @@ function calulaSaldo (saldoTotal,lista){
 }
 
 console.log(calulaSaldo(saldoTotal,lista));
+
