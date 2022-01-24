@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(241, 231, 231, 0.959);
+}
+
+header .digital {
+  font-size: 30px;
+}
+
+#inputArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.busca {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+}
+
+.busca button {
+  padding: 10px;
+  font-size: 15px;
+  border: 0;
+  background-color: #555;
+  color: #FFF;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.busca button:hover {
+  background-color: #444;
+}
+
+.busca #searchInput {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.resultado {
+  width: 300px;
+  color: white;
+  display: none;
+  border: 1px dotted #FFF;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.712);
+}
+
+.titulo {
+  width: 100%;
+  color: #FFF;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.info .temp {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.vento {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.vento .tempTitulo,
+.vento .ventoTitulo {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.vento .tempInfo,
+.vento .ventoInfo {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.vento .tempInfo sup {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.vento .ventoInfo span {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.vento .tempMin {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.vento .tempMax {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.vento .ventoArea {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
+.vento .ventoPonto {
+  width: 15px;
+  height: 1px;
+  background-color: #FFF;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.aviso {
+  color: #FFF;
+  padding-top: 20px;
+}
+/*# sourceMappingURL=style.css.map */
