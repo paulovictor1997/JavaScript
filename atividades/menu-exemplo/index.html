@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Menu Example</title>
+  </head>
+  <body>
+    <script>
+      function openMenu () {
+        const openButton = document.querySelector('.open-button');
+        const closeButton = document.querySelector('.close-button');
+        const menu = document.querySelector('.menu');
+
+        openButton.classList.add('hidden');
+        closeButton.classList.remove('hidden');
+        menu.classList.add('show');
+      }
+
+      function closeMenu () {
+        const openButton = document.querySelector('.open-button');
+        const closeButton = document.querySelector('.close-button');
+        const menu = document.querySelector('.menu');
+
+        openButton.classList.remove('hidden');
+        closeButton.classList.add('hidden');
+        menu.classList.remove('show');
+      }
+    </script>
+
+    <nav>
+      <div class="mobile">
+        <a class="logo" href="">Blog</a>
+        <div class="open-button" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="close-button hidden" onclick="closeMenu()">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+
+      <div class="menu">
+        <div class="left-side">
+          <a class="logo" href="">Blog</a>
+          
+          <button class="dropdown-container">
+            <span class="dropdown-toggl">
+              Product
+              <i class="fas fa-chevron-down"></i>
+            </span>
+            <div class="dropdown-links">
+              Example
+            </div>
+          </button>
+          
+          <button class="dropdown-container">
+            <span class="dropdown-toggl">
+              Company
+              <i class="fas fa-chevron-down"></i>
+            </span>
+            <div class="dropdown-links">
+              Example
+            </div>
+          </button>
+          
+          <button class="dropdown-container">
+            <span class="dropdown-toggl">
+              Connect
+              <i class="fas fa-chevron-down"></i>
+            </span>
+            <div class="dropdown-links">
+              Example
+            </div>
+          </button>
+  
+        </div>
+  
+        <div class="right-side">
+          <a class="btn-primary" href="#">login</a>
+          <a class="btn-primary" href="#">Signup</a>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
