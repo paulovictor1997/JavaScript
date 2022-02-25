@@ -1,0 +1,9 @@
+.Contador input{
+    font-size: 1rem;
+    width: 60px;
+}
+
+.Contador button{
+    margin: 5px;
+    cursor: pointer;
+}
