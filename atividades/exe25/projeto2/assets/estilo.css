@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Barlow';
+}
+
+:root{
+    /*Primary*/
+    --button-color:hsl(0, 100%, 68%);
+    /*Neutral*/
+    --VeryDarkBlue:hsl(230, 29%, 20%);
+    --DarkGrayishBlue: hsl(230, 11%, 40%);
+    --GrayishBlue: hsl(231, 7%, 65%);
+    --LightGravishBlue: hsl(207, 33%, 95%);
+    --header-color:lightblue;
+    --button-hover:hsl(0, 100%, 59%);
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+}
+
+.content{
+    display: flex;
+}
+
+.content-area{
+    padding: 25px 70px;
+    width: 100%;
+}
+
+.description-area{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    color: var(--GrayishBlue);
+    font-weight: 600;
+}
+
+h3 > strong{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.title{
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.description{
+    color: var(--GrayishBlue);
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.button-area{
+    display: flex;
+    align-items: center;
+    margin-top: 15%;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--button-color);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: 0.5s all;
+    background-color: var(--button-hover);
+}
+
+span{
+    color: var(--GrayishBlue);
+    margin-left: 5px;
+    padding: 20px;
+}
+
+nav{
+    padding: 25px 70px;
+    width: 100%;
+    height: 500px;
+    border-radius: 0px 0px 0px 50px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-color: var(--header-color);
+    background-image: url('../images/illustration-devices.svg');
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+i{cursor: pointer;}
+
+nav .menu > .link a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--VeryDarkBlue);
+    font-weight: 600;
+    font-family: 'Barlow Condensed';
+}
+
+nav .menu .link >.login{
+    color: var(--GrayishBlue);
+}
+
+nav .menu > .link a:hover {
+    text-decoration: underline;    
+}
+
+@media (max-width:1200px){
+    nav .menu{
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        justify-content: center;
+        position: absolute;
+        width: 500px;
+    }
+
+    nav .menu .link{
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    nav .mobile {
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+        position: relative;
+        width: 100%;
+    }
+    
+    nav .menu.show{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .mobile .open-button.hidden,
+    nav .mobile .close-button.hidden {
+      display: none;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+   
+}
+
+
+
+@media (min-width:1201px){
+    nav .mobile {
+        display: none;
+    }
+}
