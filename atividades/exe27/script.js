@@ -1,6 +1,6 @@
 function openMenu(){
     const openButton = document.querySelector('.open-button');
-    const closeButton= document.querySelector('.close-button');
+    const closeButton = document.querySelector('.close-button');
     const menu = document.querySelector('.menu');
 
     openButton.classList.add('hidden');
