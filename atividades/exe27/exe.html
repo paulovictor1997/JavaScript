@@ -6,12 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insure Landing Page Master</title>
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <main id="container">
-      
+        <nav>
+            <div class="navbar">
+                <img src="images/logo.svg" alt="logo">
+                
+                <img src="images/icon-hamburger.svg" alt="open-icon" class="open-button" onclick="openMenu()">
+
+                <img src="images/icon-close.svg" alt="close-icon" class="close-button hidden"onclick="closeMenu()">
+
+                <ul class="menu">
+                    <li><a href="#">HOW WE WORK</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">ACCOUNT</a></li>
+                    <li><a href="#" class="plans">VIEW PLANS</a></li>
+                </ul>
+            </div>
+        </nav>
     </main>
 </body>
 <script src="script.js"></script>
