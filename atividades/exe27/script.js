@@ -6,6 +6,7 @@ function openMenu(){
     openButton.classList.add('hidden');
     closeButton.classList.remove('hidden');
     menu.classList.add('show');
+    
 }
 
 function closeMenu(){

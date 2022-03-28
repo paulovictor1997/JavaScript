@@ -49,7 +49,6 @@ nav{
         display: flex;
         align-items: center;
         font-family: $Font;
-
         li{
             margin-left: 5px;
             a{
@@ -73,6 +72,62 @@ nav{
     }
 }
 
+#area-1{
+    display: flex;
+    padding: 30px 75px;
+    background-color: $Dark-Violet;
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/bg-pattern-intro-right-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    .image-area{margin-left: 15px;}
+
+    .border{
+        border: 1px solid $Dark-Grayish-Violet;
+        width: 150px;
+    }
+    
+    .content{
+        max-width: 550px;
+        padding: 20px;
+    
+        .content-area{
+           margin-top: 10%;
+           .title{
+               color: $Very-Light-Gray;
+               font-size: 50px;
+               font-weight: 600;
+            }
+            .description{
+                color: $Very-Light-Gray;
+                font-family: $Font;
+                margin-top: 10px;
+            }
+
+            .link{
+                margin-top: 5%;
+                a{
+                  border: 1px solid $Dark-Grayish-Violet;
+                  padding: 10px;
+                  text-decoration: none;
+                  font-family: $Font;
+                  color: $Very-Light-Gray;
+                  &:hover{
+                      background-color: white;
+                      color: black;
+                      transition: 0.5s;
+                  }
+                }
+            }
+
+    
+        }
+    }
+}
+
+
+
 @media (max-width:900px){
     .navbar{
 
@@ -91,8 +146,8 @@ nav{
             width: 90%;
             display: none;
             position:absolute;
-            background-image: url('..//images/bg-pattern-how-we-work-mobile.svg');
-            background-position: right bottom ;
+            background-image: url('..//images/bg-pattern-intro-right-mobile.svg');
+            background-position: bottom right;
             background-repeat: no-repeat;
 
             li{
@@ -116,6 +171,25 @@ nav{
         .open-button.hidden,
         .close-button.hidden{
             display: none;
+        }
+    }
+
+    #area-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: 800px;
+        
+        .image-area{margin-top: 5%;}
+
+        .border{display: none;}
+        
+        .content{
+            max-width: 550px;
+            .content-area{
+                text-align: center;
+            }
         }
     }
 }

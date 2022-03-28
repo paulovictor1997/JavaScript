@@ -77,6 +77,68 @@ nav {
   transition: 0.5s;
 }
 
+#area-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 75px;
+  background-color: #2d2640;
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/bg-pattern-intro-right-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+#area-1 .image-area {
+  margin-left: 15px;
+}
+
+#area-1 .border {
+  border: 1px solid #837d87;
+  width: 150px;
+}
+
+#area-1 .content {
+  max-width: 550px;
+  padding: 20px;
+}
+
+#area-1 .content .content-area {
+  margin-top: 10%;
+}
+
+#area-1 .content .content-area .title {
+  color: #fafafa;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#area-1 .content .content-area .description {
+  color: #fafafa;
+  font-family: "Karla";
+  margin-top: 10px;
+}
+
+#area-1 .content .content-area .link {
+  margin-top: 5%;
+}
+
+#area-1 .content .content-area .link a {
+  border: 1px solid #837d87;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Karla";
+  color: #fafafa;
+}
+
+#area-1 .content .content-area .link a:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 @media (max-width: 900px) {
   .navbar .open-button, .navbar .close-button {
     display: block;
@@ -97,8 +159,8 @@ nav {
     width: 90%;
     display: none;
     position: absolute;
-    background-image: url("..//images/bg-pattern-how-we-work-mobile.svg");
-    background-position: right bottom;
+    background-image: url("..//images/bg-pattern-intro-right-mobile.svg");
+    background-position: bottom right;
     background-repeat: no-repeat;
   }
   .navbar .menu li {
@@ -121,6 +183,34 @@ nav {
   .navbar .open-button.hidden,
   .navbar .close-button.hidden {
     display: none;
+  }
+  #area-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 800px;
+  }
+  #area-1 .image-area {
+    margin-top: 5%;
+  }
+  #area-1 .border {
+    display: none;
+  }
+  #area-1 .content {
+    max-width: 550px;
+  }
+  #area-1 .content .content-area {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
