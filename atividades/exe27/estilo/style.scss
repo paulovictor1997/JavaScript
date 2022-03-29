@@ -28,6 +28,8 @@ nav{
     padding: 10px 20px;
     top: 0px;
     z-index: 999; 
+    background-color: $Very-Light-Gray;
+    position: fixed;
 }
 
 .navbar{
@@ -74,6 +76,7 @@ nav{
 
 #area-1{
     display: flex;
+    justify-content: space-evenly;
     padding: 30px 75px;
     background-color: $Dark-Violet;
     width: 100%;
@@ -82,6 +85,7 @@ nav{
     background-repeat: no-repeat;
     background-position: top right;
     .image-area{margin-left: 15px;}
+    margin-top: 5%;
 
     .border{
         border: 1px solid $Dark-Grayish-Violet;
@@ -126,9 +130,87 @@ nav{
     }
 }
 
+#area-2{
+    margin-top: 20%;
+    width: 100%;
+    padding: 30px 75px;
+
+    .title-2{
+        font-family: $Font-Title;
+        font-size: 45px;
+        margin-top: 20px;
+    }
+
+    .border-2{
+        border: 1px solid $Dark-Grayish-Violet;
+        width: 150px;
+    }
+
+    .content-2{
+        padding: 50px 10px;
+        display: flex;
+        justify-content: center;
+
+        .testimonial{
+            max-width: 400px;
+            padding: 20px 10px;
+            margin-right: 5px;
+
+            .title-3{
+                font-family: $Font-Title;
+                margin-top: 20px;
+                font-weight: 600;
+            }
+
+            .description-2{
+                margin-top: 15px;
+                font-size: 20px;
+                font-family: $Font;
+                color: $Dark-Grayish-Violet;
+            }
+        }
+    }
+}
+
+#area-3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-between;
+    background-color: $Dark-Violet;
+    background-image: url('../images/bg-pattern-intro-right-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin-top: 5%;
+
+    .title-4{
+        width: 500px;
+
+        h1{
+            color: $Very-Light-Gray;
+            font-family: $Font-Title;
+            font-weight: 600;
+            font-size: 45px;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: $Very-Light-Gray;
+        font-family: $Font;
+        border: 1px solid $Very-Light-Gray;
+        padding: 5px;
+        &:hover{
+            background-color: white;
+            color: black;
+            transition: 0.5s;
+        }
+    }
+}
 
 
-@media (max-width:900px){
+@media (max-width:1200px){
     .navbar{
 
         .open-button,.close-button{
@@ -179,7 +261,7 @@ nav{
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
-        height: 800px;
+        height: 850px;
         
         .image-area{margin-top: 5%;}
 
@@ -191,6 +273,36 @@ nav{
                 text-align: center;
             }
         }
+    }
+
+    #area-2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .content-2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .testimonial{
+                text-align: center;
+            }
+        }
+    }
+
+    #area-3{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .title-4{
+            text-align: center;
+        }
+
+        a{margin-top: 5%;}
     }
 }
 

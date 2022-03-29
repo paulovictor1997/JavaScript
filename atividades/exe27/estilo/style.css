@@ -17,6 +17,8 @@ nav {
   padding: 10px 20px;
   top: 0px;
   z-index: 999;
+  background-color: #fafafa;
+  position: fixed;
 }
 
 .navbar {
@@ -81,6 +83,9 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding: 30px 75px;
   background-color: #2d2640;
   width: 100%;
@@ -88,6 +93,7 @@ nav {
   background-image: url("../images/bg-pattern-intro-right-desktop.svg");
   background-repeat: no-repeat;
   background-position: top right;
+  margin-top: 5%;
 }
 
 #area-1 .image-area {
@@ -139,7 +145,98 @@ nav {
   transition: 0.5s;
 }
 
-@media (max-width: 900px) {
+#area-2 {
+  margin-top: 20%;
+  width: 100%;
+  padding: 30px 75px;
+}
+
+#area-2 .title-2 {
+  font-family: "DM Serif Display";
+  font-size: 45px;
+  margin-top: 20px;
+}
+
+#area-2 .border-2 {
+  border: 1px solid #837d87;
+  width: 150px;
+}
+
+#area-2 .content-2 {
+  padding: 50px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#area-2 .content-2 .testimonial {
+  max-width: 400px;
+  padding: 20px 10px;
+  margin-right: 5px;
+}
+
+#area-2 .content-2 .testimonial .title-3 {
+  font-family: "DM Serif Display";
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+#area-2 .content-2 .testimonial .description-2 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-family: "Karla";
+  color: #837d87;
+}
+
+#area-3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #2d2640;
+  background-image: url("../images/bg-pattern-intro-right-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin-top: 5%;
+}
+
+#area-3 .title-4 {
+  width: 500px;
+}
+
+#area-3 .title-4 h1 {
+  color: #fafafa;
+  font-family: "DM Serif Display";
+  font-weight: 600;
+  font-size: 45px;
+}
+
+#area-3 a {
+  text-decoration: none;
+  color: #fafafa;
+  font-family: "Karla";
+  border: 1px solid #fafafa;
+  padding: 5px;
+}
+
+#area-3 a:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
   .navbar .open-button, .navbar .close-button {
     display: block;
     z-index: 999;
@@ -198,7 +295,7 @@ nav {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    height: 800px;
+    height: 850px;
   }
   #area-1 .image-area {
     margin-top: 5%;
@@ -211,6 +308,57 @@ nav {
   }
   #area-1 .content .content-area {
     text-align: center;
+  }
+  #area-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #area-2 .content-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #area-2 .content-2 .testimonial {
+    text-align: center;
+  }
+  #area-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #area-3 .title-4 {
+    text-align: center;
+  }
+  #area-3 a {
+    margin-top: 5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
