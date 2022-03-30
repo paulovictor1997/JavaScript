@@ -240,13 +240,13 @@ footer{
     #area-4{
         padding: 45px;
         display: flex;
-        align-items: center;
         justify-content: space-evenly;
         
 
         .content-3{
             background-color: $Very-Light-Gray;
             padding: 15px;
+            
             
             h4{
                 margin-bottom: 5%;
@@ -260,6 +260,7 @@ footer{
                 display: flex;
                 flex-direction: column;
                 
+               
                 
                 a{
                     text-decoration: none;
