@@ -209,6 +209,32 @@ nav{
     }
 }
 
+footer{
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 15%;
+    .border-footer{border: 1px solid $Grayish-Blue;}
+    
+    .header-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        
+        .icons{
+            cursor: pointer;
+            img {
+            margin-left: 5px;
+                &:hover{
+                    transform: scale3d(1.2,1.2,1.2);
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+
+    
+}
 
 @media (max-width:1200px){
     .navbar{
@@ -303,6 +329,20 @@ nav{
         }
 
         a{margin-top: 5%;}
+    }
+
+    footer{
+        width: 100%;
+        
+        .header-footer{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            
+            .icons{
+                margin-top: 10px;
+            }
+        }
     }
 }
 
