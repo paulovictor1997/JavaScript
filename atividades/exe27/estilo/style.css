@@ -155,6 +155,7 @@ nav {
   font-family: "DM Serif Display";
   font-size: 45px;
   margin-top: 20px;
+  color: #2d2640;
 }
 
 #area-2 .border-2 {
@@ -240,6 +241,9 @@ footer {
   width: 100%;
   padding: 10px 20px;
   margin-top: 15%;
+  background-image: url("../images/bg-pattern-intro-left-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
 }
 
 footer .border-footer {
@@ -272,6 +276,52 @@ footer .header-footer .icons img:hover {
           transform: scale3d(1.2, 1.2, 1.2);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+footer #area-4 {
+  padding: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer #area-4 .content-3 {
+  background-color: #fafafa;
+  padding: 15px;
+}
+
+footer #area-4 .content-3 h4 {
+  margin-bottom: 5%;
+  color: #837d87;
+  font-family: "Karla";
+  font-weight: 600;
+}
+
+footer #area-4 .content-3 .link-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer #area-4 .content-3 .link-content a {
+  text-decoration: none;
+  color: #2b272f;
+  font-family: "Karla";
+  padding: 5px;
+}
+
+footer #area-4 .content-3 .link-content a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
@@ -415,6 +465,21 @@ footer .header-footer .icons img:hover {
   }
   footer .header-footer .icons {
     margin-top: 10px;
+  }
+  footer #area-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer #area-4 h4 {
+    text-align: center;
+  }
+  footer #area-4 .link-content {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
