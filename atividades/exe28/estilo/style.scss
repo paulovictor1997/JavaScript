@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: 'Open Sans';   
+}
+
+//Primary Colors
+$dark-blue:hsl(217, 28%, 15%); //(intro and email sign up background)
+$main-background:hsl(218, 28%, 13%);
+$testimonials:hsl(219, 30%, 18%);
+$footer:hsl(216, 53%, 9%);
+$neutral: hsl(0, 0%, 100%);
+$hover:hsl(176, 68%, 64%);
+
+//Accent
+$light-red:hsl(0, 100%, 63%);
+$gradient: linear-gradient(to left ,hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+
+// Font
+$font:'Raleway';
+
+body{background-color: $dark-blue;}
+
+#container{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+
+    .menu{
+        display: flex;
+        list-style: none;
+        padding: 10px;
+        a{
+            color: $neutral;
+            margin-left: 15px;
+            text-decoration: none;
+            &:hover{text-decoration: underline;}
+        }
+    }
+}
