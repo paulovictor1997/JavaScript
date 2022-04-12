@@ -18,16 +18,30 @@ $hover:hsl(176, 68%, 64%);
 
 //Accent
 $light-red:hsl(0, 100%, 63%);
-$gradient: linear-gradient(to left ,hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+//$gradient: linear-gradient(to left ,hsl(176, 68%, 64%),hsl(198, 60%, 50%));
 
 // Font
 $font:'Raleway';
 
 body{background-color: $dark-blue;}
 
+.title{
+    font-family: $font;
+    color: $neutral;
+}
+
+.description{
+    color: $neutral;
+    margin-top: 5px;
+    line-height: 20px;
+}
+
 #container{
     width: 100%;
     height: 100vh;
+    background-image: url('../images/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header{
@@ -47,5 +61,31 @@ header{
             text-decoration: none;
             &:hover{text-decoration: underline;}
         }
+    }
+}
+
+.area-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .content-1{
+        max-width: 500px;
+        padding: 10px;
+        text-align: center;
+
+        button{
+            margin-top: 15px;
+            width: 200px;
+            padding: 5px;
+            border-radius: 50px;
+            border: none;
+            background-image:  linear-gradient(to left ,hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+            cursor: pointer;
+            color: $neutral;
+        }
+        
+   
     }
 }
