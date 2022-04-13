@@ -15,12 +15,14 @@ body {
 .title {
   font-family: "Raleway";
   color: white;
+  font-weight: 600;
 }
 
 .description {
   color: white;
   margin-top: 5px;
   line-height: 20px;
+  font-weight: 500;
 }
 
 #container {
@@ -31,7 +33,11 @@ body {
   background-position: center;
 }
 
-header {
+.content-area {
+  width: 100%;
+}
+
+.content-area header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,7 +51,7 @@ header {
   width: 100%;
 }
 
-header .menu {
+.content-area header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,17 +59,17 @@ header .menu {
   padding: 10px;
 }
 
-header .menu a {
+.content-area header .menu a {
   color: white;
   margin-left: 15px;
   text-decoration: none;
 }
 
-header .menu a:hover {
+.content-area header .menu a:hover {
   text-decoration: underline;
 }
 
-.area-1 {
+.content-area #area-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,13 +85,13 @@ header .menu a:hover {
           flex-direction: column;
 }
 
-.area-1 .content-1 {
-  max-width: 500px;
+.content-area #area-1 .content-1 {
+  width: 500px;
   padding: 10px;
   text-align: center;
 }
 
-.area-1 .content-1 button {
+.content-area #area-1 .content-1 button {
   margin-top: 15px;
   width: 200px;
   padding: 5px;
@@ -95,5 +101,108 @@ header .menu a:hover {
   background-image: linear-gradient(to left, #65e2d9, #339ecc);
   cursor: pointer;
   color: white;
+}
+
+.content-area #area-2 {
+  padding: 20px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1200px;
+  margin-top: 10%;
+}
+
+.content-area #area-2 .content-2 {
+  width: 400px;
+  text-align: center;
+  padding: 20px;
+}
+
+.content-area #area-3 {
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.content-area #area-3 .content-3 {
+  width: 400px;
+  padding: 15px;
+}
+
+.content-area #area-3 .content-3 h1 {
+  font-size: 40px;
+}
+
+.content-area #area-3 .content-3 .link {
+  margin-top: 20px;
+}
+
+.content-area #area-3 .content-3 .link a {
+  color: #65e2d9;
+}
+
+@media (max-width: 1200px) {
+  .content-area {
+    width: 100%;
+  }
+  .content-area header {
+    width: 100%;
+  }
+  .content-area #area1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content-area #area-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .content-area #area-2 .content-2 {
+    margin: auto;
+  }
+  .content-area #area-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

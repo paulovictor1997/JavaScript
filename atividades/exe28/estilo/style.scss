@@ -14,7 +14,7 @@ $main-background:hsl(218, 28%, 13%);
 $testimonials:hsl(219, 30%, 18%);
 $footer:hsl(216, 53%, 9%);
 $neutral: hsl(0, 0%, 100%);
-$hover:hsl(176, 68%, 64%);
+$neutral-2:hsl(176, 68%, 64%);
 
 //Accent
 $light-red:hsl(0, 100%, 63%);
@@ -28,12 +28,14 @@ body{background-color: $dark-blue;}
 .title{
     font-family: $font;
     color: $neutral;
+    font-weight: 600;
 }
 
 .description{
     color: $neutral;
     margin-top: 5px;
     line-height: 20px;
+    font-weight: 500;
 }
 
 #container{
@@ -44,48 +46,127 @@ body{background-color: $dark-blue;}
     background-position: center;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+.content-area{
     width: 100%;
+    
 
-    .menu{
+    header{
         display: flex;
-        list-style: none;
-        padding: 10px;
-        a{
-            color: $neutral;
-            margin-left: 15px;
-            text-decoration: none;
-            &:hover{text-decoration: underline;}
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+    
+        .menu{
+            display: flex;
+            list-style: none;
+            padding: 10px;
+            a{
+                color: $neutral;
+                margin-left: 15px;
+                text-decoration: none;
+                &:hover{text-decoration: underline;}
+            }
         }
     }
+    
+    #area-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        .content-1{
+            width: 500px;
+            padding: 10px;
+            text-align: center;
+    
+            button{
+                margin-top: 15px;
+                width: 200px;
+                padding: 5px;
+                border-radius: 50px;
+                border: none;
+                background-image:linear-gradient(to left ,hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+                cursor: pointer;
+                color: $neutral;
+            }
+            
+        }
+    }
+    
+    #area-2{
+        padding: 20px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 1200px;
+        margin-top: 10%;
+    
+        .content-2{
+            width: 400px;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+    
+    #area-3{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+        .content-3{
+            width: 400px;
+            h1{font-size: 40px;}
+            padding: 15px;
+    
+            .link{
+                margin-top: 20px;
+                a{
+                    color: $neutral-2;
+                }
+            }
+        }
+    }
+    
+    
 }
 
-.area-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+@media (max-width:1200px){
+    .content-area{
+        width: 100%;
 
-    .content-1{
-        max-width: 500px;
-        padding: 10px;
-        text-align: center;
-
-        button{
-            margin-top: 15px;
-            width: 200px;
-            padding: 5px;
-            border-radius: 50px;
-            border: none;
-            background-image:  linear-gradient(to left ,hsl(176, 68%, 64%),hsl(198, 60%, 50%));
-            cursor: pointer;
-            color: $neutral;
+        header{
+            width: 100%;
         }
-        
-   
+
+        #area1{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #area-2{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+
+            .content-2{
+                margin: auto;
+            }
+        }
+
+
+        #area-3{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
     }
 }
