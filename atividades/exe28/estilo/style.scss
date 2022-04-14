@@ -131,9 +131,102 @@ body{background-color: $dark-blue;}
             }
         }
     }
+
+    #area-4{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 10%;
+        padding: 50px;
+        background-image: url('../images/bg-quotes.png');
+        background-repeat: no-repeat;
+
+        .content-4{
+            width: 400px;
+            background-color: $testimonials;
+            padding: 20px;
+            border-radius: 5px;
+
+            .testimonial{
+                margin-top: 15px;
+                img{border-radius: 50px;}
+                display: flex;
+                align-items: center;
+
+                .names{
+                    color: $neutral;
+                    padding-left: 10px;
+                }
+               
+            }
+        }
+    }
     
-    
-}
+    #area-5{
+        padding: 20px;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5%;
+
+        .login-area{
+            width: 700px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
+            background-color: $testimonials;
+            border-radius: 10px;
+
+            .login{
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+
+                .form{
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                   
+                    .email{
+                        width: 300px;
+                        padding: 15px 30px;
+                        border-radius: 50px;
+                    }
+
+                    .erroText{
+                        color: $light-red;
+                        display: none;
+                        font-style: italic;
+                        position: relative;
+                        left: 30px;   
+                    }
+
+                    .error{
+                        display: block;
+                   }
+
+
+                    .button{
+                        width: 200px;
+                        margin-left: 10px;
+                        padding: 15px;
+                        color: $neutral;
+                        border-radius: 50px;
+                        background-image: linear-gradient(to left ,hsl(176, 68%, 64%),hsl(198, 60%, 50%)) ;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+    }
+}   
+
 
 @media (max-width:1200px){
     .content-area{
@@ -166,6 +259,19 @@ body{background-color: $dark-blue;}
             justify-content: center;
             flex-direction: column;
             align-items: center;
+        }
+
+        #area-4{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-image: url('../images/bg-quotes.png');
+            background-repeat: no-repeat;
+            background-position: center top;
+
+            .content-4{
+                margin-top: 20px;
+            }
         }
 
     }

@@ -154,6 +154,134 @@ body {
   color: #65e2d9;
 }
 
+.content-area #area-4 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10%;
+  padding: 50px;
+  background-image: url("../images/bg-quotes.png");
+  background-repeat: no-repeat;
+}
+
+.content-area #area-4 .content-4 {
+  width: 400px;
+  background-color: #202a3c;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.content-area #area-4 .content-4 .testimonial {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-area #area-4 .content-4 .testimonial img {
+  border-radius: 50px;
+}
+
+.content-area #area-4 .content-4 .testimonial .names {
+  color: white;
+  padding-left: 10px;
+}
+
+.content-area #area-5 {
+  padding: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5%;
+}
+
+.content-area #area-5 .login-area {
+  width: 700px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  background-color: #202a3c;
+  border-radius: 10px;
+}
+
+.content-area #area-5 .login-area .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.content-area #area-5 .login-area .login .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.content-area #area-5 .login-area .login .form .email {
+  width: 300px;
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+
+.content-area #area-5 .login-area .login .form .erroText {
+  color: #ff4242;
+  display: none;
+  font-style: italic;
+  position: relative;
+  left: 30px;
+}
+
+.content-area #area-5 .login-area .login .form .error {
+  display: block;
+}
+
+.content-area #area-5 .login-area .login .form .button {
+  width: 200px;
+  margin-left: 10px;
+  padding: 15px;
+  color: white;
+  border-radius: 50px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#65e2d9), to(#339ecc));
+  background-image: linear-gradient(to left, #65e2d9, #339ecc);
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .content-area {
     width: 100%;
@@ -203,6 +331,24 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .content-area #area-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: url("../images/bg-quotes.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  .content-area #area-4 .content-4 {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
