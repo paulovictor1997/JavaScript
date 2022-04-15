@@ -186,7 +186,7 @@ body{background-color: $dark-blue;}
                 display: flex;
                 justify-content: center;
                 margin-top: 20px;
-
+                
                 .form{
                     display: flex;
                     align-items: center;
@@ -196,21 +196,25 @@ body{background-color: $dark-blue;}
                         width: 300px;
                         padding: 15px 30px;
                         border-radius: 50px;
-                    }
 
+                        &::placeholder{
+                            color: black;
+                        }
+                        
+                    }
+    
                     .erroText{
                         color: $light-red;
                         display: none;
                         font-style: italic;
                         position: relative;
-                        left: 30px;   
+                        left: 30px;
                     }
-
+                    
                     .error{
                         display: block;
                    }
-
-
+                   
                     .button{
                         width: 200px;
                         margin-left: 10px;
@@ -220,9 +224,9 @@ body{background-color: $dark-blue;}
                         background-image: linear-gradient(to left ,hsl(176, 68%, 64%),hsl(198, 60%, 50%)) ;
                         cursor: pointer;
                     }
-                }
+                }    
             }
-
+            
         }
     }
 }   

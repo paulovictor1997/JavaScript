@@ -6,7 +6,7 @@ form.addEventListener('submit',e =>{
     let emailValue = email.value;
 
     if(!validateEmail(emailValue)){
-        form.classList.add('error') 
+        form.classList.add('error');
     }else{
         form.classList.remove('error');
     }
