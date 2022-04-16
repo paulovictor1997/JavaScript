@@ -250,6 +250,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
 }
 
@@ -275,16 +279,18 @@ body {
   color: black;
 }
 
+.content-area #area-5 .login-area .login .form .input-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .content-area #area-5 .login-area .login .form .erroText {
   color: #ff4242;
   display: none;
   font-style: italic;
   position: relative;
-  left: 30px;
-}
-
-.content-area #area-5 .login-area .login .form .error {
-  display: block;
+  margin-top: 15px;
 }
 
 .content-area #area-5 .login-area .login .form .button {
@@ -296,6 +302,47 @@ body {
   background-image: -webkit-gradient(linear, right top, left top, from(#65e2d9), to(#339ecc));
   background-image: linear-gradient(to left, #65e2d9, #339ecc);
   cursor: pointer;
+}
+
+.content-area footer {
+  width: 100%;
+  background-color: #0b1523;
+  padding: 100px;
+  margin-top: 5%;
+}
+
+.content-area footer .logo {
+  margin-top: 5%;
+}
+
+.content-area footer .footer-content {
+  width: 400px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-area footer .footer-content img {
+  margin-right: 10px;
+}
+
+.content-area footer .span-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-area footer .span-area span {
+  color: white;
+  padding: 5px;
 }
 
 @media (max-width: 1200px) {
@@ -365,6 +412,49 @@ body {
   }
   .content-area #area-4 .content-4 {
     margin-top: 20px;
+  }
+  .content-area #area-5 {
+    width: 100%;
+  }
+  .content-area #area-5 .login-area {
+    width: 450px;
+    padding: 50px;
+  }
+  .content-area #area-5 .login-area .login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content-area #area-5 .login-area .login .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .content-area #area-5 .login-area .login .form .input-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content-area #area-5 .login-area .login .form .input-area .button {
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

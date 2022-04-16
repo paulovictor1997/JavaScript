@@ -190,6 +190,7 @@ body{background-color: $dark-blue;}
                 .form{
                     display: flex;
                     align-items: center;
+                    flex-direction: column;
                     position: relative;
                    
                     .email{
@@ -202,18 +203,18 @@ body{background-color: $dark-blue;}
                         }
                         
                     }
-    
+
+                    .input-area{
+                        display: flex;
+                    }
+                    
                     .erroText{
                         color: $light-red;
                         display: none;
                         font-style: italic;
                         position: relative;
-                        left: 30px;
+                        margin-top: 15px;
                     }
-                    
-                    .error{
-                        display: block;
-                   }
                    
                     .button{
                         width: 200px;
@@ -227,6 +228,39 @@ body{background-color: $dark-blue;}
                 }    
             }
             
+        }
+    }
+
+    footer{
+        width: 100%;
+        background-color: $footer;
+        padding: 100px;
+        margin-top: 5% ;
+
+        .logo{margin-top: 5% ;}
+
+        .footer-content{
+            width: 400px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            
+
+            img{
+                margin-right: 10px;
+            }
+
+            
+        }
+
+        .span-area{
+          display: flex;
+          flex-direction: column;
+          
+          span{
+              color: $neutral;
+              padding: 5px;
+            }
         }
     }
 }   
@@ -275,6 +309,39 @@ body{background-color: $dark-blue;}
 
             .content-4{
                 margin-top: 20px;
+            }
+        }
+
+        #area-5{
+            width: 100%;
+
+            .login-area{
+                width: 450px;
+                padding: 50px;
+                
+                
+                .login{
+                    display: flex;
+                    justify-content: center; 
+
+                    .form{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        position: relative;
+
+                        .input-area{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            .button{
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+               
             }
         }
 
