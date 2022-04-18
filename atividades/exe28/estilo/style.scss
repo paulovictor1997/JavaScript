@@ -234,37 +234,56 @@ body{background-color: $dark-blue;}
     footer{
         width: 100%;
         background-color: $footer;
-        padding: 100px;
-        margin-top: 5% ;
+        padding: 50px;
 
-        .logo{margin-top: 5% ;}
-
-        .footer-content{
-            width: 400px;
-            padding: 20px;
+        .footer-area{
+            width: 100%;
+            padding: 50px;
             display: flex;
             align-items: center;
-            
+            justify-content: space-around;
 
-            img{
-                margin-right: 10px;
+            .content-footer{
+                width: 400px;
+                display: flex;
+                padding: 15px;
+                align-items: center;
+                p{line-height: 1.5rem;}
+                img{margin-right: 10px ;}
             }
 
-            
-        }
-
-        .span-area{
-          display: flex;
-          flex-direction: column;
-          
-          span{
-              color: $neutral;
-              padding: 5px;
+            .span-area{
+                display: flex;
+                flex-direction: column;
+                
+                span{
+                    color: $neutral;
+                    padding: 10px;
+                  }
             }
+
+            .link-area{
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                max-width: 100px;
+                .links{
+                    list-style: none;
+                    a{
+                        color: $neutral;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+              
         }
     }
-}   
-
+    
+    
+}
 
 @media (max-width:1200px){
     .content-area{
@@ -345,5 +364,15 @@ body{background-color: $dark-blue;}
             }
         }
 
+        footer{
+            width: 100%;
+    
+            .footer-area{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
     }
+
 }

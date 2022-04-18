@@ -307,30 +307,42 @@ body {
 .content-area footer {
   width: 100%;
   background-color: #0b1523;
-  padding: 100px;
-  margin-top: 5%;
+  padding: 50px;
 }
 
-.content-area footer .logo {
-  margin-top: 5%;
-}
-
-.content-area footer .footer-content {
-  width: 400px;
-  padding: 20px;
+.content-area footer .footer-area {
+  width: 100%;
+  padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.content-area footer .footer-content img {
+.content-area footer .footer-area .content-footer {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-area footer .footer-area .content-footer p {
+  line-height: 1.5rem;
+}
+
+.content-area footer .footer-area .content-footer img {
   margin-right: 10px;
 }
 
-.content-area footer .span-area {
+.content-area footer .footer-area .span-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,9 +352,33 @@ body {
           flex-direction: column;
 }
 
-.content-area footer .span-area span {
+.content-area footer .footer-area .span-area span {
   color: white;
-  padding: 5px;
+  padding: 10px;
+}
+
+.content-area footer .footer-area .link-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  max-width: 100px;
+}
+
+.content-area footer .footer-area .link-area .links {
+  list-style: none;
+}
+
+.content-area footer .footer-area .link-area .links a {
+  color: white;
+  text-decoration: none;
+}
+
+.content-area footer .footer-area .link-area .links a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
@@ -455,6 +491,18 @@ body {
   }
   .content-area #area-5 .login-area .login .form .input-area .button {
     margin-top: 10px;
+  }
+  .content-area footer {
+    width: 100%;
+  }
+  .content-area footer .footer-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
