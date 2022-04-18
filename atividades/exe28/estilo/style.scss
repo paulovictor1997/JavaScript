@@ -266,9 +266,9 @@ body{background-color: $dark-blue;}
                 display: flex;
                 align-items: center;
                 padding: 10px;
-                max-width: 100px;
                 .links{
                     list-style: none;
+
                     a{
                         color: $neutral;
                         text-decoration: none;
@@ -378,6 +378,7 @@ body{background-color: $dark-blue;}
             .footer-area{
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
             }
         }
         

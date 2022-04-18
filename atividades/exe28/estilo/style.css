@@ -365,7 +365,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
-  max-width: 100px;
 }
 
 .content-area footer .footer-area .link-area .links {
@@ -510,6 +509,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
