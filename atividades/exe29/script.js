@@ -16,18 +16,21 @@ const showInfo = (content) =>{
         population
     }) =>{
         return `
-          <div>
+          <div class = "content">
           <img src ="${flags.png}">
-          <p> ${name.common}</p>
-          <p> ${capital}</p>
-          <p> ${continents}</p>
-          <p> ${population}</p>
+          <div class = "description">
+          <p> Country - ${name.common}</p>
+          <p> Capital - ${capital}</p>
+          <p> Continent - ${continents}</p>
+          <p> Population - ${population}</p>
+          </div>
           </div>  
         `
     })
-    document.querySelector('.teste').innerHTML = myData;
+    document.querySelector('#content-area').innerHTML = myData;
 
 }
+
 
 getApi()
 
