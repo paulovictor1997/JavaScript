@@ -40,8 +40,8 @@ function updateSelect(){
     let optionValue = select.options[select.selectedIndex];
     
     let value = optionValue.value;
-    //let text = optionValue.text;
-    console.log(value);
+    let text = optionValue.text;
+    console.log(value,text);
 
 }
 
