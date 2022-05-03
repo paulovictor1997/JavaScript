@@ -36,6 +36,19 @@ header h1 {
   color: white;
 }
 
+header .select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+header .select select {
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+}
+
 #content-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,16 +96,5 @@ header h1 {
 .area .content img {
   width: 80%;
   height: 50%;
-}
-
-.select {
-  margin: 1rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.select select {
-  padding: 5px;
-  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

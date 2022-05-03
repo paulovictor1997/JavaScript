@@ -8,8 +8,12 @@
     font-weight: 500;
 }
 
+$color-body:rgb(5, 27, 99);
+$color-font:white;
+$header-color:rgb(0, 8, 34);
+
 body{
-    background-color: rgb(5, 27, 99);
+    background-color: $color-body;
 }
 
 #container{
@@ -22,11 +26,24 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(0, 8, 34);
+    background-color: $header-color;
 
     h1{
         font-size: 45px;
         color: white;
+    }
+
+    .select {
+        margin: 1rem;
+        position: relative;
+        overflow: hidden;
+    
+        select{
+            padding: 5px;
+            cursor: pointer;
+            border: none;
+            width: 100px;
+        }
     }
 }
 
@@ -55,7 +72,7 @@ header{
         .description{
             padding: 10px;
             margin-top: 10px;
-            color: white;
+            color: $color-font;
             
             p{ margin-top: 5px;}
         }
@@ -68,13 +85,3 @@ header{
 }
 
 
-.select {
-    margin: 1rem;
-    position: relative;
-    overflow: hidden;
-
-    select{
-        padding: 5px;
-        cursor: pointer;
-    }
-}

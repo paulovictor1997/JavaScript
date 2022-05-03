@@ -42,6 +42,7 @@ function updateSelect(){
     let value = optionValue.value;
     //let text = optionValue.text;
     console.log(value);
+
 }
 
 getApi()
