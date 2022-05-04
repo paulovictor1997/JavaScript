@@ -56,3 +56,23 @@ getApi()
 
 
 
+// Scroll Back To Top Button
+
+const button = document.querySelector('#myButton');
+
+//Quando rolar uns 20px para baixo, o botão ficará a mostra
+window.onscroll = function(){scrollFunction()};
+function scrollFunction(){
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        button.style.display = 'block';
+    }else{
+        button.style.display = 'none';
+    }
+}
+
+//Quando o usuário clicar, o documento vai rolar de volta ao topo
+
+function topButton(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0; 
+}
