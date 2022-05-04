@@ -46,7 +46,7 @@ header .select select {
   padding: 5px;
   cursor: pointer;
   border: none;
-  width: 100px;
+  width: 150px;
 }
 
 #content-area {
@@ -96,5 +96,10 @@ header .select select {
 .area .content img {
   width: 80%;
   height: 50%;
+}
+
+#myButton {
+  background-color: white;
+  width: 500px;
 }
 /*# sourceMappingURL=style.css.map */

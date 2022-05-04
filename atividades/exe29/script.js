@@ -30,8 +30,6 @@ const showInfo = (content) =>{
         `
     })
     document.querySelector('#content-area').innerHTML = myData;
-
-   updateSelect()
 }
 
 
@@ -40,9 +38,18 @@ function updateSelect(){
     let optionValue = select.options[select.selectedIndex];
     
     let value = optionValue.value;
-    let text = optionValue.text;
-    console.log(value,text);
+    console.log(value);
+    getApiByRegion(value);
 
+}
+
+async function getApiByRegion(region){
+    const response = await fetch(`https://restcountries.com/v3.1/region/${region}`)
+    const data = await response.json();
+    if(response.status === 200){
+       console.log(data); 
+        showInfo(data);
+    }   
 }
 
 getApi()
