@@ -1,2 +1,2 @@
 # JavaScript
- Repositório feito para backup de exercícios.
+ Repositório feito para usar como backup de exercícios.
