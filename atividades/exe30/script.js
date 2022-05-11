@@ -9,11 +9,14 @@ const getStyle = (element,style)=>{
 //Pegando o estilo
 
 const initialColors = {
-    
+    bg:getStyle(html,'--bg'),
+    bgcolor:getStyle(html,'--bg-dark'),
+
 }    
     
 const darkMode = {
-   
+  bg:'#1e202a',
+  bgcolor:'#ffffff'
 }
     
 const transformKey = key =>
@@ -30,3 +33,4 @@ const changeColors = (colors) =>{
 checkbox.addEventListener('change',({target})=>{
     target.checked ? changeColors(darkMode) : changeColors(initialColors)
 })
+
