@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <title>Social Media Dashbord</title>
 </head>
 <body>
-    
+    <main id="container">
+        <header>
+
+            <div class="top-header">
+                <h1 class="title">Social Media Dashboard</h1>
+                <p class="subtitle">
+                    Total Followers: 23,004
+                </p>
+            </div>
+
+            <div class="toggle">
+                Change Theme
+                <input id="switch" type="checkbox" name="theme">
+                <label for="switch">toggle</label>
+            </div>
+
+        </header>
+
+        <section class="content-area">
+
+            <div class="content">
+
+                <div class="area-1">
+                    <img src="images/icon-facebook.svg" alt="icon-facebook">
+                    <p class="subtitle">@nathanf</p>
+                </div>
+
+                <div class="area-2">
+                    <h1 class="title">1987</h1>
+                    <p  class="subtitle">FOLLOWERS</p>
+                </div>
+
+                <div class="followers-area">
+                    <img src="images/icon-up.svg" alt="up">
+                    <p class="followers">12 Today</p>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
 </body>
+<script src="script.js"></script>
 </html>
