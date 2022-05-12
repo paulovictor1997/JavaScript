@@ -10,15 +10,19 @@
 html{
     --bg:#ffffff;
     --bg-dark:#1e202a;
-    
-}
-
-:root{
+    --header:#f5f7ff;
     --toggle-color:#aeb3cb;
     --text:hsl(228, 12%, 44%);
     --bright-red:hsl(356, 69%, 56%);
     --lime-green:hsl(163, 72%, 41%);
+    --title:#1e202a;
+
+    /*--gradient:linear-gradient(to left,hsl(37, 97%, 70%),hsl(329, 70%, 58%));*/
+    --youtube:hsl(348, 97%, 39%);
+    --twitter:hsl(203, 89%, 53%);
+    --facebook:hsl(208, 92%, 53%);
 }
+
 
 #container{
     width: 100%;
@@ -34,6 +38,27 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--header);
+}
+
+#border-1{
+    border-top: 10px solid var(--facebook);
+    box-shadow: 0 10px 0 0  rgba(0, 0, 0, 0.1);
+}
+
+#border-2{
+    border-top: 10px solid var(--twitter);
+    box-shadow: 0 10px 0 0  rgba(0, 0, 0, 0.1);
+}
+
+#border-3{
+    border-top: 10px solid  hsl(37, 97%, 70%);
+    box-shadow: 0 10px 0 0  rgba(0, 0, 0, 0.1);
+}
+
+#border-4{
+    border-top: 10px solid var(--youtube);
+    box-shadow: 0 10px 0 0  rgba(0, 0, 0, 0.1);
 }
 
 
@@ -42,8 +67,10 @@ header .top-header{
 }
 
 header .top-header h1{
-    color: var(--bg-dark);
+    color: var(--title);
+    font-weight: 700;
 }
+
 
 .toggle{
     display: flex;
@@ -62,6 +89,8 @@ header .top-header h1{
 .content-area{
     width: 100%;
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .content-area .content{
@@ -73,6 +102,7 @@ header .top-header h1{
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
+    margin-right: 30px;
 }
 
 .content-area .content .area-1{
@@ -94,7 +124,7 @@ header .top-header h1{
 
 .content-area .content .area-2 h1{
     font-size: 45px;
-    color: var(--bg-dark);
+    color: var(--title);
 }
 
 .content-area .content .followers-area{
@@ -105,6 +135,11 @@ header .top-header h1{
 
 .content-area .content .followers-area .followers{
     color: var(--lime-green);
+    margin-left: 10px;
+}
+
+.content-area .content .followers-area .followers-2{
+    color: var(--bright-red);
     margin-left: 10px;
 }
 
@@ -148,4 +183,25 @@ input:checked + label::after {
 
 label:active:after {
     width: 45px;
+}
+
+@media screen and (max-width:900px) {
+    header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .content-area{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3%;
+    }
+
+    .content-area .content{
+        margin-top: 10px;
+    }
 }
