@@ -61,6 +61,8 @@ header{
     box-shadow: 0 10px 0 0  rgba(0, 0, 0, 0.1);
 }
 
+.sub-up{color:var(--lime-green);}
+.sub-down{color: var(--bright-red);}
 
 header .top-header{
     padding: 10px;
@@ -96,7 +98,7 @@ header .top-header h1{
 .content-area .content{
     width: 300px;
     height: 250px;
-    background-color: var(--toggle-color);
+    background-color:var(--header);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -105,12 +107,18 @@ header .top-header h1{
     margin-right: 30px;
 }
 
+.content-area .content:hover{
+    background-color: var(--toggle-color);
+    transition: 0.5s all ;
+}
+
 .content-area .content .area-1{
     display: flex;
 }
 
 .content-area .content .area-1 p{
     margin-left: 10px;
+    color: var(--text);
 }
 
 .content-area .content .area-2{
@@ -154,7 +162,7 @@ label {
     text-indent: -9999px;
     width: 52px;
     height: 27px;
-    background: grey;
+    background-image: linear-gradient( to left, hsl(210, 78%, 56%) , hsl(146, 68%, 55%));
     float: right;
     border-radius: 100px;
     position: relative;
@@ -185,6 +193,58 @@ label:active:after {
     width: 45px;
 }
 
+.header-2{
+    padding: 20px;
+    background-color: var(--header);
+    color: var(--title);
+    margin-top: 15px;
+}
+
+.content-area-2{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-area-2 .content-2{
+    width: 320px;
+    padding: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: var(--header);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 10px 0 0  rgba(0, 0, 0, 0.1);
+}
+
+.content-area-2 .content-2:hover{
+    background-color: var(--toggle-color);
+    transition: 0.5s all;
+}
+
+.content-area-2 .content-2 .views p{
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.content-area-2 .content-2 .views h1{
+    margin-top: 15px;
+    color: var(--title);
+}
+
+.content-area-2 .content-2 .subs{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.content-area-2 .content-2 .statisct .subs img{
+    margin-right: 5px;
+}
+
 @media screen and (max-width:900px) {
     header{
         display: flex;
@@ -203,5 +263,9 @@ label:active:after {
 
     .content-area .content{
         margin-top: 10px;
+    }
+
+    .header-2 h1{
+        text-align: center;
     }
 }
