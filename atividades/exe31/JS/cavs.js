@@ -1,4 +1,4 @@
-const gold = [
+let gold = [
     {id:1, name :'Mu',img:'img/Mu.jpg', idade: 20, born: 'Tibete' ,constellation : 'Áries' , description : 'Treinou em Jamiel, seus principais poderes são : Muralha de Cristal, Revolução estelar, Extinção estelar, Telecinese e a Rede de Cristal'},
 
     {id:2, name:'Aldebaran', img:'img/Aldebaran.jpg', born :'Brasil', idade: 20, constellation:'Touro', description:'Treinou no Brasil, seus principais poderes são : Grande chifre, Punho de aço, Chifres Cosmicos'},

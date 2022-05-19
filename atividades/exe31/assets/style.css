@@ -16,4 +16,25 @@ body {
   width: 100%;
   height: 100vh;
 }
+
+.modal {
+  width: 100%;
+  display: none;
+}
+
+.modal .img img {
+  width: 50%;
+  height: 300px;
+}
+
+.content {
+  width: 300px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.content .img-content img {
+  width: 200px;
+  height: 200px;
+}
 /*# sourceMappingURL=style.css.map */
