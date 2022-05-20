@@ -1,4 +1,4 @@
-let gold = [
+let cavaleiros = [
     {id:1, name :'Mu',img:'img/Mu.jpg', idade: 20, born: 'Tibete' ,constellation : 'Áries' , description : 'Treinou em Jamiel, seus principais poderes são : Muralha de Cristal, Revolução estelar, Extinção estelar, Telecinese e a Rede de Cristal'},
 
     {id:2, name:'Aldebaran', img:'img/Aldebaran.jpg', born :'Brasil', idade: 20, constellation:'Touro', description:'Treinou no Brasil, seus principais poderes são : Grande chifre, Punho de aço, Chifres Cosmicos'},
@@ -21,6 +21,6 @@ let gold = [
 
     {id:11, name:'Camus', img:'img/Camus.jpg', born: 'França', idade: 23, constellation : 'Aquário',description: 'Treinou na Sibéria,seus principais poderes são : Pó de Diamante,Golpe da Constelação de Aquário, Trovão Aurora Ataque, Execução Aurora '},
 
-    {id:12, name:'Afrodite', img:'img/Afrodite.jpg', born: 'Suécia', idade: 22, constellation : 'Peixes',description: 'Treinou na Groenlândia,seus principais poderes são : Rosas Diabólicas Reais, Rosas Piranhas, Rosa Sangrenta, Encomenda de Rosas'},
+    {id:12, name:'Afrodite', img:'img/Afrodite.jpg', born: 'Suécia', idade: 22, constellation : 'Peixes',description: 'Treinou na Groenlândia,seus principais poderes são : Rosas Diabólicas Reais, Rosas Piranhas, Rosa Sangrenta, Encomenda de Rosas'}
 ]
 

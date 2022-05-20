@@ -10,6 +10,13 @@
 body {
   background-image: url("..//img/Santuario.jpg");
   background-repeat: round;
+  background-attachment: fixed;
+}
+
+.text {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 #container {
@@ -17,24 +24,63 @@ body {
   height: 100vh;
 }
 
-.modal {
-  width: 100%;
+.models {
   display: none;
 }
 
-.modal .img img {
-  width: 50%;
-  height: 300px;
+.cavs-item--name {
+  margin-top: 50px;
+  padding: 10px;
 }
 
-.content {
-  width: 300px;
+.cavs-item {
+  width: 400px;
+  text-align: center;
   padding: 20px;
-  cursor: pointer;
 }
 
-.content .img-content img {
+.cavs-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.cavs-item .cavs-item--img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+.cavs-item .cavs-item--img img {
+  width: 100%;
+  height: auto;
+}
+
+.area-content {
+  width: 100%;
+  padding: 20px;
+}
+
+.area-content .area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
