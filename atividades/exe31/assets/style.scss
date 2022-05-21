@@ -98,6 +98,11 @@ $button-color:#D39829;
     display:flex;
     margin:20px 0px;
 
+    .info{
+        flex:1; 
+        padding-bottom:50px;
+    }
+    
     .cavsBig{
         flex:1;
         display:flex;
@@ -106,20 +111,13 @@ $button-color:#D39829;
     
         img{
             height:400px;
-             width:auto;
+            width:auto;
         }
-    }
-    
-    .info{
-        flex:1; 
-        padding-bottom:50px;
     }
     
     .cancelButton{
         display:inline-block;
         cursor:pointer;
     }
-
-
 }
 
