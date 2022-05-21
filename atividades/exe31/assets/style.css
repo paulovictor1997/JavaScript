@@ -83,4 +83,23 @@ body {
   padding: 20px;
   width: 100%;
 }
+
+.modal-area {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: auto;
+}
 /*# sourceMappingURL=style.css.map */

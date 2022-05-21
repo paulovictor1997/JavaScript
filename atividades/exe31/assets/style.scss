@@ -13,9 +13,11 @@ body{
     background-attachment: fixed;
 }
 
-$background-modal:white;
+$background-modal:rgb(255, 255, 255,0.5);
 $text:white;
 $text-2:black;
+$window-body:white;
+$button-color:#D39829;
 
 .text{
     color: $text;
@@ -73,3 +75,51 @@ $text-2:black;
         width: 100%;
     }
 }
+
+.modal-area{
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(255, 255, 255, 0.5);
+    display:none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
+}
+
+.window-body{
+    width:900px;
+    background-color:#FFF;
+    border-radius:10px;
+    box-shadow:0px 0px 15px #999;
+    display:flex;
+    margin:20px 0px;
+
+    .cavsBig{
+        flex:1;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    
+        img{
+            height:400px;
+             width:auto;
+        }
+    }
+    
+    .info{
+        flex:1; 
+        padding-bottom:50px;
+    }
+    
+    .cancelButton{
+        display:inline-block;
+        cursor:pointer;
+    }
+
+
+}
+
