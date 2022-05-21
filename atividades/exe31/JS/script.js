@@ -15,9 +15,14 @@ cavaleiros.map((item,index)=>{
         document.querySelector('.modal-area').style.display = 'flex';
 
         //Preenchendo os dados
-        document.querySelector('.cavsBig img').src = item.img
+        document.querySelector('.cavsBig img').src = item.img;
+        document.querySelector('.name').innerHTML = `${item.name} de ${item.constellation}`;
+        document.querySelector('.born').innerHTML = `País - ${item.born}`;
+        document.querySelector('.age').innerHTML = `Idade - ${item.idade}`;
+        document.querySelector('.description').innerHTML = item.description;
     })
 
+    //Fechando a janela modal
     document.querySelector('.cancelButton').addEventListener('click',()=>{
         document.querySelector('.modal-area').style.display = 'none';
     })
