@@ -129,3 +129,31 @@ body{
     display:inline-block;
     cursor:pointer;
 }
+
+.mobileButton{
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px){
+    .window-body{
+        width: 400px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .window-body .cavsBig img{
+        height:250px;
+    }
+
+    .mobileButton{
+        display: block;
+        margin-bottom: 3%;
+    }
+
+    .window-body .cancelButton{
+        display: none;
+    }
+}

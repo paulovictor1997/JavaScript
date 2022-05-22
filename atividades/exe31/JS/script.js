@@ -27,4 +27,10 @@ cavaleiros.map((item,index)=>{
         document.querySelector('.modal-area').style.display = 'none';
     })
 
+    //Fechando a janela modal no mobile
+    document.querySelector('.mobileButton').addEventListener('click',()=>{
+        document.querySelector('.modal-area').style.display = 'none';
+    })
+
+
 })
