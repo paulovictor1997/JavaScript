@@ -17,7 +17,7 @@ cavaleiros.map((item,index)=>{
         //Preenchendo os dados
         document.querySelector('.cavsBig img').src = item.img;
         document.querySelector('.name').innerHTML = `${item.name} de ${item.constellation}`;
-        document.querySelector('.born').innerHTML = `País - ${item.born}`;
+        document.querySelector('.born').innerHTML = `País aonde nasceu - ${item.born}`;
         document.querySelector('.age').innerHTML = `Idade - ${item.idade}`;
         document.querySelector('.description').innerHTML = item.description;
     })
