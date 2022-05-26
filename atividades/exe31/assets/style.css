@@ -53,6 +53,10 @@ header h1{
     font-size: 50px;
 }
 
+header .made{
+    font-style: italic;
+}
+
 .models{display: none;}
 
 .cavs-item{
