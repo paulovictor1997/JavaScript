@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 * {
   text-align: justify;
-  font-family: 'Open Sans Condensed';
+  font-family: "Open Sans Condensed";
 }
 
 h1 {
@@ -48,12 +48,10 @@ body {
   width: 50%;
   margin: auto;
   padding: 0 25px 40px 10px;
-  background-color: #4b88ac;
+  background-color: rgb(75, 136, 172);
   border: 4px solid white;
   border-radius: 5px;
   color: white;
   font-weight: bold;
-  -webkit-box-shadow: 5px 5px 5px #d4d4d4;
-          box-shadow: 5px 5px 5px #d4d4d4;
-}
-/*# sourceMappingURL=style.css.map */
+  box-shadow: 5px 5px 5px rgb(212, 212, 212);
+}/*# sourceMappingURL=style.css.map */

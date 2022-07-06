@@ -4,16 +4,13 @@
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Roboto',sans-serif;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -34,15 +31,9 @@ header {
   max-width: 1200px;
   padding: 0px 20px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -85,27 +76,19 @@ header {
 
 .menu {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .menu li {
   margin-left: 10px;
 }
-
 .menu li a {
   display: block;
   padding: 10px 15px;
   color: white;
   text-decoration: none;
-  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
-
 .menu li a:hover {
   color: black;
   background-color: white;
@@ -119,13 +102,11 @@ header {
   border-radius: 10px;
   padding: 15px;
   margin: auto;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   min-width: 400px;
   max-width: 800px;
   margin-top: 10%;
 }
-
 .content img {
   margin: auto;
   display: block;
@@ -135,7 +116,7 @@ header {
 }
 
 .title {
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   text-align: center;
   font-weight: bold;
   font-size: 25px;
@@ -151,14 +132,12 @@ header {
 .links li {
   list-style: none;
 }
-
 .links li a {
   text-decoration: none;
   color: black;
 }
-
 .links .external::after {
-  content: '\00A0\1F517';
+  content: " 🔗";
 }
 
 footer {
@@ -167,7 +146,6 @@ footer {
   margin-top: 10px;
   background-color: #ebf5f0;
 }
-
 footer a {
   text-decoration: none;
   color: black;
@@ -176,32 +154,17 @@ footer a {
 /*Part of content who i used in the "battles"*/
 /*Parte do conteúdo que será usado na aba de "batalhas"*/
 .area {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
 .battle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .item {
@@ -214,8 +177,6 @@ footer a {
 }
 
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -229,8 +190,6 @@ footer a {
   border-radius: 10px;
   color: white;
   font-size: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   cursor: pointer;
   padding: 15px;
@@ -242,6 +201,7 @@ footer a {
     display: block;
     z-index: 999;
   }
+
   .menu {
     position: fixed;
     top: 0;
@@ -249,53 +209,47 @@ footer a {
     height: 100vh;
     background-color: #263238;
     margin: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
     padding: 100px 20px;
     max-width: 250px;
-    -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
   }
+
   .menu.active {
     right: 0;
   }
+
   ul.active:not(.menu) {
     display: none;
   }
+
   .content {
     margin-top: 20%;
   }
+
   .area {
     margin-top: 20%;
   }
+
   .button {
     margin-top: 400px;
   }
+
   .card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 20%;
   }
+
   .vs {
     padding: 20px;
     margin-top: 20px;
   }
 }
-
 @media screen and (max-width: 500px) {
   .content {
     margin-top: 30%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

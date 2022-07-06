@@ -3,9 +3,8 @@
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Ubuntu';
+  box-sizing: border-box;
+  font-family: "Ubuntu";
 }
 
 body {
@@ -18,66 +17,44 @@ body {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   background-color: #171A21;
   padding: 35px;
   color: white;
 }
-
 header .title {
   font-size: 60px;
   font-weight: 600;
-  font-family: 'Passion One';
+  font-family: "Passion One";
 }
-
 header p {
   font-style: italic;
 }
 
 #content-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .area {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 10px;
 }
-
 .area .content {
   width: 400px;
   padding: 10px;
 }
-
 .area .content img {
   width: 100%;
 }
-
 .area .content .games-description {
   margin-top: 10px;
 }
-
 .area .content .games-description h3, .area .content .games-description p {
   color: white !important;
 }
@@ -86,63 +63,38 @@ footer {
   background-color: #171A21;
   padding: 15px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   color: white;
 }
-
 footer .title-footer {
   color: white;
 }
-
 footer .social-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding: 15px;
 }
-
 footer .social-media a:hover {
-  -webkit-transform: scale3d(1.2, 1.2, 1.2);
-          transform: scale3d(1.2, 1.2, 1.2);
-  -webkit-transition: 1s;
+  transform: scale3d(1.2, 1.2, 1.2);
   transition: 1s;
 }
-
 footer .about {
   width: 500px;
   padding: 20px;
   background-color: #3b7bc9;
   border-radius: 5px;
 }
-
 footer .about .description, footer .about .reference {
   margin-top: 10px;
 }
-
 footer .about .description a, footer .about .reference a {
   color: white;
   text-decoration: none;
 }
-
 footer .about .description a:hover, footer .about .reference a:hover {
   text-decoration: underline;
 }
@@ -154,5 +106,4 @@ footer .about .description a:hover, footer .about .reference a:hover {
   footer .about {
     width: 350px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

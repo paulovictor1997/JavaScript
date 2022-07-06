@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
-  font-family: 'Poppins';
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  font-family: "Poppins";
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #ff7a7a;
+  background-color: hsl(0deg, 100%, 74%);
   background-image: url(imagens/bg-intro-desktop.png);
 }
 
@@ -16,68 +15,38 @@ body {
   padding: 90px 165px;
   min-height: 100vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .esquerda {
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   max-width: 500px;
   margin-right: 75px;
 }
 
 .direita {
   width: 540px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 20px 40px 40px 40px;
   width: 540px;
   max-height: 650px;
   background-color: white;
   border-radius: 10px;
-  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 .campo {
@@ -89,20 +58,15 @@ body {
   border-radius: 0.3rem;
   padding: 0 30px;
   font-size: 14px;
-  border: 1.5px solid #e4e4e4;
+  border: 1.5px solid rgb(228, 228, 228);
 }
 
-.campo::-webkit-input-placeholder {
+.campo::-moz-placeholder {
   font-size: 0.9rem;
   font-weight: 600;
 }
 
 .campo:-ms-input-placeholder {
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.campo::-ms-input-placeholder {
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -114,22 +78,15 @@ body {
 
 .trial {
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 60px;
-  background-color: #6055a5;
+  background-color: hsl(248deg, 32%, 49%);
   border-radius: 0.5rem;
   margin-bottom: 25px;
   width: 100%;
-  -webkit-box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 .weight {
@@ -148,7 +105,7 @@ body {
   display: none;
   font-size: 0.7rem;
   margin-top: 5px;
-  color: #ff7a7a;
+  color: hsl(0deg, 100%, 74%);
 }
 
 .button {
@@ -158,16 +115,15 @@ body {
   height: 55px;
   width: 460px;
   font-size: 1rem;
-  background-color: #38cc8c;
+  background-color: hsl(154deg, 59%, 51%);
   color: white;
   border: none;
   border-radius: 0.3rem;
-  -webkit-box-shadow: inset 0 -3px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0 -3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 -3px rgba(0, 0, 0, 0.1);
 }
 
 .termo {
-  color: #b9b6d3;
+  color: hsl(246deg, 25%, 77%);
   margin-top: 1rem;
   font-size: 0.7rem;
 }
@@ -175,7 +131,7 @@ body {
 .termo a {
   font-weight: 700;
   text-decoration: none;
-  color: #ff7a7a;
+  color: hsl(0deg, 100%, 74%);
 }
 
 .container {
@@ -190,75 +146,71 @@ body {
 }
 
 .red {
-  border: 1.5px solid #ff7a7a;
+  border: 1.5px solid hsl(0deg, 100%, 74%);
 }
 
 @media (hover: hover) and (pointer: fine) {
   .button:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    transform: scale(1.05);
   }
 }
-
 .button:active {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
+  transform: scale(1.05);
+  filter: brightness(1.1);
 }
 
 @media screen and (max-width: 900px) {
   .conteudo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
+
   .principal {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 100px 25px 60px 25px;
     text-align: center;
   }
+
   .esquerda {
     margin: 0;
     width: auto;
   }
+
   .direita {
     margin: 0;
     width: 330px;
   }
+
   .form {
     width: 330px;
     padding: 25px;
   }
+
   .campo {
     width: 280px;
   }
+
   #name {
     margin-top: 0;
   }
+
   .button {
     width: 280px;
   }
+
   .trial {
     height: 90px;
     padding: 1rem 3rem;
     display: block;
   }
+
   .titulo {
     font-size: 2rem;
     line-height: 2.5rem;
   }
+
   .descicao {
     margin-bottom: 70px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

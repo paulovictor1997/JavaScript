@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Overpass";
+  font-weight: 500;
+}
+
+body {
+  background-color: hsl(216deg, 12%, 8%);
+}
+
+.title {
+  color: white;
+  margin-top: 5%;
+}
+
+.description {
+  color: hsl(216deg, 12%, 54%);
+  margin-top: 5%;
+  font-size: 15px;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 350px;
+  border-radius: 15px;
+  max-height: 360px;
+  padding: 20px;
+  background-color: hsl(213deg, 19%, 18%);
+}
+.card .list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10%;
+}
+.card .list li {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: hsl(216deg, 12%, 8%);
+  color: hsl(217deg, 12%, 63%);
+  cursor: pointer;
+}
+.card .list li .selected {
+  background-color: orange;
+}
+.card .list li:hover {
+  background-color: orange;
+  color: white;
+  transition: 0.5s all;
+}
+.card button {
+  margin-top: 8%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+}
+.card button:hover {
+  transition: 0.5s all;
+  background-color: white;
+  color: orange;
+}/*# sourceMappingURL=style.css.map */

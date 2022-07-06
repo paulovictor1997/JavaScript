@@ -2,65 +2,47 @@
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Rubik';
+  box-sizing: border-box;
+  font-family: "Rubik";
 }
 
 body {
-  background-color: #1c1f4a;
+  background-color: hsl(235deg, 46%, 20%);
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
 
 .container {
-  display: -ms-grid;
   display: grid;
   grid-gap: auto;
   grid-row-gap: 3em;
   width: 80%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .control {
   border-radius: 20px;
-  background-color: #1c1f4a;
+  background-color: hsl(235deg, 46%, 20%);
   width: 300px;
 }
 
 .profile {
-  background-color: #5847eb;
+  background-color: hsl(246deg, 80%, 60%);
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 20px;
 }
 
 .profileImg {
   width: 50px;
 }
-
 .profileImg img {
   width: 100%;
   border: 3px solid white;
@@ -70,41 +52,28 @@ main {
 .text {
   margin: 0 15px;
 }
-
 .text p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   color: white;
   font-weight: 300;
   font-size: 18px;
 }
-
 .text p span {
   font-size: 13px;
   margin-bottom: 3px;
-  color: #bdc1ff;
+  color: hsl(236deg, 100%, 87%);
 }
 
 .controls {
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .controls a {
   text-decoration: none;
-  color: #bdc1ff;
+  color: hsl(236deg, 100%, 87%);
 }
-
 .controls a:hover {
   color: white;
 }
@@ -123,31 +92,31 @@ main {
 }
 
 .panel:hover .schedule-text {
-  background-color: #6f76c8;
+  background-color: hsl(235deg, 45%, 61%);
 }
 
 .panel:nth-child(2) .schedule-img {
-  background-color: #ff5c7c;
+  background-color: hsl(348deg, 100%, 68%);
 }
 
 .panel:nth-child(3) .schedule-img {
-  background-color: #56c2e6;
+  background-color: hsl(195deg, 74%, 62%);
 }
 
 .panel:nth-child(4) .schedule-img {
-  background-color: #ff8c66;
+  background-color: hsl(15deg, 100%, 70%);
 }
 
 .panel:nth-child(5) .schedule-img {
-  background-color: #4acf81;
+  background-color: hsl(145deg, 58%, 55%);
 }
 
 .panel:nth-child(6) .schedule-img {
-  background-color: #7536d3;
+  background-color: hsl(264deg, 64%, 52%);
 }
 
 .panel:nth-child(7) .schedule-img {
-  background-color: #f1c65b;
+  background-color: hsl(43deg, 84%, 65%);
 }
 
 .schedule-img {
@@ -159,7 +128,6 @@ main {
   width: 100%;
   height: 100%;
 }
-
 .schedule-img img {
   width: 76px;
   position: relative;
@@ -174,16 +142,12 @@ main {
   border-radius: 20px;
   width: 100%;
   height: 100%;
-  background-color: #1c1f4a;
+  background-color: hsl(235deg, 46%, 20%);
 }
 
 .schedule-text p:first-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: white;
   font-size: 18px;
 }
@@ -194,60 +158,49 @@ main {
 }
 
 .duration {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-top: 10px;
 }
-
 .duration p {
   font-size: 14px;
   color: white;
   margin-left: auto;
-  color: #bdc1ff;
+  color: hsl(236deg, 100%, 87%);
 }
 
 @media (min-width: 1100px) {
   .container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 3rem;
     grid-auto-rows: minmax(200px, auto);
     width: 90%;
   }
+
   .control {
-    -ms-grid-column: 1;
     grid-column: 1;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
     grid-row: 1/3;
     width: unset;
   }
+
   .controls {
     padding: 30px;
   }
   .controls a {
     font-size: 1.2rem;
   }
+
   .profile {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     height: 70%;
   }
   .profile img {
     width: 80px;
   }
+
   .text {
     margin: 20px 0;
   }
@@ -259,52 +212,41 @@ main {
   .text p span {
     font-size: 16px;
   }
+
   .controls {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: space-between;
-        -ms-flex-align: space-between;
-            align-items: space-between;
+    flex-direction: column;
+    align-items: space-between;
     height: 30%;
   }
+
   .panel {
     height: 230px;
     width: unset;
   }
+
   .schedule-text {
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .duration {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     margin-top: 30px;
   }
+
   .duration p {
     padding-top: 10px;
     margin-left: 0;
   }
+
   .duration h2 {
     font-size: 3rem;
   }
 }
-
 @media (min-width: 1500px) {
   .container {
     width: 60%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Overpass';
+    font-weight: 500;
+}
+
+$body-background:hsl(216, 12%, 8%);
+$card-background:hsl(213, 19%, 18%);
+$color-text-1:white;
+$color-text-2:hsl(216, 12%, 54%);
+$ligth-gray:hsl(217, 12%, 63%);
+$button:orange;
+$button-hover:white;
+$color-hover:orange;
+
+body{background-color: $body-background;}
+
+.title{
+    color: $color-text-1;
+    margin-top: 5%;
+}
+
+.description{
+    color: $color-text-2;
+    margin-top: 5%;
+    font-size: 15px;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card{
+    width: 350px;
+    border-radius: 15px;
+    max-height: 360px;
+    padding: 20px;
+    background-color: $card-background;
+
+    .list{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin-top: 10%;
+
+        li{
+            
+            .selected{
+                background-color: $button;
+            }
+            
+    
+            margin: 15px;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: $body-background;
+            color: $ligth-gray;
+            cursor: pointer;
+            &:hover{
+                background-color: $color-hover;
+                color: $color-text-1;
+                transition: 0.5s all;
+            }
+
+        }
+    }
+
+    button{
+        margin-top: 8%;
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: $button;
+        color: $color-text-1;
+
+        &:hover{
+            transition: 0.5s all;
+            background-color: $color-text-1;
+            color: $color-hover;
+        }
+    }
+}

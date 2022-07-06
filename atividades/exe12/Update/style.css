@@ -2,9 +2,8 @@
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Roboto',sans-serif;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -15,43 +14,25 @@ header {
   width: 100%;
   height: 200px;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: black;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: white;
 }
 
 .menuLink {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 20px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .menu li > a {
@@ -60,9 +41,7 @@ header {
 }
 
 .menu li > a:hover {
-  -webkit-transform: scale3d(1.5, 1.5, 1.5);
-          transform: scale3d(1.5, 1.5, 1.5);
-  -webkit-transition: 1s;
+  transform: scale3d(1.5, 1.5, 1.5);
   transition: 1s;
 }
 
@@ -73,8 +52,7 @@ header {
 
 .card {
   background-color: white;
-  -webkit-box-shadow: 4px 4px 15px black;
-          box-shadow: 4px 4px 15px black;
+  box-shadow: 4px 4px 15px rgb(0, 0, 0);
   border-radius: 15px;
   margin: 0px 20px;
   height: 132px;
@@ -82,12 +60,8 @@ header {
 
 .cardSmall {
   width: 240px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .cardLarge {
@@ -95,51 +69,30 @@ header {
 }
 
 .card .cardConteudo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   height: 80px;
   width: 100%;
 }
 
 .card > .cardContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   height: 100%;
 }
 
 .cardsHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 20px;
 }
 
 .cardInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cardInfo > h2 {
@@ -162,8 +115,7 @@ header {
   padding: 30px;
   margin: 40px;
   background-color: white;
-  -webkit-box-shadow: 0px 4px 15px black;
-          box-shadow: 0px 4px 15px black;
+  box-shadow: 0px 4px 15px rgb(0, 0, 0);
   border-radius: 16px;
   text-align: left;
 }
@@ -190,32 +142,19 @@ header {
 }
 
 .tableInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .chart {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 400px;
   height: 450px;
   background-color: white;
-  -webkit-box-shadow: 0px 4px 15px black;
-          box-shadow: 0px 4px 15px black;
+  box-shadow: 0px 4px 15px rgb(0, 0, 0);
   border-radius: 16px;
 }
 
@@ -225,7 +164,6 @@ footer {
   background-color: white;
   margin-top: 20px;
 }
-
 footer strong {
   font-style: italic;
 }
@@ -234,130 +172,107 @@ footer strong {
   .container, .conteudo {
     width: 100%;
   }
+
   .cardSmall {
     margin: 20px;
   }
+
   .cardsHeader {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
   .tableInfo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
+
   .tabela {
     width: 550px;
     height: 500px;
     padding: 30px;
     margin: 80px;
     background-color: white;
-    -webkit-box-shadow: 0px 4px 15px black;
-            box-shadow: 0px 4px 15px black;
+    box-shadow: 0px 4px 15px rgb(0, 0, 0);
     border-radius: 16px;
     text-align: center;
   }
+
   .tabela > table {
     width: 100%;
   }
 }
-
 @media (max-width: 600px) {
   header {
     width: 100%;
     height: 200px;
     padding: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
+
   .cardSmall {
     width: 350px;
     margin: 20px;
   }
+
   .cardLarge {
     width: 350px;
     padding: 20px;
   }
+
   .tabela {
     width: 450px;
     height: 550px;
     padding: 30px;
     margin: 80px;
     background-color: white;
-    -webkit-box-shadow: 0px 4px 15px black;
-            box-shadow: 0px 4px 15px black;
+    box-shadow: 0px 4px 15px rgb(0, 0, 0);
     border-radius: 16px;
     text-align: center;
   }
+
   .tabela > table {
     width: 100%;
   }
 }
-
 @media (max-width: 460px) {
   header {
     width: 450px;
     height: 200px;
     padding: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
+
   .cardSmall {
     width: 350px;
     margin: 20px;
   }
+
   .cardLarge {
     width: 350px;
     padding: 20px;
   }
+
   .tabela {
     width: 500px;
     height: 550px;
     padding: 30px;
     margin: 90px;
     background-color: white;
-    -webkit-box-shadow: 0px 4px 15px black;
-            box-shadow: 0px 4px 15px black;
+    box-shadow: 0px 4px 15px rgb(0, 0, 0);
     border-radius: 16px;
     text-align: center;
   }
+
   .tabela > table {
     width: 100%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

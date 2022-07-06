@@ -5,29 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .numero{
-            cursor: pointer;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
-    <h1>TESTANDO</h1>
-   <div class="list">
-       <div onclick="clicou(1)" class="numero">1</div>
-       <div onclick="clicou(2)" class="numero">2</div>
-       <div onclick="clicou(3)" class="numero">3</div>
-       <button type="submit" class="button">submit</button>
-   </div>
+  <main id="container">
+    <div class="card">
+        <img src="images/icon-star.svg" alt="icon-star">
+        <h1 class="title">How did we do?</h1>
+        <p class="description">
+            Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!
+        </p>
+        <ul class="list">
+            <li onclick="selectNumbers(1)">1</li>
+            <li onclick="selectNumbers(2)">2</li>
+            <li onclick="selectNumbers(3)">3</li>
+            <li onclick="selectNumbers(4)">4</li>
+            <li onclick="selectNumbers(5)">5</li>
+        </ul>
+        <button type="submit" class="button" onclick="submit()">SUBMIT</button>
+    </div>
+
+
+  </main>
 </body>
 <script src="script.js"></script>
 </html>
+
