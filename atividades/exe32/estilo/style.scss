@@ -16,6 +16,7 @@ $ligth-gray:hsl(217, 12%, 63%);
 $button:orange;
 $button-hover:white;
 $color-hover:orange;
+$color-content:orange;
 
 body{background-color: $body-background;}
 
@@ -40,25 +41,25 @@ body{background-color: $body-background;}
 
 
 .card{
-    width: 350px;
+    max-width: 350px;
     border-radius: 15px;
     max-height: 360px;
     padding: 20px;
     background-color: $card-background;
-
     .list{
         display: flex;
         justify-content: center;
         list-style: none;
         margin-top: 10%;
 
+
+        .selected{
+            background-color: $button;
+            color: $color-text-1;
+        }
+
         li{
             
-            .selected{
-                background-color: $button;
-            }
-            
-    
             margin: 15px;
             padding: 10px;
             border-radius: 50%;
@@ -87,6 +88,27 @@ body{background-color: $body-background;}
             transition: 0.5s all;
             background-color: $color-text-1;
             color: $color-hover;
+        }
+    }
+}
+
+.card-2{
+    max-width: 350px;
+    border-radius: 15px;
+    max-height: 360px;
+    padding: 35px;
+    background-color: $card-background;
+    text-align: center;
+    display: none;
+
+    .content{
+        margin-top: 8%;
+
+        .description-2{
+            color: $color-content;
+            background-color: $body-background;
+            border-radius: 20px;
+            padding: 5px;
         }
     }
 }
