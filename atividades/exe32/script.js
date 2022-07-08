@@ -1,7 +1,7 @@
 let card = document.querySelector('.card');
 let cardThanks = document.querySelector('.card-2');
 let listNumbers = document.querySelectorAll('.list li');
-let description = document.querySelector('.description-2')
+let description = document.querySelector('.description-2');
 
 let feed = 0;
 
