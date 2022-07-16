@@ -18,6 +18,23 @@
                 <label for="switch">toggle</label>
             </div>
         </header>
+        <nav>
+            <form class="search">
+                <input type="search" id="searchInput" placeholder="Search for you countrie" />
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <div class="select">
+                <select id="countries" onchange="updateSelect()">
+                    <option value="All"selected >Chosen the region</option>
+                    <option value="Americas">Americas</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Africa">Africa</option>
+                </select>
+            </div>
+
+        </nav>
     </main>
 </body>
 <script src="https://kit.fontawesome.com/7f318edcb1.js" crossorigin="anonymous"></script>
