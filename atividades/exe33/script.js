@@ -1,3 +1,78 @@
+//Fazendo a requisição da API
+async function getAPI(){
+  const response = await fetch('https://restcountries.com/v3.1/all')
+  const data = await response.json();
+    if(response.status === 200){
+      console.log(data); 
+      showInfo(data);
+    }
+
+}
+
+function showInfo(content){
+    const myArea = content.map(({
+      flags,
+      name,
+      capital,
+      region,
+      population
+    }) =>{
+      return `
+      <div class= "content">
+      <img src ="${flags.png}">
+      <div class = "description">
+      <p> Country - ${name.common}</p>
+      <p> Capital - ${capital}</p>
+      <p> Region - ${region}</p>
+      <p> Population - ${population}</p>
+      </div>
+      </div>
+      `
+    })
+    document.querySelector('#content-area').innerHTML = myArea;
+}
+
+//Pegando as regiões
+async function getApiByRegion(region){
+  const response = await fetch(`https://restcountries.com/v3.1/region/${region}`)
+  const data = await response.json();
+  if(response.status === 200){
+     console.log(data); 
+      showInfo(data);
+  }   
+}
+
+//Pegando o input para pesquisar pelo nome
+document.querySelector('.search').addEventListener('submit', async (e)=>{
+  e.preventDefault();
+   let input = document.querySelector('#searchInput').value;
+   getApiByname(input);
+  
+})
+
+async function getApiByname(name){
+  const response = await fetch(`https://restcountries.com/v3.1/name/${name}`)
+  const data = await response.json();
+  if(response.status === 200){
+    console.log(data); 
+     showInfo(data);
+ }   
+}
+//--------------------------------------------
+// Pegando o select 
+function updateSelect(){
+  let select = document.querySelector('#countries');
+    let optionValue = select.options[select.selectedIndex];
+    
+    let value = optionValue.value;
+    console.log(value);
+    getApiByRegion(value)
+}
+
+
+getAPI()
+
+//-----------CHANGE THEME COLORS-----------------------
 const html = document.querySelector('html');
 const checkbox = document.querySelector('input[name=theme]');
 

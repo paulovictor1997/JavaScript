@@ -144,4 +144,40 @@ nav .select select{
     border: none;
     background-color: var(--bg);
     color: var(--text);
+    cursor: pointer;
+}
+
+.area{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+}
+
+.area .content{
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    gap: 10px;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.area .content .description{
+    margin-top: 10px;
+}
+
+.area .content img{
+    width: 80%;
+    height: 50%;
+}
+
+.area #content-area{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
