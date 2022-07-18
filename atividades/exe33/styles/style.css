@@ -118,6 +118,7 @@ nav form input{
     box-shadow: 0 10px 0 0  rgba(0, 0, 0, 0.1);
     border: none;
     background-color: var(--bg);
+    color: var(--text);
 }
 
 nav form input::placeholder{
@@ -156,22 +157,25 @@ nav .select select{
     height: 100vh;
 }
 
-.area .content{
+.area .content-countrie{
     width: 400px;
     height: 400px;
     padding: 10px;
     gap: 10px;
     background-color: var(--bg);
     color: var(--text);
+    cursor: pointer;
 }
 
-.area .content .description{
+.area .content-countrie .description{
     margin-top: 10px;
+    color: var(--text);
 }
 
-.area .content img{
+
+.area .content-countrie img{
     width: 80%;
-    height: 50%;
+    height: 55%;
 }
 
 .area #content-area{

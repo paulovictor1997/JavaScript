@@ -15,15 +15,17 @@ function showInfo(content){
       name,
       capital,
       region,
+      subregion,
       population
     }) =>{
       return `
-      <div class= "content">
+      <div class= "content-countrie">
       <img src ="${flags.png}">
       <div class = "description">
       <p> Country - ${name.common}</p>
       <p> Capital - ${capital}</p>
-      <p> Region - ${region}</p>
+      <p> Continent - ${region}</p>
+      <p> Region - ${subregion}</p>
       <p> Population - ${population}</p>
       </div>
       </div>
@@ -42,13 +44,17 @@ async function getApiByRegion(region){
   }   
 }
 
-//Pegando o input para pesquisar pelo nome
-document.querySelector('.search').addEventListener('submit', async (e)=>{
-  e.preventDefault();
-   let input = document.querySelector('#searchInput').value;
-   getApiByname(input);
-  
-})
+// Pegando os valores no select 
+function updateSelect(){
+  const select = document.querySelector('#countries');
+  const optionValue = select.options[select.selectedIndex];
+    
+    const value = optionValue.value;
+    console.log(value);
+    getApiByRegion(value)
+}
+
+//--------------------------------------------
 
 async function getApiByname(name){
   const response = await fetch(`https://restcountries.com/v3.1/name/${name}`)
@@ -58,16 +64,17 @@ async function getApiByname(name){
      showInfo(data);
  }   
 }
-//--------------------------------------------
-// Pegando o select 
-function updateSelect(){
-  let select = document.querySelector('#countries');
-    let optionValue = select.options[select.selectedIndex];
-    
-    let value = optionValue.value;
-    console.log(value);
-    getApiByRegion(value)
-}
+
+//Pegando o input para pesquisar pelo nome
+document.querySelector('.search').addEventListener('submit', async (e)=>{
+  e.preventDefault();
+   const input = document.querySelector('#searchInput').value;
+   getApiByname(input);
+  
+})
+
+
+
 
 
 getAPI()
