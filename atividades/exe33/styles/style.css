@@ -5,6 +5,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Nunito Sans';
+    font-weight: bold;
 }
 
 html{
@@ -38,7 +39,6 @@ header{
 
 header .title{
     color: var(--text);
-    font-weight: 500;
 }
 
 header .toggle{
@@ -164,7 +164,6 @@ nav .select select{
     gap: 10px;
     background-color: var(--bg);
     color: var(--text);
-    cursor: pointer;
 }
 
 .area .content-countrie .description{
@@ -182,6 +181,7 @@ nav .select select{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding: 20px;
     justify-content: center;
     align-items: center;
 }
