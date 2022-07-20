@@ -137,8 +137,13 @@ nav form button{
 
 nav .select{
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
-
+nav .select p{
+    margin-right: 10px;
+    color: var(--text);
+}
 nav .select select{
     padding: 10px;
     font-size: 16px;

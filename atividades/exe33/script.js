@@ -45,7 +45,14 @@ async function getApiByRegion(region){
 }
 
 // Pegando os valores no select 
-function updateSelect(){
+async function updateSelect(){
+  const response = await fetch('https://restcountries.com/v3.1/all')
+  const data = await response.json();
+    if(response.status === 200){
+      console.log(data); 
+      showInfo(data);
+    }
+
   const select = document.querySelector('#countries');
   const optionValue = select.options[select.selectedIndex];
     
