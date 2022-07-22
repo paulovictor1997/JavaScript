@@ -170,6 +170,7 @@ nav .select select{
     gap: 10px;
     background-color: var(--bg);
     color: var(--text);
+    text-align: center;
 }
 
 .area .content-countrie .description{
