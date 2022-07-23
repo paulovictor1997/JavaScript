@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Nunito Sans';
     font-weight: bold;
+    outline: none;
 }
 
 html{
