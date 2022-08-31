@@ -201,7 +201,6 @@ footer a {
     display: block;
     z-index: 999;
   }
-
   .menu {
     position: fixed;
     top: 0;
@@ -215,34 +214,27 @@ footer a {
     max-width: 250px;
     transition: 0.5s ease;
   }
-
   .menu.active {
     right: 0;
   }
-
   ul.active:not(.menu) {
     display: none;
   }
-
   .content {
     margin-top: 20%;
   }
-
   .area {
     margin-top: 20%;
   }
-
   .button {
     margin-top: 400px;
   }
-
   .card {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 20%;
   }
-
   .vs {
     padding: 20px;
     margin-top: 20px;

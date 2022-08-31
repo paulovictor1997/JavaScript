@@ -172,25 +172,21 @@ footer strong {
   .container, .conteudo {
     width: 100%;
   }
-
   .cardSmall {
     margin: 20px;
   }
-
   .cardsHeader {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   .tableInfo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
-
   .tabela {
     width: 550px;
     height: 500px;
@@ -201,7 +197,6 @@ footer strong {
     border-radius: 16px;
     text-align: center;
   }
-
   .tabela > table {
     width: 100%;
   }
@@ -215,17 +210,14 @@ footer strong {
     justify-content: center;
     align-items: center;
   }
-
   .cardSmall {
     width: 350px;
     margin: 20px;
   }
-
   .cardLarge {
     width: 350px;
     padding: 20px;
   }
-
   .tabela {
     width: 450px;
     height: 550px;
@@ -236,7 +228,6 @@ footer strong {
     border-radius: 16px;
     text-align: center;
   }
-
   .tabela > table {
     width: 100%;
   }
@@ -250,17 +241,14 @@ footer strong {
     justify-content: center;
     align-items: center;
   }
-
   .cardSmall {
     width: 350px;
     margin: 20px;
   }
-
   .cardLarge {
     width: 350px;
     padding: 20px;
   }
-
   .tabela {
     width: 500px;
     height: 550px;
@@ -271,7 +259,6 @@ footer strong {
     border-radius: 16px;
     text-align: center;
   }
-
   .tabela > table {
     width: 100%;
   }

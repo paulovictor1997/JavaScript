@@ -88,7 +88,6 @@ c .logo a {
     display: block;
     z-index: 999;
   }
-
   .menu {
     position: fixed;
     top: 0;
@@ -102,11 +101,9 @@ c .logo a {
     max-width: 250px;
     transition: 0.5s ease;
   }
-
   .menu.active {
     right: 0;
   }
-
   ul.active:not(.menu) {
     display: none;
   }

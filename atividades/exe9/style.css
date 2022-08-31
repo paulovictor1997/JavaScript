@@ -116,44 +116,36 @@ a:hover {
   .principal {
     height: 140vh;
   }
-
   .card {
     max-height: 50rem;
     max-width: 25rem;
     display: flex;
     flex-direction: column;
   }
-
   .imagen img {
     border-radius: 10px 10px 0px 0px;
   }
-
   .conteudo {
     height: 350px;
     width: 400px;
     padding: 20px 50px;
   }
-
   #cabecalho {
     margin-top: 0px;
     font-size: 22px;
   }
-
   #descricao {
     font-size: 16px;
     padding-top: 10px;
   }
-
   .perfil {
     padding-top: 20px;
   }
-
   .button {
     position: absolute;
     left: 270px;
     top: 30px;
   }
-
   .container-show {
     position: absolute;
     left: -50px;
@@ -163,7 +155,6 @@ a:hover {
     padding: 25px 50px;
     border-radius: 9.5px;
   }
-
   .container-show img {
     padding-left: 17px;
   }

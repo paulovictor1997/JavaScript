@@ -165,51 +165,41 @@ body {
     align-items: center;
     justify-content: center;
   }
-
   .principal {
     flex-direction: column;
     padding: 100px 25px 60px 25px;
     text-align: center;
   }
-
   .esquerda {
     margin: 0;
     width: auto;
   }
-
   .direita {
     margin: 0;
     width: 330px;
   }
-
   .form {
     width: 330px;
     padding: 25px;
   }
-
   .campo {
     width: 280px;
   }
-
   #name {
     margin-top: 0;
   }
-
   .button {
     width: 280px;
   }
-
   .trial {
     height: 90px;
     padding: 1rem 3rem;
     display: block;
   }
-
   .titulo {
     font-size: 2rem;
     line-height: 2.5rem;
   }
-
   .descicao {
     margin-bottom: 70px;
   }

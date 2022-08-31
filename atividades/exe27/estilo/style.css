@@ -274,7 +274,6 @@ footer #area-4 .content-3 .link-content a:hover {
 .navbar .close-button.hidden {
     display: none;
   }
-
   #area-1 {
     display: flex;
     justify-content: center;
@@ -294,7 +293,6 @@ footer #area-4 .content-3 .link-content a:hover {
   #area-1 .content .content-area {
     text-align: center;
   }
-
   #area-2 {
     display: flex;
     justify-content: center;
@@ -310,7 +308,6 @@ footer #area-4 .content-3 .link-content a:hover {
   #area-2 .content-2 .testimonial {
     text-align: center;
   }
-
   #area-3 {
     display: flex;
     justify-content: center;
@@ -322,7 +319,6 @@ footer #area-4 .content-3 .link-content a:hover {
   #area-3 a {
     margin-top: 5%;
   }
-
   footer {
     width: 100%;
   }
