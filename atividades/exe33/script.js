@@ -26,7 +26,7 @@ function showInfo(content){
       <p> Capital - ${capital}</p>
       <p> Continent - ${region}</p>
       <p> Region - ${subregion}</p>
-      <p> Population - ${population}</p>
+      <p> Population - ${population.toLocaleString()}</p>
       </div>
       </div>
       `
