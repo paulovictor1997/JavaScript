@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Libre Franklin';
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --button:hsl(223, 87%, 63%);
+    --gray:hsl(0, 0%, 59%);
+    --hover:hsl(223, 100%, 88%);
+    --header-paragraph:hsl(209, 33%, 12%);;
+    --span:hsl(209, 33%, 12%);
+    --error:hsl(354, 100%, 66%);
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+header .header-title h1{
+    font-size:50px;
+    font-weight: 500;
+    color: var(--gray);
+    padding: 10px;
+}
+
+header .header-title h1 span{
+    color: var(--span);
+    font-weight: bold;
+}
+
+header .header-title p{
+    color: var(--header-paragraph);
+    font-weight: 500;
+    font-size:18px;
+}
+
+#form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#form button{
+    width: 200px;
+    border-radius: 50px;
+    padding:15px;
+    background-color: var(--button);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#form button:hover{
+    transition: 0.5s all;
+    background-color: var(--hover);
+}
+
+#form .email-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form .email-box .error{
+    color: var(--error);
+    font-size: 13px;
+    margin-right: 10vh;
+    display: none;
+    font-style:italic ;
+}
+
+#form .email-box input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 50px;
+   
+}
+
+.image{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.image img{
+    width: 600px;
+    margin-top: 5vh;
+}
+
+.social-media{
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.social-media .icons {
+    gap: 10px;
+    padding: 10px;
+ }
+
+.social-media p{
+   color: var(--gray);
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+footer p{
+    color: var(--gray);
+}
