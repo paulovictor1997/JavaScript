@@ -4,8 +4,9 @@ const emailInput = document.querySelector('#email');
 form.addEventListener('submit',(event)=>{
     event.preventDefault();
     if(emailInput.value === '' || !validateEmail(emailInput.value)){
-        alert('por favor preencha seu email')
-        return
+        document.querySelector(".error").style.display='block';
+    } else{
+        document.querySelector(".error").style.display='none';
     }
 })
 
@@ -16,7 +17,7 @@ function validateEmail(email){
     );
 
     if(regex.test(email)){
-        return true
+        return true;
     } 
 
     return false;

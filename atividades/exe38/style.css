@@ -173,6 +173,10 @@ footer p{
     #form .email-box input{
         width: 200px;
     }
+
+    #form .email-box .error{
+        margin-left: 10vh;
+    }
     
     .image{
         width: 100%;
