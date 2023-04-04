@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: hsl(216deg, 12%, 8%);
+  background-color: hsl(216, 12%, 8%);
 }
 
 .title {
@@ -17,7 +17,7 @@ body {
 }
 
 .description {
-  color: hsl(216deg, 12%, 54%);
+  color: hsl(216, 12%, 54%);
   margin-top: 5%;
   font-size: 15px;
 }
@@ -35,7 +35,7 @@ body {
   border-radius: 15px;
   max-height: 360px;
   padding: 20px;
-  background-color: hsl(213deg, 19%, 18%);
+  background-color: hsl(213, 19%, 18%);
 }
 .card .list {
   display: flex;
@@ -51,8 +51,8 @@ body {
   margin: 15px;
   padding: 10px;
   border-radius: 50%;
-  background-color: hsl(216deg, 12%, 8%);
-  color: hsl(217deg, 12%, 63%);
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(217, 12%, 63%);
   cursor: pointer;
 }
 .card .list li:hover {
@@ -80,7 +80,7 @@ body {
   border-radius: 15px;
   max-height: 360px;
   padding: 35px;
-  background-color: hsl(213deg, 19%, 18%);
+  background-color: hsl(213, 19%, 18%);
   text-align: center;
   display: none;
 }
@@ -89,7 +89,7 @@ body {
 }
 .card-2 .content .description-2 {
   color: orange;
-  background-color: hsl(216deg, 12%, 8%);
+  background-color: hsl(216, 12%, 8%);
   border-radius: 20px;
   padding: 5px;
 }/*# sourceMappingURL=style.css.map */

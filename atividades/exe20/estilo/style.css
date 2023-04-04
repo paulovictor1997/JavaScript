@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: hsl(235deg, 46%, 20%);
+  background-color: hsl(235, 46%, 20%);
 }
 
 main {
@@ -28,12 +28,12 @@ main {
 
 .control {
   border-radius: 20px;
-  background-color: hsl(235deg, 46%, 20%);
+  background-color: hsl(235, 46%, 20%);
   width: 300px;
 }
 
 .profile {
-  background-color: hsl(246deg, 80%, 60%);
+  background-color: hsl(246, 80%, 60%);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -62,7 +62,7 @@ main {
 .text p span {
   font-size: 13px;
   margin-bottom: 3px;
-  color: hsl(236deg, 100%, 87%);
+  color: hsl(236, 100%, 87%);
 }
 
 .controls {
@@ -72,7 +72,7 @@ main {
 }
 .controls a {
   text-decoration: none;
-  color: hsl(236deg, 100%, 87%);
+  color: hsl(236, 100%, 87%);
 }
 .controls a:hover {
   color: white;
@@ -92,31 +92,31 @@ main {
 }
 
 .panel:hover .schedule-text {
-  background-color: hsl(235deg, 45%, 61%);
+  background-color: hsl(235, 45%, 61%);
 }
 
 .panel:nth-child(2) .schedule-img {
-  background-color: hsl(348deg, 100%, 68%);
+  background-color: hsl(348, 100%, 68%);
 }
 
 .panel:nth-child(3) .schedule-img {
-  background-color: hsl(195deg, 74%, 62%);
+  background-color: hsl(195, 74%, 62%);
 }
 
 .panel:nth-child(4) .schedule-img {
-  background-color: hsl(15deg, 100%, 70%);
+  background-color: hsl(15, 100%, 70%);
 }
 
 .panel:nth-child(5) .schedule-img {
-  background-color: hsl(145deg, 58%, 55%);
+  background-color: hsl(145, 58%, 55%);
 }
 
 .panel:nth-child(6) .schedule-img {
-  background-color: hsl(264deg, 64%, 52%);
+  background-color: hsl(264, 64%, 52%);
 }
 
 .panel:nth-child(7) .schedule-img {
-  background-color: hsl(43deg, 84%, 65%);
+  background-color: hsl(43, 84%, 65%);
 }
 
 .schedule-img {
@@ -142,7 +142,7 @@ main {
   border-radius: 20px;
   width: 100%;
   height: 100%;
-  background-color: hsl(235deg, 46%, 20%);
+  background-color: hsl(235, 46%, 20%);
 }
 
 .schedule-text p:first-child {
@@ -166,7 +166,7 @@ main {
   font-size: 14px;
   color: white;
   margin-left: auto;
-  color: hsl(236deg, 100%, 87%);
+  color: hsl(236, 100%, 87%);
 }
 
 @media (min-width: 1100px) {

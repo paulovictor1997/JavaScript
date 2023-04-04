@@ -8,17 +8,17 @@
 }
 
 body {
-  background-color: hsl(217deg, 28%, 15%);
+  background-color: hsl(217, 28%, 15%);
 }
 
 .title {
   font-family: "Raleway";
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-weight: 600;
 }
 
 .description {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   margin-top: 5px;
   line-height: 20px;
   font-weight: 500;
@@ -48,7 +48,7 @@ body {
   padding: 10px;
 }
 .content-area header .menu a {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   margin-left: 15px;
   text-decoration: none;
 }
@@ -72,9 +72,9 @@ body {
   padding: 5px;
   border-radius: 50px;
   border: none;
-  background-image: linear-gradient(to left, hsl(176deg, 68%, 64%), hsl(198deg, 60%, 50%));
+  background-image: linear-gradient(to left, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
   cursor: pointer;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 .content-area #area-2 {
   padding: 20px;
@@ -108,7 +108,7 @@ body {
   margin-top: 20px;
 }
 .content-area #area-3 .content-3 .link a {
-  color: hsl(176deg, 68%, 64%);
+  color: hsl(176, 68%, 64%);
 }
 .content-area #area-4 {
   width: 100%;
@@ -122,7 +122,7 @@ body {
 }
 .content-area #area-4 .content-4 {
   width: 400px;
-  background-color: hsl(219deg, 30%, 18%);
+  background-color: hsl(219, 30%, 18%);
   padding: 20px;
   border-radius: 5px;
 }
@@ -135,7 +135,7 @@ body {
   border-radius: 50px;
 }
 .content-area #area-4 .content-4 .testimonial .names {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   padding-left: 10px;
 }
 .content-area #area-5 {
@@ -154,7 +154,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 50px;
-  background-color: hsl(219deg, 30%, 18%);
+  background-color: hsl(219, 30%, 18%);
   border-radius: 10px;
 }
 .content-area #area-5 .login-area .login {
@@ -176,9 +176,6 @@ body {
 .content-area #area-5 .login-area .login .form .email::-moz-placeholder {
   color: black;
 }
-.content-area #area-5 .login-area .login .form .email:-ms-input-placeholder {
-  color: black;
-}
 .content-area #area-5 .login-area .login .form .email::placeholder {
   color: black;
 }
@@ -186,7 +183,7 @@ body {
   display: flex;
 }
 .content-area #area-5 .login-area .login .form .erroText {
-  color: hsl(0deg, 100%, 63%);
+  color: hsl(0, 100%, 63%);
   display: none;
   font-style: italic;
   position: relative;
@@ -196,14 +193,14 @@ body {
   width: 200px;
   margin-left: 10px;
   padding: 15px;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   border-radius: 50px;
-  background-image: linear-gradient(to left, hsl(176deg, 68%, 64%), hsl(198deg, 60%, 50%));
+  background-image: linear-gradient(to left, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
   cursor: pointer;
 }
 .content-area footer {
   width: 100%;
-  background-color: hsl(216deg, 53%, 9%);
+  background-color: hsl(216, 53%, 9%);
   padding: 50px;
 }
 .content-area footer .footer-area {
@@ -230,7 +227,7 @@ body {
   flex-direction: column;
 }
 .content-area footer .footer-area .span-area span {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   padding: 10px;
 }
 .content-area footer .footer-area .link-area {
@@ -244,7 +241,7 @@ body {
 }
 .content-area footer .footer-area .link-area .links a {
   text-decoration: none;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 .content-area footer .footer-area .link-area .links a:hover {
   text-decoration: underline;

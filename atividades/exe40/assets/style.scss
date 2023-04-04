@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+//Primary
+$fontColor1:hsl(243, 87%, 12%);
+$fontColor2:hsl(240, 75%, 98%);
+$areaColor3:hsl(238, 22%, 44%);
+$fontColor3:hsl(0, 0%, 75%);
+
+//Alternatives
+$LinkColor: hsl(170, 45%, 43%);
+$Button:hsl(224, 93%, 58%);
+
+//Font - Header menu, title.
+$font2:"Raleway";
+
+body{
+    min-height: 100vh;
+}
