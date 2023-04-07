@@ -9,4 +9,86 @@
 
 body {
   min-height: 100vh;
+}
+
+.description {
+  color: hsl(243, 87%, 12%);
+  font-weight: 500;
+  margin-top: 3vh;
+}
+
+.title {
+  font-family: "Raleway";
+  color: hsl(243, 87%, 12%);
+  font-weight: 900;
+}
+
+header {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .menu {
+  padding: 10px;
+  display: flex;
+  list-style: none;
+}
+header .menu li a {
+  text-decoration: none;
+  margin-left: 10px;
+  font-family: "Raleway";
+  color: hsl(243, 87%, 12%);
+}
+header .menu li a:hover {
+  text-decoration: underline;
+}
+
+.area1 {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.area1 .content1 {
+  width: 550px;
+  margin-top: 8vh;
+}
+.area1 .content1 h1 {
+  font-size: 2.1rem;
+}
+.area1 .content1 .form-1 {
+  margin-top: 3vh;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  padding: 5px;
+}
+.area1 .content1 .form-1 .button {
+  width: 150px;
+  padding: 10px;
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(240, 75%, 98%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.area1 .content1 .form-1 .button:hover {
+  transition: 1s all;
+  background-color: hsl(0, 0%, 75%);
+}
+.area1 .content1 .form-1 .campInput {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.area1 .content1 .form-1 .campInput input {
+  padding: 10px;
+  width: 250px;
+}
+.area1 .content1 .form-1 .campInput .error1 {
+  color: hsl(0, 81%, 54%);
+  font-style: italic;
+  font-size: 10px;
+  display: none;
 }/*# sourceMappingURL=style.css.map */

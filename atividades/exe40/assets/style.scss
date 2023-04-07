@@ -14,6 +14,8 @@ $fontColor1:hsl(243, 87%, 12%);
 $fontColor2:hsl(240, 75%, 98%);
 $areaColor3:hsl(238, 22%, 44%);
 $fontColor3:hsl(0, 0%, 75%);
+$hover:hsl(0, 0%, 75%);
+$span1:hsl(0, 81%, 54%);
 
 //Alternatives
 $LinkColor: hsl(170, 45%, 43%);
@@ -24,4 +26,95 @@ $font2:"Raleway";
 
 body{
     min-height: 100vh;
+}
+
+.description{
+    color: $fontColor1;
+    font-weight: 500;
+    margin-top: 3vh;
+}
+
+.title{
+    font-family: $font2;
+    color: $fontColor1;
+    font-weight: 900;
+}
+
+header{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu{
+        padding: 10px;
+        display: flex;
+        list-style: none;
+
+        li a{
+            text-decoration: none;
+            margin-left: 10px;
+            font-family: $font2;
+            color: $fontColor1;
+
+            &:hover{text-decoration: underline;}
+        }
+    }
+}
+
+.area1{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+
+    .content1{
+        width: 550px;
+        margin-top: 8vh;
+
+        h1{
+            font-size: 2.1rem;
+        }
+
+        .form-1{
+            margin-top: 3vh; 
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            padding: 5px;
+
+            .button{
+                width: 150px;
+                padding: 10px;
+                background-color: $Button;
+                color: $fontColor2;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover{
+                    transition: 1s all;
+                    background-color: $hover
+                }
+            }
+
+            .campInput{
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+
+                input{
+                    padding: 10px;
+                    width: 250px;
+                }
+
+                .error1{
+                    color: $span1;
+                    font-style: italic;
+                    font-size: 10px;
+                    display: none;
+                }
+            }
+        }
+    }
 }

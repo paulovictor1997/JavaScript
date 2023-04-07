@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="assets/style.css">    
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -21,22 +22,28 @@
 
     <section class="area1">
         <div class="content1">
-            <h1>All your files in one secure location, accessible anywhere.</h1>
+            <h1 class="title">All your files in one secure location, accessible anywhere.</h1>
 
-            <p>
+            <p class="description">
                 Fylo stores your most important files in one secure location.Access them wherever you need, share and collaborate with friends,family, and co-workers.
             </p>
 
-            <form>
-                <input type="email" placeholder="Enter your email...">
-                <button>
+            <form class="form-1">
+                <div class="campInput">
+                    <input type="email" placeholder="Enter your email...">
+                    <span class="error1">
+                        Please check your email
+                    </span>
+                </div>
+                
+                <button class="button" id="button-1">
                     Get Started
                 </button>
             </form>
         </div>
 
         <div class="img1">
-            <img src="images/illustration-1.svg" alt="illustration-1">
+            <img src="images/illustration-1.svg" alt="illustration-1" width="600">
         </div>
     </section>
 
