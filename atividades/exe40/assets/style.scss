@@ -20,6 +20,8 @@ $span1:hsl(0, 81%, 54%);
 //Alternatives
 $LinkColor: hsl(170, 45%, 43%);
 $Button:hsl(224, 93%, 58%);
+$footer:hsl(243, 87%, 12%);
+$aside:hsl(240, 75%, 98%);
 
 //Font - Header menu, title.
 $font2:"Raleway";
@@ -100,7 +102,6 @@ header{
 
             .campInput{
                 display: flex;
-                justify-content: flex-start;
                 flex-direction: column;
 
                 input{
@@ -113,6 +114,156 @@ header{
                     font-style: italic;
                     font-size: 10px;
                     display: none;
+                }
+            }
+        }
+    }
+}
+
+.area2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    margin-top: 10vh;
+
+    .content2{
+        max-width: 600px;
+
+        .link{
+            margin-top: 3vh;
+            a{
+                color: $LinkColor;
+            }
+        }
+    }
+
+    aside{
+        width: 400px;
+        margin-top: 5vh;
+        padding: 10px;
+        box-shadow: 5px 5px 5px 5px  rgba(0, 0, 0, 0.1);
+        background-color:$aside;
+        .description2{
+            color: $fontColor1;
+        }
+
+        .testimomial{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 3vh;
+            color: $fontColor1;
+        }
+    }
+
+
+    .img2{
+        background-image: url('../images/bg-curve-desktop.svg');
+        background-position: center;
+    }
+}
+
+.area3{
+    width: 100%;
+    padding: 25px;
+    background-color: $areaColor3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5vh;
+
+    .content3{
+        width: 500px;
+        padding: 10px;
+
+        .title2{
+            color: $fontColor2;
+            font-weight: 500;
+        }
+
+        .description3{
+            color: $fontColor2;
+            font-weight: 500;
+            margin-top: 3vh;
+        }
+    }
+
+    .form-2{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        input{
+            border: none;
+            width: 350px;
+            padding: 5px;
+            margin-bottom: 2vh;
+        }
+
+        .button2{
+            width: 200px;
+            padding: 10px;
+            background-color: $Button;
+            color: $fontColor2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover{
+                transition: 1s all;
+                background-color: $hover
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    background-color:$footer;
+    color: $fontColor2;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+
+    .contactArea{
+        display: flex;
+        flex-direction: column;
+
+        .contact{
+            padding: 10px;
+        }
+    }
+
+    .links{
+        padding: 10px;
+        ul{
+            list-style: none;
+            li{
+                padding: 5px;
+                a{
+                    color: $fontColor2;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .socialMedia{
+        padding: 10px;
+        .linkMedia{
+            display: flex;
+            gap: 10px;
+            list-style: none;
+
+            li{
+                a{
+                    color: $fontColor2;
+                    &:hover{
+                       color: $LinkColor;
+                    }
                 }
             }
         }

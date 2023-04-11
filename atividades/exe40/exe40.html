@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/style.css">    
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
 </head>
@@ -49,13 +51,13 @@
 
     <section class="area2">
         <div class="content2">
-            <h1>Stay productive, wherever you are</h1>
-            <p>
+            <h1 class="title">Stay productive, wherever you are</h1>
+            <p class="description">
                 Never let location be an issue when accessing your files. Fylo has you 
                 covered for all of your file storage needs.
             </p>
 
-            <p>
+            <p class="description">
                 Securely share files and folders with friends, family and colleagues for 
                 live collaboration. No email attachments required!
             </p>
@@ -70,45 +72,84 @@
             <aside>
                 <img src="images/icon-quotes.svg" alt="quotes">
 
-                <p>
+                <p class="description2">
                     Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
                 </p>
 
-                <img src="images/avatar-testimonial.jpg" alt="avatar">
+                <div class="testimomial">
+                    <img src="images/avatar-testimonial.jpg" alt="avatar" width="50" style="border-radius: 50%;">
+                    
+                    <div class="name">
+                        <p>Kyle Burton</p>
+                        <p>Founder & CEO</p>
+                    </div>
+                </div>
             </aside>
         </div>
 
         <div class="img2">
-            <img src="images/illustration-2.svg" alt="illustration-2">
+            <img src="images/illustration-2.svg" alt="illustration-2" width="600">
         </div>
     </section>
 
     <section class="area3">
         <div class="content3">
-            <h2>Get early acces today</h2>
+            <h2 class="title2">Get early acces today</h2>
 
-            <p>
+            <p class="description3">
                 It only takes a minute to sign up and our free starter tier is extremely generous.If you have any questions, our support team would be happy to help you.
             </p>
         </div>
 
-        <form>
-            <form>
-                <input type="email" placeholder="Enter your email...">
-                <button>
-                    Get Started
-                </button>
-            </form>
+        <form class="form-2">
+            <input type="email" placeholder="Enter your email...">
+            <button class="button2">
+                Get Started
+            </button>
+
         </form>
     </section>
 
     <footer>
-        <div class="logoFooter">
-            <img src="images/logo.svg" alt="logo">
+        <main class="contactArea">
+            <div class="logoFooter">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+
+            <div class="contact">
+                <img src="images/icon-phone.svg" alt="icon-phone">
+                <span>Phone: +1-543-123-4567</span>
+            </div>
+
+            <div class="contact">
+                <img src="images/icon-email.svg" alt="icon-email">
+                <span>example@fylo.com</span>
+            </div>
+        </main>
+
+        <div class="links">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">blog</a></li>
+            </ul>
         </div>
 
-        <div class="linksFooter">
-    
+        <div class="links">
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+
+        <div class="socialMedia">
+            <ul class="linkMedia">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
         </div>
     </footer>
 
