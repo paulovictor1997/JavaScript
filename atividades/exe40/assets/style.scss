@@ -201,6 +201,13 @@ header{
             margin-bottom: 2vh;
         }
 
+        .error2{
+            font-style: italic;
+            font-size: 10px;
+            color: $fontColor2;
+            display: none;
+        }
+
         .button2{
             width: 200px;
             padding: 10px;

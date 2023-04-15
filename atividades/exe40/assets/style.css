@@ -163,6 +163,12 @@ header .menu li a:hover {
   padding: 5px;
   margin-bottom: 2vh;
 }
+.area3 .form-2 .error2 {
+  font-style: italic;
+  font-size: 10px;
+  color: hsl(240, 75%, 98%);
+  display: none;
+}
 .area3 .form-2 .button2 {
   width: 200px;
   padding: 10px;
