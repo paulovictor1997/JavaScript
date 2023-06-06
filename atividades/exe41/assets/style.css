@@ -4,4 +4,125 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Hanken Grotesk";
+}
+
+/*
+ card
+ hsl(252, 100%, 67%)
+ hsl(241, 81%, 54%)
+
+ circle
+hsla(256, 72%, 46%, 1)
+hsla(241, 72%, 46%, 0)
+*/
+body {
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-1 {
+  background-image: linear-gradient(to left, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  width: 310px;
+  border-radius: 0px 0px 25px 25px;
+}
+.card-1 h3 {
+  color: hsl(221, 100%, 96%);
+  font-weight: 500;
+}
+.card-1 .circle {
+  text-align: center;
+  margin-top: 3vh;
+  width: 120px;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+}
+.card-1 .circle .number {
+  font-size: 50px;
+  color: hsl(221, 100%, 96%);
+}
+.card-1 .circle p {
+  color: hsl(221, 100%, 96%);
+}
+.card-1 .info {
+  text-align: center;
+  color: hsl(221, 100%, 96%);
+  margin-top: 3vh;
+}
+
+.card-2 {
+  padding: 25px;
+  width: 310px;
+  background-color: hsl(0, 0%, 100%);
+}
+.card-2 button {
+  margin-top: 3vh;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(221, 100%, 96%);
+  cursor: pointer;
+}
+.card-2 button:hover {
+  transition: 1s all;
+  background-color: hsl(241, 100%, 89%);
+}
+.card-2 h3 {
+  color: hsl(224, 30%, 27%);
+  font-weight: 500;
+}
+.card-2 .statistic {
+  background-color: hsl(221, 100%, 96%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 3vh;
+  font-weight: 500;
+}
+.card-2 .statistic span {
+  color: hsl(241, 100%, 89%);
+  font-weight: 500;
+}
+.card-2 .statistic h3 {
+  font-weight: 500;
+}
+.card-2 .statistic .icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 30vh;
+  }
+  .card-1 {
+    width: 280px;
+    border-radius: 15px;
+    height: 400px;
+  }
+  .card-1 .info {
+    text-align: center;
+    color: hsl(221, 100%, 96%);
+    margin-top: 5vh;
+  }
 }/*# sourceMappingURL=style.css.map */
