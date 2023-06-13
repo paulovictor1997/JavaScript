@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik',Arial;
+}
+
+$font-content: hsl(229, 8%, 60%);
+$font-title: hsl(229, 31%, 21%);
+$hover-red:hsl(0, 94%, 66%);
+$hover-button:hsl(231, 69%, 60%);
+$white:hsl(0, 0%, 100%);
