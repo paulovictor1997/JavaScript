@@ -4,4 +4,37 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rubik", Arial;
+}
+
+header {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .menu {
+  padding: 5px;
+}
+header .menu a {
+  text-decoration: none;
+  padding: 5px;
+  color: hsl(229, 31%, 21%);
+}
+header .menu a:hover {
+  transition: 0.5s all;
+  color: hsl(0, 94%, 66%);
+}
+header .menu .login {
+  padding: 10px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 94%, 66%);
+  cursor: pointer;
+}
+header .menu .login:hover {
+  transition: 0.5s all;
+  color: hsl(0, 94%, 66%);
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 94%, 66%);
 }/*# sourceMappingURL=style.css.map */

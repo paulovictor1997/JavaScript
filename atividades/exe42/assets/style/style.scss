@@ -10,6 +10,43 @@
 
 $font-content: hsl(229, 8%, 60%);
 $font-title: hsl(229, 31%, 21%);
+$font-content: hsl(229, 31%, 21%);
 $hover-red:hsl(0, 94%, 66%);
+$red:hsl(0, 94%, 66%);
 $hover-button:hsl(231, 69%, 60%);
 $white:hsl(0, 0%, 100%);
+
+header{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu{
+        padding: 5px;
+        a{
+            text-decoration: none;
+            padding: 5px;
+            color: $font-content;
+            &:hover{
+                transition: 0.5s all;
+                color: $hover-red;
+            }
+        }
+
+        .login{
+            padding: 10px;
+            border-radius: 5px;
+            color: $white;
+            background-color: $red;
+            cursor: pointer;
+            &:hover{
+                transition: 0.5s all;
+                color: $hover-red;
+                background-color: $white;
+                border-color: $red;
+            }
+        }
+    }
+}
