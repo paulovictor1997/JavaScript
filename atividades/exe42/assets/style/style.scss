@@ -23,6 +23,10 @@ header{
     align-items: center;
     justify-content: space-between;
 
+    .open{
+        display: none;
+    }
+
     .menu{
         padding: 5px;
         a{
@@ -49,4 +53,46 @@ header{
             }
         }
     }
+}
+
+.menu-mobile{
+    width: 100%;
+    padding: 10px;
+    background-color: $font-content;
+    display: none;
+    
+    .line{
+        border: 1px solid rgba(255, 255, 255, 0.473);
+        width: 100%;
+    }
+
+   .links-menu{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .icon-media{
+            margin-top: 10%;
+            a{
+                gap: 5px;
+            }
+        }
+
+        .login-menu{
+            margin-top: 3%;
+            width: 200px;
+            padding: 5px;
+            color: $white;
+            background-color: transparent;
+            border-color: white;
+            cursor: pointer;
+        }
+
+        a{
+            padding: 10px; 
+            text-decoration: none;
+            color: $white;
+        }
+   }
 }

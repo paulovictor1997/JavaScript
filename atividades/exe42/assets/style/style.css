@@ -13,6 +13,9 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+header .open {
+  display: none;
+}
 header .menu {
   padding: 5px;
 }
@@ -37,4 +40,41 @@ header .menu .login:hover {
   color: hsl(0, 94%, 66%);
   background-color: hsl(0, 0%, 100%);
   border-color: hsl(0, 94%, 66%);
+}
+
+.menu-mobile {
+  width: 100%;
+  padding: 10px;
+  background-color: hsl(229, 31%, 21%);
+  display: none;
+}
+.menu-mobile .line {
+  border: 1px solid rgba(255, 255, 255, 0.473);
+  width: 100%;
+}
+.menu-mobile .links-menu {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-mobile .links-menu .icon-media {
+  margin-top: 10%;
+}
+.menu-mobile .links-menu .icon-media a {
+  gap: 5px;
+}
+.menu-mobile .links-menu .login-menu {
+  margin-top: 3%;
+  width: 200px;
+  padding: 5px;
+  color: hsl(0, 0%, 100%);
+  background-color: transparent;
+  border-color: white;
+  cursor: pointer;
+}
+.menu-mobile .links-menu a {
+  padding: 10px;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
 }/*# sourceMappingURL=style.css.map */
