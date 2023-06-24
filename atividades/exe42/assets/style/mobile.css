@@ -1,0 +1,11 @@
+@media screen and (max-width: 800px) {
+  header {
+    width: 100%;
+  }
+  header .open {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+}/*# sourceMappingURL=mobile.css.map */

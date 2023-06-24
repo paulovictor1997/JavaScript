@@ -23,7 +23,7 @@ header .menu {
 header .menu a {
   text-decoration: none;
   padding: 5px;
-  color: hsl(229, 31%, 21%);
+  color: hsl(229, 8%, 60%);
 }
 header .menu a:hover {
   transition: 0.5s all;
@@ -46,8 +46,9 @@ header .menu .login:hover {
 .menu-mobile {
   width: 100%;
   padding: 10px;
-  background-color: hsl(229, 31%, 21%);
+  background-color: hsl(229, 8%, 60%);
   display: none;
+  position: absolute;
 }
 .menu-mobile .line {
   border: 1px solid rgba(255, 255, 255, 0.473);
@@ -80,14 +81,68 @@ header .menu .login:hover {
   color: hsl(0, 0%, 100%);
 }
 
-@media screen and (max-width: 800px) {
-  header {
-    width: 100%;
-  }
-  header .open {
-    display: block;
-  }
-  .menu {
-    display: none;
-  }
+.area-1 {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6%;
+}
+.area-1 .content-1 {
+  width: 400px;
+  padding: 10px;
+}
+.area-1 .content-1 .title-1 {
+  color: hsl(229, 31%, 21%);
+  font-size: 40px;
+  font-weight: 700;
+}
+.area-1 .content-1 .description-1 {
+  margin-top: 3%;
+  color: hsl(229, 8%, 60%);
+  font-weight: 500;
+}
+.area-1 .content-1 .button-area {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5%;
+  width: 300px;
+}
+.area-1 .content-1 .button-area .button-chrome {
+  padding: 10px;
+  width: 200px;
+  background-color: hsl(231, 69%, 60%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.area-1 .content-1 .button-area .button-chrome:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(231, 69%, 60%);
+  border-color: hsl(231, 69%, 60%);
+  transition: 0.5s all;
+}
+.area-1 .content-1 .button-area .button-firefox {
+  padding: 10px;
+  width: 200px;
+  background-color: hsl(229, 8%, 60%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.area-1 .content-1 .button-area .button-firefox:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(229, 8%, 60%);
+  border-color: hsl(229, 8%, 60%);
+  transition: 0.5s all;
+}
+.area-1 .img-area-1 {
+  width: 650px;
+  margin-right: -43px;
+  background-color: hsl(231, 69%, 60%);
+  border-radius: 0px 0px 0px 50px;
+}
+.area-1 .img-area-1 img {
+  margin-left: -12%;
+  margin-top: -10%;
 }/*# sourceMappingURL=style.css.map */

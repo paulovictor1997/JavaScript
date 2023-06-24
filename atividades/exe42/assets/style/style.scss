@@ -10,10 +10,13 @@
 
 $font-content: hsl(229, 8%, 60%);
 $font-title: hsl(229, 31%, 21%);
-$font-content: hsl(229, 31%, 21%);
+$font-subTitles: hsl(229, 31%, 21%);
 $hover-red:hsl(0, 94%, 66%);
 $red:hsl(0, 94%, 66%);
 $hover-button:hsl(231, 69%, 60%);
+$button-purple:hsl(231, 69%, 60%);
+$purple:hsl(231, 69%, 60%);
+$button-grey:hsl(229, 8%, 60%);
 $white:hsl(0, 0%, 100%);
 
 header{
@@ -61,7 +64,7 @@ header{
     padding: 10px;
     background-color: $font-content;
     display: none;
-    
+    position: absolute;
     .line{
         border: 1px solid rgba(255, 255, 255, 0.473);
         width: 100%;
@@ -98,15 +101,73 @@ header{
    }
 }
 
-@media screen and (max-width:800px) {
-    header{
-        width: 100%;
-        .open{
-            display: block;
+.area-1{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6%;
+    .content-1{
+        width: 400px;
+        padding: 10px;
+
+        .title-1{
+            color: $font-title;
+            font-size: 40px;
+            font-weight: 700;
         }
-    
+
+        .description-1{
+            margin-top: 3%;
+            color: $font-content;
+            font-weight: 500;
+        }
+
+        .button-area{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 5%;
+            width: 300px;
+            .button-chrome{
+                padding: 10px;
+                width: 200px;
+                background-color: $button-purple;
+                color: $white;
+                cursor: pointer;
+                &:hover{
+                    background-color: $white;
+                    color: $hover-button;
+                    border-color: $hover-button;
+                    transition: 0.5s all;
+                }
+            }
+
+            .button-firefox{
+                padding: 10px;
+                width: 200px;
+                background-color: $button-grey;
+                color: $white;
+                cursor: pointer;
+                &:hover{
+                    background-color: $white;
+                    color: $font-content;
+                    border-color: $font-content;
+                    transition: 0.5s all;
+                }
+            }
+        }
     }
-    .menu{
-        display: none;
+    .img-area-1{
+        width:650px;
+        margin-right: -43px ;
+        background-color: $purple;
+        border-radius: 0px 0px 0px 50px;
+       
+        img{
+           margin-left: -12%;
+           margin-top: -10%;
+        }
     }
 }
