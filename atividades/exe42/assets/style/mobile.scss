@@ -1,12 +1,60 @@
-@media screen and (max-width:800px) {
+@media screen and (max-width:920px) {
     header{
         width: 100%;
         .open{
             display: block;
         }
+
+        .menu{
+            display: none;
+        }
+    
     
     }
-    .menu{
-        display: none;
+   
+    .area-1{
+        width: 100%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+    
+        .content-1{
+            text-align: center;
+            padding: 15px;
+            .title-1{
+                font-size: 30px;
+                font-weight: 700;
+            }
+
+            .button-area{
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+        }
+        
+        .img-area-1{
+           width: 500px;
+           margin-right: -50% ;
+            img{
+                width: 350px;
+                margin-left: -12%;
+                margin-top: -10%;
+            }
+        }
+        
+        
     }
 }
+
+
+/*
+ width: 400px;
+           margin-right: -50% ;
+            img{
+                width: 350px;
+                margin-left: -12%;
+                margin-top: -10%;
+            }
+
+*/

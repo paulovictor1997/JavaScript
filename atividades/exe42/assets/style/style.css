@@ -6,6 +6,14 @@
   font-family: "Rubik", Arial;
 }
 
+.color-title {
+  color: hsl(229, 31%, 21%);
+}
+
+.color-description {
+  color: hsl(229, 8%, 60%);
+}
+
 header {
   width: 100%;
   padding: 15px;
@@ -46,7 +54,7 @@ header .menu .login:hover {
 .menu-mobile {
   width: 100%;
   padding: 10px;
-  background-color: hsl(229, 8%, 60%);
+  background-color: hsl(229, 31%, 21%);
   display: none;
   position: absolute;
 }
@@ -94,13 +102,11 @@ header .menu .login:hover {
   padding: 10px;
 }
 .area-1 .content-1 .title-1 {
-  color: hsl(229, 31%, 21%);
   font-size: 40px;
   font-weight: 700;
 }
 .area-1 .content-1 .description-1 {
   margin-top: 3%;
-  color: hsl(229, 8%, 60%);
   font-weight: 500;
 }
 .area-1 .content-1 .button-area {
@@ -145,4 +151,14 @@ header .menu .login:hover {
 .area-1 .img-area-1 img {
   margin-left: -12%;
   margin-top: -10%;
+}
+
+.area-2 {
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  margin-top: 3%;
+}
+.area-2 .description-2 {
+  margin-top: 3%;
 }/*# sourceMappingURL=style.css.map */
