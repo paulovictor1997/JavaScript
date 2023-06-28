@@ -18,6 +18,7 @@ $hover-button:hsl(231, 69%, 60%);
 $button-purple:hsl(231, 69%, 60%);
 $purple:hsl(231, 69%, 60%);
 $button-grey:hsl(229, 8%, 60%);
+$grey:hsl(229, 8%, 60%);;
 $white:hsl(0, 0%, 100%);
 
 .color-title{
@@ -168,7 +169,7 @@ header{
     }
     .img-area-1{
         width:650px;
-        margin-right: -43px ;
+        margin-right: -45px ;
         background-color: $purple;
         border-radius: 0px 0px 0px 50px;
        
@@ -187,5 +188,71 @@ header{
 
     .description-2{
         margin-top: 3%;
+    }
+}
+
+.links{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+
+    a{
+       text-decoration: none;
+       padding: 20px;
+       color: $font-title;
+       &:hover{
+            text-decoration: underline;
+            color: $red;
+            transition: 0.5s all;
+       }
+    }
+}
+
+.mark-areas{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+
+    .img-area-2{
+        width:650px;
+        margin-left: -40px ;
+        background-color: $purple;
+        border-radius: 0px 0px 50px 0px;
+        padding: 10px;
+
+        img{
+            width: 420px;
+            margin-left: 40%;
+            margin-top: -15%;
+        }
+    }
+
+    .content-2{
+        width: 420px;
+        padding: 10px;
+
+        .description-3{
+            color: $font-content;
+            margin-top: 3%;
+        }
+
+        .button-info{
+            margin-top: 3%;
+            padding: 10px;
+            background-color: $button-purple;
+            color: $white;
+            cursor: pointer;
+            &:hover{
+                background-color: $white;
+                color: $hover-button;
+                border-color: $hover-button;
+                transition: 0.5s all;
+            }
+        }
     }
 }
