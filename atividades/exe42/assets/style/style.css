@@ -170,18 +170,19 @@ header .menu .login:hover {
   justify-content: center;
   margin-top: 3%;
 }
-.links a {
+.links span {
+  cursor: pointer;
   text-decoration: none;
   padding: 20px;
   color: hsl(229, 31%, 21%);
 }
-.links a:hover {
+.links span:hover {
   text-decoration: underline;
   color: hsl(0, 94%, 66%);
   transition: 0.5s all;
 }
 
-.mark-areas {
+.mark-areas-1 {
   width: 100%;
   padding: 25px;
   display: flex;
@@ -189,34 +190,34 @@ header .menu .login:hover {
   justify-content: space-between;
   margin-top: 5%;
 }
-.mark-areas .img-area-2 {
+.mark-areas-1 .img-area-2 {
   width: 650px;
   margin-left: -40px;
   background-color: hsl(231, 69%, 60%);
   border-radius: 0px 0px 50px 0px;
   padding: 10px;
 }
-.mark-areas .img-area-2 img {
+.mark-areas-1 .img-area-2 img {
   width: 420px;
   margin-left: 40%;
   margin-top: -15%;
 }
-.mark-areas .content-2 {
+.mark-areas-1 .content-2 {
   width: 420px;
   padding: 10px;
 }
-.mark-areas .content-2 .description-3 {
+.mark-areas-1 .content-2 .description-3 {
   color: hsl(229, 8%, 60%);
   margin-top: 3%;
 }
-.mark-areas .content-2 .button-info {
+.mark-areas-1 .content-2 .button-info {
   margin-top: 3%;
   padding: 10px;
   background-color: hsl(231, 69%, 60%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
 }
-.mark-areas .content-2 .button-info:hover {
+.mark-areas-1 .content-2 .button-info:hover {
   background-color: hsl(0, 0%, 100%);
   color: hsl(231, 69%, 60%);
   border-color: hsl(231, 69%, 60%);
