@@ -18,7 +18,7 @@ $hover-button:hsl(231, 69%, 60%);
 $button-purple:hsl(231, 69%, 60%);
 $purple:hsl(231, 69%, 60%);
 $button-grey:hsl(229, 8%, 60%);
-$grey:hsl(229, 8%, 60%);;
+$grey:hsl(229, 8%, 60%);
 $white:hsl(0, 0%, 100%);
 
 .color-title{
@@ -211,48 +211,156 @@ header{
     }
 }
 
-.mark-areas-1{
+.book-mark-1{
     width: 100%;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 5%;
-
-    .img-area-2{
-        width:650px;
-        margin-left: -40px ;
-        background-color: $purple;
-        border-radius: 0px 0px 50px 0px;
-        padding: 10px;
-
-        img{
+    padding: 10px;
+    .mark-areas-1{
+        width: 100%;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5%;
+    
+        .img-area-2{
+            width:650px;
+            margin-left: -40px ;
+            background-color: $purple;
+            border-radius: 0px 0px 50px 0px;
+            padding: 10px;
+    
+            img{
+                width: 420px;
+                margin-left: 40%;
+                margin-top: -15%;
+            }
+        }
+    
+        .content-2{
             width: 420px;
-            margin-left: 40%;
-            margin-top: -15%;
+            padding: 10px;
+    
+            .description-3{
+                color: $font-content;
+                margin-top: 3%;
+            }
+    
+            .button-info{
+                margin-top: 3%;
+                padding: 10px;
+                background-color: $button-purple;
+                color: $white;
+                cursor: pointer;
+                &:hover{
+                    background-color: $white;
+                    color: $hover-button;
+                    border-color: $hover-button;
+                    transition: 0.5s all;
+                }
+            }
         }
     }
+}
 
-    .content-2{
-        width: 420px;
-        padding: 10px;
-
-        .description-3{
-            color: $font-content;
-            margin-top: 3%;
-        }
-
-        .button-info{
-            margin-top: 3%;
+.book-mark-2{
+    width: 100%;
+    padding: 10px;
+    display: none;
+    .mark-areas-2{
+        width: 100%;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5%;
+    
+        .img-area-3{
+            width:650px;
+            margin-left: -40px ;
+            background-color: $purple;
+            border-radius: 0px 0px 50px 0px;
             padding: 10px;
-            background-color: $button-purple;
-            color: $white;
-            cursor: pointer;
-            &:hover{
-                background-color: $white;
-                color: $hover-button;
-                border-color: $hover-button;
-                transition: 0.5s all;
+    
+            img{
+                width: 420px;
+                margin-left: 40%;
+                margin-top: -15%;
+            }
+        }
+    
+        .content-3{
+            width: 420px;
+            padding: 10px;
+    
+            .description-4{
+                color: $font-content;
+                margin-top: 3%;
+            }
+    
+            .info-2{
+                margin-top: 3%;
+                padding: 10px;
+                background-color: $button-purple;
+                color: $white;
+                cursor: pointer;
+                &:hover{
+                    background-color: $white;
+                    color: $hover-button;
+                    border-color: $hover-button;
+                    transition: 0.5s all;
+                }
+            }
+        }
+    }
+}
+
+.book-mark-3{
+    width: 100%;
+    padding: 10px;
+    display: none;
+    .mark-areas-3{
+        width: 100%;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5%;
+    
+        .img-area-4{
+            width:650px;
+            margin-left: -40px ;
+            background-color: $purple;
+            border-radius: 0px 0px 50px 0px;
+            padding: 10px;
+    
+            img{
+                width: 420px;
+                margin-left: 40%;
+                margin-top: -15%;
+            }
+        }
+    
+        .content-4{
+            width: 420px;
+            padding: 10px;
+    
+            .description-5{
+                color: $font-content;
+                margin-top: 3%;
+            }
+    
+            .info-3{
+                margin-top: 3%;
+                padding: 10px;
+                background-color: $button-purple;
+                color: $white;
+                cursor: pointer;
+                &:hover{
+                    background-color: $white;
+                    color: $hover-button;
+                    border-color: $hover-button;
+                    transition: 0.5s all;
+                }
             }
         }
     }
