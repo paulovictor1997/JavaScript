@@ -31,3 +31,13 @@ easy.addEventListener('click',()=>{
     document.querySelector('.book-mark-1').style.display='none';
     document.querySelector('.book-mark-2').style.display='none';
 })
+/* 
+const dropbtn = document.querySelectorAll(".dropbtn", "dropbtn-icon")
+
+dropbtn.forEach((btn)=>{
+    btn.addEventListener('click', () => {
+      btn.classList.toggle("open");
+      console.log(btn);
+    })
+  })
+*/
