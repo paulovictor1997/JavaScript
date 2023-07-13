@@ -423,6 +423,7 @@ header .menu .login:hover {
 }
 .faq-area .faq-questions .dropdown .open .fa-chevron-down {
   transform: rotate(180deg);
+  transition: 0.5s all;
 }
 .faq-area .faq-questions .answer {
   margin-top: 3%;
