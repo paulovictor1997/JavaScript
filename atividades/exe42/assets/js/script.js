@@ -39,7 +39,7 @@ const dropbtn = document.querySelectorAll('.dropbtn');
 dropbtn.forEach((e)=>{
     e.addEventListener('click',()=>{
         e.classList.toggle("open");
-        document.querySelector('.answer').style.display = 'block';
-       
+        document.querySelector('.answer').style.display = 'block'
     })
+    
 })
