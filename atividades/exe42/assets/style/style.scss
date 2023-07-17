@@ -444,6 +444,98 @@ header{
     width: 100%;
     padding: 25px;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .more-info{
+        margin-top: 5%;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: $button-purple;
+        color: $white;
+        &:hover{
+            background-color: $white;
+            color: $hover-button;
+            border-color: $hover-button;
+            transition: 0.5s all;
+        }
+    }
+
+    .accordion{
+        width: 500px;
+        .accordion-item{
+            border-bottom: 1px solid $grey;
+            button[aria-expanded='true'] {
+                border-bottom: 1px solid $grey;
+            }
+            button{
+                position: relative;
+                display: block;
+                text-align: left;
+                width: 100%;
+                padding: 1em 0;
+                color: $font-title;
+                font-size: 1.15rem;
+                font-weight: 400;
+                border: none;
+                background: none;
+                outline: none;
+                &:hover, &:focus {
+                  cursor: pointer;
+                  color: $red;
+                  transition: 0.5s all;
+                  &::after {
+                    cursor: pointer;
+                    border: 1px solid $grey;
+                  }
+                }
+                .accordion-title {
+                    padding: 1em 1.5em 1em 0;
+                }
+
+                .icon{
+                    display: inline-block;
+                    position: absolute;
+                    top: 18px;
+                    right: 0;
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+            button[aria-expanded='true'] {
+                color: $grey;    
+                + .accordion-content {
+                  opacity: 1;
+                  max-height: 9em;
+                  transition: all 200ms linear;
+                  will-change: opacity, max-height;
+                }
+            }
+
+            .accordion-content {
+                opacity: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: opacity 200ms linear, max-height 200ms linear;
+                will-change: opacity, max-height;
+                p {
+                  font-size: 1rem;
+                  font-weight: 300;
+                  margin: 2em 0;
+                }
+            }
+        }
+        
+    }
+}
+
+
+/*
+.faq-area{
+    width: 100%;
+    padding: 25px;
+    display: flex;
     flex-direction: column;
     align-items: center;
 
@@ -482,3 +574,4 @@ header{
         }
     }
 }
+*/

@@ -396,36 +396,128 @@ header .menu .login:hover {
   width: 100%;
   padding: 25px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
-.faq-area .faq-questions {
+.faq-area .more-info {
+  margin-top: 5%;
+  cursor: pointer;
   padding: 10px;
+  border-radius: 5px;
+  background-color: hsl(231, 69%, 60%);
+  color: hsl(0, 0%, 100%);
+}
+.faq-area .more-info:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(231, 69%, 60%);
+  border-color: hsl(231, 69%, 60%);
+  transition: 0.5s all;
+}
+.faq-area .accordion {
   width: 500px;
 }
-.faq-area .faq-questions .line-2 {
-  width: 100%;
-  border: 1px solid gray;
+.faq-area .accordion .accordion-item {
+  border-bottom: 1px solid hsl(229, 8%, 60%);
 }
-.faq-area .faq-questions .dropdown {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+.faq-area .accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid hsl(229, 8%, 60%);
 }
-.faq-area .faq-questions .dropdown .dropbtn {
-  background-color: transparent;
+.faq-area .accordion .accordion-item button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: hsl(229, 31%, 21%);
+  font-size: 1.15rem;
+  font-weight: 400;
   border: none;
-  cursor: pointer;
+  background: none;
+  outline: none;
 }
-.faq-area .faq-questions .dropdown .dropbtn:hover {
+.faq-area .accordion .accordion-item button:hover, .faq-area .accordion .accordion-item button:focus {
+  cursor: pointer;
   color: hsl(0, 94%, 66%);
   transition: 0.5s all;
 }
-.faq-area .faq-questions .dropdown .open .fa-chevron-down {
-  transform: rotate(180deg);
-  transition: 0.5s all;
+.faq-area .accordion .accordion-item button:hover::after, .faq-area .accordion .accordion-item button:focus::after {
+  cursor: pointer;
+  border: 1px solid hsl(229, 8%, 60%);
 }
-.faq-area .faq-questions .answer {
-  margin-top: 3%;
-  display: none;
-}/*# sourceMappingURL=style.css.map */
+.faq-area .accordion .accordion-item button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.faq-area .accordion .accordion-item button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+}
+.faq-area .accordion .accordion-item button[aria-expanded=true] {
+  color: hsl(229, 8%, 60%);
+}
+.faq-area .accordion .accordion-item button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.faq-area .accordion .accordion-item .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.faq-area .accordion .accordion-item .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+/*
+.faq-area{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .faq-questions{
+        padding: 10px;
+        width: 500px;
+
+        .line-2{
+            width: 100%;
+            border: 1px solid gray;
+        }
+        .dropdown{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            .dropbtn{
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                &:hover{
+                    color: $red;
+                    transition: 0.5s all;
+                }
+            }
+
+            .open .fa-chevron-down{
+                transform: rotate(180deg);
+                transition: 0.5s all;
+            }
+        }
+
+        .answer{
+            margin-top: 3%;
+            display: none;
+        }
+    }
+}
+*//*# sourceMappingURL=style.css.map */

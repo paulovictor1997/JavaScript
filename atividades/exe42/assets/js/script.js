@@ -34,12 +34,18 @@ easy.addEventListener('click',()=>{
     document.querySelector('.book-mark-2').style.display='none';
 })
 
-/* Corrigir essa parte */
-const dropbtn = document.querySelectorAll('.dropbtn');
-dropbtn.forEach((e)=>{
-    e.addEventListener('click',()=>{
-        e.classList.toggle("open");
-        document.querySelector('.answer').style.display = 'block'
-    })
-    
-})
+/* FAQ */
+const items = document.querySelectorAll(".accordion button");
+function toggleAccordion(){
+    const itemToggle = this.getAttribute("aria-expanded");
+    for(i = 0; i < items.length; i++){
+        items[i].setAttribute("aria-expanded", "false");
+    }
+
+    if(itemToggle == "false"){
+        this.setAttribute("aria-expanded", "true");
+    }
+}
+items.forEach(item => item.addEventListener('click',toggleAccordion));
+
+/* Email Validation*/
