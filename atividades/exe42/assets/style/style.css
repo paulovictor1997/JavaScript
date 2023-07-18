@@ -477,47 +477,68 @@ header .menu .login:hover {
   margin: 2em 0;
 }
 
-/*
-.faq-area{
-    width: 100%;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .faq-questions{
-        padding: 10px;
-        width: 500px;
-
-        .line-2{
-            width: 100%;
-            border: 1px solid gray;
-        }
-        .dropdown{
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-
-            .dropbtn{
-                background-color: transparent;
-                border: none;
-                cursor: pointer;
-                &:hover{
-                    color: $red;
-                    transition: 0.5s all;
-                }
-            }
-
-            .open .fa-chevron-down{
-                transform: rotate(180deg);
-                transition: 0.5s all;
-            }
-        }
-
-        .answer{
-            margin-top: 3%;
-            display: none;
-        }
-    }
+.area-3 {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(231, 69%, 60%);
+  margin-top: 5%;
 }
-*//*# sourceMappingURL=style.css.map */
+.area-3 .content-3 {
+  width: 450px;
+  text-align: center;
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+}
+.area-3 .content-3 h3 {
+  margin-top: 3%;
+}
+.area-3 .content-3 h1 {
+  margin-top: 3%;
+}
+.area-3 form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.area-3 form .email-box {
+  padding: 5px;
+}
+.area-3 form .email-box .erroIcon {
+  position: absolute;
+  margin-left: -3%;
+  padding: 10px;
+}
+.area-3 form .email-box input {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.area-3 form .email-box .button-form {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: hsl(0, 94%, 66%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.area-3 form .email-box .button-form:hover {
+  transition: 0.5s all;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 94%, 66%);
+  border: hsl(0, 94%, 66%);
+}
+.area-3 form .error {
+  width: 250px;
+  border-radius: 0px 0px 5px 5px;
+  text-align: left;
+  background-color: hsl(0, 94%, 66%);
+  color: hsl(0, 0%, 100%);
+  margin-right: 6%;
+  padding: 3px;
+  margin-top: 3%;
+  position: absolute;
+  display: none;
+}/*# sourceMappingURL=style.css.map */

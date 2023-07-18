@@ -530,48 +530,74 @@ header{
     }
 }
 
-
-/*
-.faq-area{
+.area-3{
     width: 100%;
     padding: 25px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    background-color: $purple;
+    margin-top: 5%;
 
-    .faq-questions{
-        padding: 10px;
-        width: 500px;
-        
-        .line-2{
-            width: 100%;
-            border: 1px solid gray;
+    .content-3{
+        width: 450px;
+        text-align: center;
+        font-weight: 500;
+        color: $white;
+
+        h3{
+            margin-top: 3%;
         }
-        .dropdown{
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
+        
+        h1{
+            margin-top: 3%;
+        }
+    }
 
-            .dropbtn{
-                background-color: transparent;
-                border: none;
+    form{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .email-box{
+            padding: 5px;
+            .erroIcon{
+                position: absolute;
+                margin-left: -3%;
+                padding: 10px;
+                //display: none;
+            }
+            input{
+               width: 250px; 
+               padding: 10px;
+               border-radius: 5px;
+            }
+            .button-form{
+                padding: 10px;
+                border-radius: 5px;
+                background-color: $red;
+                color: $white;
                 cursor: pointer;
                 &:hover{
-                    color: $red;
                     transition: 0.5s all;
+                    background-color: $white;
+                    color: $red;
+                    border: $red;
                 }
-            }
-
-            .open .fa-chevron-down{
-                transform: rotate(180deg);
-                transition: 0.5s all;
             }
         }
 
-        .answer{
+        .error{
+            width: 250px; 
+            border-radius: 0px 0px 5px 5px;
+            text-align: left;
+            background-color: $red;
+            color: $white;
+            margin-right: 6%;
+            padding: 3px;
             margin-top: 3%;
+            position: absolute;
             display: none;
         }
     }
 }
-*/
