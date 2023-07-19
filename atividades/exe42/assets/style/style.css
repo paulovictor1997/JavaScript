@@ -509,8 +509,10 @@ header .menu .login:hover {
 }
 .area-3 form .email-box .erroIcon {
   position: absolute;
-  margin-left: -3%;
+  margin-left: 14%;
+  margin-top: -2.5%;
   padding: 10px;
+  display: none;
 }
 .area-3 form .email-box input {
   width: 250px;
@@ -541,4 +543,42 @@ header .menu .login:hover {
   margin-top: 3%;
   position: absolute;
   display: none;
+}
+
+footer {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: hsl(229, 31%, 21%);
+  justify-content: space-around;
+}
+footer .area-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+footer .area-footer img {
+  margin-right: 10px;
+}
+footer .area-footer .link-footer {
+  padding: 10px;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+footer .area-footer .link-footer:hover {
+  transition: 0.5s all;
+  color: hsl(0, 94%, 66%);
+}
+footer .social-media {
+  padding: 10px;
+}
+footer .social-media .media {
+  padding: 10px;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+footer .social-media .media:hover {
+  transition: 0.5s all;
+  color: hsl(0, 94%, 66%);
 }/*# sourceMappingURL=style.css.map */

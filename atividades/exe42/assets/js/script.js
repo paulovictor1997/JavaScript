@@ -56,7 +56,7 @@ form.addEventListener('submit',(event)=>{
     event.preventDefault();
     if(emailInput.value === '' || !validateEmail(emailInput.value)){
         document.querySelector('.error').style.display = 'block';
-       // document.querySelector('.erroIcon').style.display = 'block';
+        document.querySelector('.erroIcon').style.display = 'block';
     } else{
         document.querySelector('.error').style.display = 'none';
         document.querySelector('.erroIcon').style.display = 'none';

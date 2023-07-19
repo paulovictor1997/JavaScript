@@ -10,6 +10,7 @@
 
 $font-content: hsl(229, 8%, 60%);
 $font-title: hsl(229, 31%, 21%);
+$footer: hsl(229, 31%, 21%);
 $menu-mobile: hsl(229, 31%, 21%);
 $font-subTitles: hsl(229, 31%, 21%);
 $hover-red:hsl(0, 94%, 66%);
@@ -563,9 +564,10 @@ header{
             padding: 5px;
             .erroIcon{
                 position: absolute;
-                margin-left: -3%;
+                margin-left: 14%;
+                margin-top: -2.5%;
                 padding: 10px;
-                //display: none;
+                display: none;
             }
             input{
                width: 250px; 
@@ -598,6 +600,44 @@ header{
             margin-top: 3%;
             position: absolute;
             display: none;
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: $footer;
+    justify-content: space-around;
+    .area-footer{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        img{
+            margin-right: 10px;
+        }
+        .link-footer{
+            padding: 10px;
+            text-decoration: none;
+            color: $white;
+            &:hover{
+                transition: 0.5s all;
+                color: $hover-red;
+            }
+        }
+    }
+    .social-media{
+        padding: 10px;
+        .media{
+            padding: 10px; 
+            text-decoration: none;
+            color: $white;
+            &:hover{
+                transition: 0.5s all;
+                color:$hover-red;
+            }
         }
     }
 }
