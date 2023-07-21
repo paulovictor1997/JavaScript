@@ -573,6 +573,10 @@ header{
                width: 250px; 
                padding: 10px;
                border-radius: 5px;
+               &::placeholder{
+                color: $font-content;
+                font-weight: 500;
+               }
             }
             .button-form{
                 padding: 10px;

@@ -152,6 +152,59 @@
         align-items: center;
         flex-direction: column;
     }
+
+    .area-3{
+        width: 100%;
+        form{
+            padding: 10px;
+            
+            .error{
+                margin-top: 8%;
+                margin-left: 6%;
+            }
+            .email-box{
+                display: flex;
+                flex-direction: column;
+                
+                .erroIcon{
+                    margin-left: 40%;
+                    margin-top: 0.9%;
+                }
+                
+                .button-form{
+                    margin-top: 10%;
+                }
+            }
+        }
+    }
+
+    footer{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+
+        .area-footer{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
 }
 
 
+@media screen and (max-width:800px) {
+    .area-1{
+        width: 100%;
+        .img-area-1{
+            width: 450px;
+           margin-right: -25%;
+             img{
+                 width: 350px;
+                 margin-left: -12%;
+                 margin-top: -10%;
+             }
+         }
+    }
+}

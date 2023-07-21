@@ -519,6 +519,14 @@ header .menu .login:hover {
   padding: 10px;
   border-radius: 5px;
 }
+.area-3 form .email-box input::-moz-placeholder {
+  color: hsl(229, 8%, 60%);
+  font-weight: 500;
+}
+.area-3 form .email-box input::placeholder {
+  color: hsl(229, 8%, 60%);
+  font-weight: 500;
+}
 .area-3 form .email-box .button-form {
   padding: 10px;
   border-radius: 5px;
