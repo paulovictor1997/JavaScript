@@ -205,6 +205,7 @@ body{
 
 .compre-ja .btn-plataforma .plataformas li:nth-child(1):hover {
 	background-color: #00439c;
+	transition: 0.5s all;
 }
 .compre-ja .btn-plataforma .plataformas li:nth-child(2) {
 	border: 1px solid #387a26;
@@ -212,6 +213,7 @@ body{
 
 .compre-ja .btn-plataforma .plataformas li:nth-child(2):hover {
 	background-color: #387a26;
+	transition: 0.5s all;
 }
 
 .compre-ja .btn-plataforma .plataformas li:nth-child(3) {
@@ -220,6 +222,7 @@ body{
 
 .compre-ja .btn-plataforma .plataformas li:nth-child(3):hover {
 	background-color: #00439c;
+	transition: 0.5s all;
 }
 
 .compre-ja .btn-plataforma .plataformas li:nth-child(4) {
@@ -228,6 +231,7 @@ body{
 
 .compre-ja .btn-plataforma .plataformas li:nth-child(4):hover {
 	background-color: #387a26;
+	transition: 0.5s all;
 }
 .compre-ja .btn-plataforma .plataformas li:nth-child(5) {
 	border: 1px solid #fcaf17;
@@ -235,4 +239,5 @@ body{
 
 .compre-ja .btn-plataforma .plataformas li:nth-child(5):hover {
 	background-color: #fcaf17;
+	transition: 0.5s all;
 }
