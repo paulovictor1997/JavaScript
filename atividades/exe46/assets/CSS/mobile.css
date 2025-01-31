@@ -1,0 +1,70 @@
+@media screen and (max-width:1200px) {
+    .nav-links-desktop{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+    
+    .hidenButton{
+        display: none;
+    }
+
+    .area-1{
+        flex-direction: column-reverse;
+    }
+
+    .area-1 .img-illustration img{
+        width: 300px;
+    }
+
+    .content{
+        text-align: center;
+    }
+
+    .content h1{
+        font-size: 30px;
+    }
+
+    .area-2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area-3{
+        background-image: url(../images/bg-simplify-section-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+    .area-3 .simplify{
+        padding: 10px;
+        flex-direction: column;
+    }    
+
+    .area-3 .simplify .title2 h1{
+         font-size: 28px;   
+         text-align: center;
+    }    
+
+    .area-3 .simplify .btn2{
+     margin-top: 15px;
+   }   
+
+   .footer-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .footer-left{
+        margin-top: 10px;
+    }
+
+    .footer-links{
+        margin-top: 20px;
+    }
+
+}
