@@ -1,3 +1,4 @@
+//Validate fields
 const form = document.querySelector('#form')
 
 form.addEventListener('submit', function (e) {
@@ -200,6 +201,7 @@ function passwordMatch(value) {
     return validator
 }
 
+//Passoword change icons
 const passwordIcons = document.querySelectorAll('.password-icon')
 
 passwordIcons.forEach(icon => {
