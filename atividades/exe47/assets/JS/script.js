@@ -162,7 +162,7 @@ function passwordIsSecure(value) {
 
     if (isEmpty(value)) {
         validator.isValid = false
-        validator.errorMessage = 'O senha é obrigatória!'
+        validator.errorMessage = 'A senha é obrigatória!'
         return validator
     }
 
@@ -194,7 +194,7 @@ function passwordMatch(value) {
     
     if (value === '' || passwordValue !== value) {
         validator.isValid = false
-        validator.errorMessage = 'Senhas não condizem!'
+        validator.errorMessage = 'As senhas não condizem!'
         return validator
     }
 
