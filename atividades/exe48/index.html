@@ -3,11 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QR Code generate</title>
+    <link rel="shortcut icon" href="assets/image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 <body>
-    
+    <main class="container">
+        <div class="logo">
+            <img src="assets/image/Logo.svg" alt="Logo">
+        </div>
+        <form>
+            <input type="text" id="textInput" placeholder="Enter an URL">
+            <button onclick="generateQRCode()" class="allButton">QR Code</button>
+        </form>
+        <div class="qrCode-area">
+            <div id="qrcode"></div>
+            <div class="buttons">
+                <button id="download-btn" class="allButton">Download <span><i class="fa-solid fa-download"></i></span></button>
+                <button id="share-btn" class="allButton">Share <span><i class="fa-solid fa-share-from-square"></i></span></button>
+            </div>
+        </div>
+    </main>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script src="assets/JS/script.js"></script>
 </html>
