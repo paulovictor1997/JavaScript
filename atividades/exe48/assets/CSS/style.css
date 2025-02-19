@@ -7,6 +7,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/*background-color: #151D32;*/
+
 body{
     min-height: 100vh;
     display: flex;
@@ -69,6 +71,10 @@ form input::placeholder{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 15px;
+}
+
+#qrcode{
     padding: 10px;
 }
 
@@ -76,6 +82,7 @@ form input::placeholder{
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-top: 10px;
 }
  
 #download-btn,#share-btn{

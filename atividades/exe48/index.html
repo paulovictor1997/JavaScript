@@ -16,14 +16,14 @@
             <img src="assets/image/Logo.svg" alt="Logo">
         </div>
         <form>
-            <input type="text" id="textInput" placeholder="Enter an URL">
-            <button onclick="generateQRCode()" class="allButton">QR Code</button>
+            <input type="url" id="textInput" placeholder="Enter an URL">
+            <button onclick="generateQRCode()" class="allButton" type="button">QR Code</button>
         </form>
         <div class="qrCode-area">
             <div id="qrcode"></div>
             <div class="buttons">
-                <button id="download-btn" class="allButton">Download <span><i class="fa-solid fa-download"></i></span></button>
-                <button id="share-btn" class="allButton">Share <span><i class="fa-solid fa-share-from-square"></i></span></button>
+                <button id="download-btn" class="allButton" type="button">Download <span><i class="fa-solid fa-download"></i></span></button>
+                <button id="share-btn" class="allButton" type="button">Share <span><i class="fa-solid fa-share-from-square"></i></span></button>
             </div>
         </div>
     </main>
