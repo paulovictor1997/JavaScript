@@ -1,15 +1,25 @@
+//Global variables 
 const qrCode = document.querySelector("#qrcode")
 const downloadBtn = document.querySelector("#download-btn")
 const shareBtn = document.querySelector("#share-btn")
+const form = document.querySelector("#form")
+const textInput = document.querySelector("#textInput")
 
-// function who will genetare the QRcode 
-function generateQRCode(){
-    //Regex to take only the URL
-    const urlRegex = /^(https?:\/\/)?([\w\d.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/
-    const text = document.querySelector("#textInput").value
+const urlRegex = /^(https?:\/\/)?([\w\d.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/
+
+//Function who will generate QRcode 
+const generateQRCode = () =>{
+    const text = textInput.value
+
+    if (text === "") {
+        //console.log("Input vazio! Exibindo alerta...")
+        alert("The field is empty.")
+        return;
+    }
 
     if(!urlRegex.test(text)){
-        alert("A valid URL please !")
+        //console.log("URL inválida! Exibindo alerta...")
+        alert("A valid URL please!")
         return
     }
 
@@ -26,7 +36,21 @@ function generateQRCode(){
     },500)
 }
 
-//download button
+//Form event
+form.addEventListener("submit",(e)=>{
+    e.preventDefault()
+    generateQRCode()
+})
+
+//Input event
+textInput.addEventListener("keydown", (e)=>{
+    if(e.key === "Enter"){
+        e.preventDefault()
+        generateQRCode()
+    }
+})
+
+//Download button
 downloadBtn.addEventListener("click",()=>{
     const qrCanvas = qrCode.querySelector("canvas")
     if(qrCanvas){
@@ -37,7 +61,7 @@ downloadBtn.addEventListener("click",()=>{
     }
 })
 
-//share button
+//Share button
 shareBtn.addEventListener("click",()=>{
     const text = document.querySelector("#textInput").value
 
