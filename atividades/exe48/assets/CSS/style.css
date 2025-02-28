@@ -19,10 +19,16 @@ body{
     background-position: right; 
 }
 
+:root{
+    --btnButton:#010e57;
+    --bckgInput:#02022b;
+    --font:white;
+}
+
 .allButton{
     cursor: pointer;
-    background-color: #010e57;
-    color: white;
+    background-color: var(--btnButton);
+    color: var(--font);
     padding: 5px;
     width: 100px;
     border-radius: 15px;
@@ -54,17 +60,23 @@ form{
 }
 
 form input{
+    flex: 1;
     border: 1px solid black;
     padding: 5px;
-    background-color:#02022b;
+    background-color:var(--bckgInput);
     border-radius: 5px;
-    color: white;
+    color: var(--font);
 }
 
 form input::placeholder{
     padding: 5px;
-    color: white;
+    color: var(--font);
     font-weight: 700;
+}
+
+form input:focus {
+    border: 2px solid #00ffcc;
+    box-shadow: 0px 0px 8px rgba(0, 255, 204, 0.8);
 }
 
 .qrCode-area{
