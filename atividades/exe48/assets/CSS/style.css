@@ -100,3 +100,23 @@ form input:focus {
 #download-btn,#share-btn{
     display: none;
 }
+
+@media (max-width: 550px) {
+    .container {
+        width: 95%;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .allButton {
+        width: 100%;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+}
