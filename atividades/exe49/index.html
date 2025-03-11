@@ -10,20 +10,25 @@
 </head>
 <body>
    <div class="container">
-        <div class="title">
-            <h2>Cadastro</h2>
-        </div>
+        <header>
+            <div class="title">
+                <h2>Cadastro</h2>
+            </div>
+            <div class="link">
+                <a href="listagem.html">Lista de Usuários</a>
+            </div>
+        </header>
         <form id="cadastroForm">
             <label for="nome">Nome :</label>
-            <input type="text" id="nome" required>
+            <input type="text" id="nome" placeholder="Insira seu nome" required>
 
             <label for="email">E-mail :</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email" placeholder="Insira seu e-mail" required>
 
             <label for="data_nasc">Data de Nascimento :</label>
             <input type="date" id="data_nasc" required>
 
-            <button type="submit"><i class="fas fa-user-plus"></i>Cadastrar</button>
+            <button type="submit" id="btnCadastrar"><i class="fas fa-user-plus"></i>Cadastrar</button>
         </form>
    </div>
 </body>

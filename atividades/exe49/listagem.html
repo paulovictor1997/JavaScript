@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <script src="assets/JS/script.js" defer></script>
 </head>
 <body>
-    
+    <div class="container-listagem">
+        <h2 class="titulo-listagem">Lista de Pessoas Cadastradas</h2>
+        <table class="tabela-listagem">
+            <thead>
+                <tr>
+                    <th class="th-nome">Nome</th>
+                    <th class="th-data">Data de Nascimento</th>
+                    <th class="th-email">Email</th>
+                    <th class="th-acoes">Ações</th>
+                </tr>
+            </thead>
+            <tbody id="listaUsers">
+                <!-- Os usuários cadastrados serão inseridos aqui -->
+            </tbody>
+        </table>
+        <button class="btn-voltar" onclick="voltar()">Voltar</button>
+    </div>
+</body>
 </body>
 </html>
