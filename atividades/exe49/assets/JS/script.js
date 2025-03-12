@@ -3,6 +3,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("cadastroForm");
 
     if (form) {
+        // Verifica se há um usuário em edição e os campos ficam preenchidos
+        const editIndex = localStorage.getItem("editIndex");
+        if (editIndex !== null) {
+            const pessoaEditada = JSON.parse(localStorage.getItem("editPessoa"));
+            document.getElementById("nome").value = pessoaEditada.nome;
+            document.getElementById("data_nasc").value = pessoaEditada.data_nasc;
+            document.getElementById("email").value = pessoaEditada.email;
+        }
+
         form.addEventListener("submit", function (e) {
             e.preventDefault();
 
@@ -10,14 +19,18 @@ document.addEventListener("DOMContentLoaded", function () {
             const data_nasc = document.getElementById("data_nasc").value;
             const email = document.getElementById("email").value;
 
-            const pessoa = { 
-                nome, 
-                data_nasc, 
-                email 
-            };
-
             let pessoas = JSON.parse(localStorage.getItem("pessoas")) || [];
-            pessoas.push(pessoa);
+
+            if (editIndex !== null) {
+                // Atualiza os dados do usuário em edição
+                pessoas[editIndex] = { nome, data_nasc, email };
+                localStorage.removeItem("editIndex");
+                localStorage.removeItem("editPessoa");
+            } else {
+                // Adiciona um novo usuário
+                pessoas.push({ nome, data_nasc, email });
+            }
+
             localStorage.setItem("pessoas", JSON.stringify(pessoas));
 
             window.location.href = "listagem.html";
