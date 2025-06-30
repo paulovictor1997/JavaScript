@@ -19,4 +19,4 @@ const getApi = async () => {
   }
 }
 
-getApi()
+//getApi()
