@@ -1,22 +1,46 @@
+/*
+- Função principal : requisição da API.
+- Main function : Call API.
+*/
 const getApi = async () => {
   try {
-    const response = await fetch("https://api.football-data.org/v4/competitions", {
-      method: 'GET',
-      headers: {
-        "X-Auth-Token": "9ec91597457b491393553a765c180372"
-      }
-    })
-    const data = await response.json()
+      const response = await fetch("http://localhost:3000/ligas")
+      const data = await response.json()
 
-    if (response === 200) {
-      console.log(data)// Mostra todas as competições
+  if(response.ok){
+      detailCards(data.competitions)
+      console.log(data.competitions)
     } else {
       console.error(`Erro ${response.status}: ${response.statusText}`)
-    }
-
+  }
   } catch (error) {
-    console.error("Erro ao buscar dados:", error)
+    console.error("Erro ao buscar ligas:", error)
   }
 }
 
-//getApi()
+/*
+- Função para os detalhes do card
+- Function for the details card  
+*/
+const detailCards =(competitions)=>{
+  const cards = document.querySelectorAll(".card")
+  cards.forEach(card => {
+    const code = card.dataset.code
+    const league = competitions.find(item => item.code === code)
+
+    if(league){
+      const img = document.createElement("img")
+      img.src = league.emblem
+      img.alt = league.name
+
+      const p = document.createElement("p")
+      //p.textContent = league.area.name
+
+      card.insertBefore(img,card.firstChild)
+      card.appendChild(p)
+    }
+  })
+}
+
+
+getApi()
