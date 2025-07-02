@@ -14,7 +14,7 @@ const getApi = async () => {
       console.error(`Erro ${response.status}: ${response.statusText}`)
   }
   } catch (error) {
-    console.error("Erro ao buscar ligas:", error)
+      console.error("Erro ao buscar ligas:", error)
   }
 }
 
