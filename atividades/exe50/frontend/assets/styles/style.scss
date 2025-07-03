@@ -7,3 +7,112 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+
+body{
+    background-color:  $color-light;
+    color: $color-dark;
+    line-height: 1.6;
+}
+
+a{
+    color: $color-primary;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar{
+    background-color: $color-dark;
+    color: $color-light;
+    padding: $spacing-md;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highlights{
+    padding: $spacing-lg;
+
+    h2{
+        margin-bottom: $spacing-md;
+        text-align: center;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(180px, 1fr));
+        gap: $spacing-md;
+
+        .card{
+            background-color: $color-light;
+            border: 1px solid #ccc;
+            padding: $spacing-md;
+            text-align: center;
+            transition: 0.3s;
+
+            h3{
+                margin-bottom: $spacing-md;
+            }
+
+            &:hover {
+                background-color: #f0f0f0;
+                transform: scale(1.02);
+            }
+        }
+    }
+}
+
+//NEWS SECTION
+.news {
+  padding: $spacing-lg;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    text-align: center;
+    margin-bottom: $spacing-md;
+  }
+
+  .group-news {
+    margin-bottom: $spacing-lg;
+
+    h3 {
+      margin-bottom: $spacing-sm;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: $spacing-sm;
+      }
+    }
+  }
+}
+
+.league-info {
+  text-align: center;
+  margin: $spacing-lg 0;
+
+  h1 {
+    margin-bottom: $spacing-sm;
+  }
+
+  img {
+    max-width: 100px;
+    margin-bottom: $spacing-sm;
+  }
+
+  p {
+    font-style: italic;
+    color: gray;
+  }
+}
