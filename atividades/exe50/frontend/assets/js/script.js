@@ -42,5 +42,30 @@ const detailCards =(competitions)=>{
   })
 }
 
+//MENU
+document.addEventListener("DOMContentLoaded",()=>{
+  const menuToggle = document.querySelector("#menuToggle")
+  const sidebar = document.querySelector("#sidebar")
+  const overlay = document.querySelector("#overlay")
+
+  const openSidebar = () => {
+    sidebar.classList.add("active")
+    overlay.classList.add("active")
+  }
+
+  const closeSidebar = () =>{
+    sidebar.classList.remove("active")
+    overlay.classList.remove("active")
+  }
+
+  menuToggle.addEventListener("click",openSidebar)
+  overlay.addEventListener("click",closeSidebar)
+
+  //FECHAR AO CLICAR FORA DO MENU
+  sidebar.querySelectorAll("a").forEach(link =>{
+    link.addEventListener("click", closeSidebar)
+  })
+})
+
 
 getApi()
