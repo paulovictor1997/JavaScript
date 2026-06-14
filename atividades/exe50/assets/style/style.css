@@ -144,10 +144,12 @@ button {
 .btn--ghost {
   color: var(--color-white);
   background: transparent;
+  opacity: 0.8;
 }
-.btn--ghost:hover,
-.btn--ghost:focus-visible {
-  color: var(--color-red-500);
+
+.btn--ghost:hover {
+  transition: 0.5s all;
+  opacity: 1;
 }
 
 /* Ghost dark: usado no mobile menu sobre fundo branco */
@@ -202,7 +204,7 @@ button {
   z-index: 100;
   background-color: var(--color-red-550);
   background-image:
-    url('../../../images/bg-pattern-intro-desktop.svg'),
+    url('../../images/bg-pattern-intro-desktop.svg'),
     var(--gradient-intro);
   background-repeat: no-repeat;
   background-position: left -25rem center;
@@ -688,6 +690,7 @@ button {
 
   /* Header desktop */
   .header {
+    background-image: url('../../images/bg-pattern-intro-mobile.svg');
     background-position: left -20rem center;
     background-size: 125%;
   }
