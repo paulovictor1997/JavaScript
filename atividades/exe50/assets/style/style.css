@@ -587,7 +587,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: var(--space-10);
-  max-width: 72rem;
+  max-width: 39rem;
   margin-inline: auto;
 }
 
