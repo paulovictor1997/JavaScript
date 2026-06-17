@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Frontend Mentor | Bookmark landing page</title>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#" aria-label="Bookmark home">
+        <img src="./assets/logo-bookmark.svg" alt="Bookmark">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">
+        <img class="nav-toggle__open" src="./assets/icon-hamburger.svg" alt="">
+        <img class="nav-toggle__close" src="./assets/icon-close.svg" alt="">
+      </button>
+
+      <div class="nav-panel" id="primary-menu">
+        <a class="brand brand--mobile" href="#" aria-label="Bookmark home">
+          <img src="./assets/logo-bookmark.svg" alt="Bookmark">
+        </a>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#download">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="login-link" href="#contact">Login</a></li>
+        </ul>
+        <div class="mobile-social" aria-label="Social links">
+          <a href="#" aria-label="Facebook"><img src="./assets/icon-facebook.svg" alt=""></a>
+          <a href="#" aria-label="Twitter"><img src="./assets/icon-twitter.svg" alt=""></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+          <div class="button-row">
+            <a class="button button--primary" href="#download">Get it on Chrome</a>
+            <a class="button button--light" href="#download">Get it on Firefox</a>
+          </div>
+        </div>
+        <div class="hero__media shape shape--right">
+          <img src="./assets/illustration-hero.svg" alt="Bookmark manager browser preview">
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Features</h2>
+          <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Bookmark features">
+          <button class="tab is-active" type="button" role="tab" aria-selected="true" aria-controls="feature-simple" id="tab-simple" data-tab="simple">Simple Bookmarking</button>
+          <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="feature-speedy" id="tab-speedy" data-tab="speedy">Speedy Searching</button>
+          <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="feature-easy" id="tab-easy" data-tab="easy">Easy Sharing</button>
+        </div>
+
+        <article class="feature-panel is-active" id="feature-simple" role="tabpanel" aria-labelledby="tab-simple" data-panel="simple">
+          <div class="feature-panel__image shape shape--left">
+            <img src="./assets/illustration-features-tab-1.svg" alt="Simple bookmarking illustration">
+          </div>
+          <div class="feature-panel__copy">
+            <h3>Bookmark in one click</h3>
+            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+            <a class="button button--primary" href="#">More Info</a>
+          </div>
+        </article>
+
+        <article class="feature-panel" id="feature-speedy" role="tabpanel" aria-labelledby="tab-speedy" data-panel="speedy" hidden>
+          <div class="feature-panel__image shape shape--left">
+            <img src="./assets/illustration-features-tab-2.svg" alt="Speedy search illustration">
+          </div>
+          <div class="feature-panel__copy">
+            <h3>Intelligent search</h3>
+            <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+            <a class="button button--primary" href="#">More Info</a>
+          </div>
+        </article>
+
+        <article class="feature-panel" id="feature-easy" role="tabpanel" aria-labelledby="tab-easy" data-panel="easy" hidden>
+          <div class="feature-panel__image shape shape--left">
+            <img src="./assets/illustration-features-tab-3.svg" alt="Easy sharing illustration">
+          </div>
+          <div class="feature-panel__copy">
+            <h3>Share your bookmarks</h3>
+            <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+            <a class="button button--primary" href="#">More Info</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="download" id="download">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Download the extension</h2>
+          <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+        </div>
+
+        <div class="extension-grid">
+          <article class="extension-card">
+            <img class="extension-card__logo" src="./assets/logo-chrome.svg" alt="">
+            <h3>Add to Chrome</h3>
+            <p>Minimum version 62</p>
+            <img class="extension-card__dots" src="./assets/bg-dots.svg" alt="">
+            <a class="button button--primary" href="#">Add &amp; Install Extension</a>
+          </article>
+
+          <article class="extension-card">
+            <img class="extension-card__logo" src="./assets/logo-firefox.svg" alt="">
+            <h3>Add to Firefox</h3>
+            <p>Minimum version 55</p>
+            <img class="extension-card__dots" src="./assets/bg-dots.svg" alt="">
+            <a class="button button--primary" href="#">Add &amp; Install Extension</a>
+          </article>
+
+          <article class="extension-card">
+            <img class="extension-card__logo" src="./assets/logo-opera.svg" alt="">
+            <h3>Add to Opera</h3>
+            <p>Minimum version 46</p>
+            <img class="extension-card__dots" src="./assets/bg-dots.svg" alt="">
+            <a class="button button--primary" href="#">Add &amp; Install Extension</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container faq__container">
+        <div class="section-heading">
+          <h2>Frequently Asked Questions</h2>
+          <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <button class="accordion__trigger" type="button" aria-expanded="false">
+              <span>What is Bookmark?</span>
+              <img src="./assets/icon-arrow.svg" alt="">
+            </button>
+            <div class="accordion__content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" type="button" aria-expanded="false">
+              <span>How can I request a new browser?</span>
+              <img src="./assets/icon-arrow.svg" alt="">
+            </button>
+            <div class="accordion__content">
+              <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" type="button" aria-expanded="false">
+              <span>Is there a mobile app?</span>
+              <img src="./assets/icon-arrow.svg" alt="">
+            </button>
+            <div class="accordion__content">
+              <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" type="button" aria-expanded="false">
+              <span>What about other Chromium browsers?</span>
+              <img src="./assets/icon-arrow.svg" alt="">
+            </button>
+            <div class="accordion__content">
+              <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque.</p>
+            </div>
+          </div>
+        </div>
+
+        <a class="button button--primary" href="#">More Info</a>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact__container">
+        <p class="eyebrow">35,000+ already joined</p>
+        <h2>Stay up-to-date with what we're doing</h2>
+        <form class="contact-form" novalidate>
+          <div class="form-control">
+            <input id="email" name="email" type="email" placeholder="Enter your email address" aria-describedby="email-error">
+            <img class="form-control__icon" src="./assets/icon-error.svg" alt="">
+            <p class="form-control__error" id="email-error">Whoops, make sure it's an email</p>
+          </div>
+          <button class="button button--accent" type="submit">Contact Us</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="brand brand--footer" href="#" aria-label="Bookmark home">
+        <img src="./assets/logo-bookmark.svg" alt="Bookmark">
+      </a>
+      <ul class="footer-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#download">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="footer-social" aria-label="Social links">
+        <a href="#" aria-label="Facebook"><img src="./assets/icon-facebook.svg" alt=""></a>
+        <a href="#" aria-label="Twitter"><img src="./assets/icon-twitter.svg" alt=""></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script/script.js"></script>
+</body>
+</html>
