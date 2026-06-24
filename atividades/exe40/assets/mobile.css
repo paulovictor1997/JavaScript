@@ -11,6 +11,19 @@
   .area1 .content1 {
     text-align: center;
     width: 400px;
+  }
+  .area1 .content1 .login {
+    width: 100%;
+  }
+  .area1 .content1 .login .form-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .area1 .content1 .login .form-1 .button, .area1 .content1 .login .form-1 input {
+    width: 300px;
+  }
+  .area1 .content1 {
     /*
     .form-1{
         display: flex;
@@ -32,17 +45,6 @@
         }
     }
     */
-  }
-  .area1 .content1 .login {
-    width: 100%;
-  }
-  .area1 .content1 .login .form-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .area1 .content1 .login .form-1 .button, .area1 .content1 .login .form-1 input {
-    width: 300px;
   }
   .area2 {
     width: 100%;

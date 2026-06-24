@@ -99,10 +99,12 @@ body {
 }
 .content-area #area-3 .content-3 {
   width: 400px;
-  padding: 15px;
 }
 .content-area #area-3 .content-3 h1 {
   font-size: 40px;
+}
+.content-area #area-3 .content-3 {
+  padding: 15px;
 }
 .content-area #area-3 .content-3 .link {
   margin-top: 20px;
@@ -128,11 +130,13 @@ body {
 }
 .content-area #area-4 .content-4 .testimonial {
   margin-top: 15px;
-  display: flex;
-  align-items: center;
 }
 .content-area #area-4 .content-4 .testimonial img {
   border-radius: 50px;
+}
+.content-area #area-4 .content-4 .testimonial {
+  display: flex;
+  align-items: center;
 }
 .content-area #area-4 .content-4 .testimonial .names {
   color: hsl(0, 0%, 100%);

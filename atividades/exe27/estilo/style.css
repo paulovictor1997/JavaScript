@@ -70,10 +70,12 @@ nav {
   background-image: url("../images/bg-pattern-intro-right-desktop.svg");
   background-repeat: no-repeat;
   background-position: top right;
-  margin-top: 5%;
 }
 #area-1 .image-area {
   margin-left: 15px;
+}
+#area-1 {
+  margin-top: 5%;
 }
 #area-1 .border {
   border: 1px solid hsl(273, 4%, 51%);
@@ -187,12 +189,14 @@ footer {
   width: 100%;
   padding: 10px 20px;
   margin-top: 15%;
-  background-image: url("../images/bg-pattern-intro-left-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: top left;
 }
 footer .border-footer {
   border: 1px solid hsl(216, 30%, 68%);
+}
+footer {
+  background-image: url("../images/bg-pattern-intro-left-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
 }
 footer .header-footer {
   display: flex;
