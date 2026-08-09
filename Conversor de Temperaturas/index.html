@@ -2,45 +2,67 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temperatura</title>
+    <title>Conversor de Temperaturas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <main>
-      <p>
-        <h1>Conversor de Temperaturas</h1>
-        <input type="radio" name="temp" id="cel" checked>
-        <label for="cel">De Celsius para Fahrenheint</label>
+    <main class="card">
+        <header class="card__header">
+            <h1 class="card__title">
+                <i class="fa-solid fa-thermometer card__icon" aria-hidden="true"></i>
+                Conversor de Temperaturas
+            </h1>
+            <p class="card__subtitle">Converta entre Celsius, Fahrenheit e Kelvin</p>
+        </header>
 
-        <br><br><input type="radio" name="temp" id="fah">
-        <label for="fah">De Fahrenheint para Celsius</label>
+        <form class="form" onsubmit="confirmar(event)">
+            <fieldset class="form__group">
+                <legend class="form__legend">Escolha a conversão</legend>
 
-        <br><br><input type="radio" name="temp" id="kev">
-        <label for="kev">De Kelvin para Celsius</label>
+                <label class="radio">
+                    <input type="radio" name="temp" id="cel" value="cel" checked>
+                    <span class="radio__label">Celsius → Fahrenheit</span>
+                </label>
 
-        <br><br><input type="radio" name="temp" id="kel">
-        <label for="kel">De Celsius para Kelvin</label>
+                <label class="radio">
+                    <input type="radio" name="temp" id="fah" value="fah">
+                    <span class="radio__label">Fahrenheit → Celsius</span>
+                </label>
 
-        <br><br><input type="radio" name="temp" id="fa">
-        <label for="fa">De Fahrenheint para Kelvin</label>
+                <label class="radio">
+                    <input type="radio" name="temp" id="kev" value="kev">
+                    <span class="radio__label">Kelvin → Celsius</span>
+                </label>
 
-        <br><br><input type="radio" name="temp" id="ke">
-        <label for="ke">De Kelvin para Fahrenheint</label>
+                <label class="radio">
+                    <input type="radio" name="temp" id="kel" value="kel">
+                    <span class="radio__label">Celsius → Kelvin</span>
+                </label>
 
-      <br><br>Informe a temperatura para ser convertida :
-       <input type="number" name="num" id="num">
-      
-       <br><p>(Caso confirme com o espaço em branco, ele irá ser reconhecido como zero)</p>
-      
-       <p>
-       <br><input type="button" value="Resultado" onclick="confirmar()">
-       </p>
-       
-      </p>
-      <div id="resultado"></div>
-    </main> 
+                <label class="radio">
+                    <input type="radio" name="temp" id="fa" value="fa">
+                    <span class="radio__label">Fahrenheit → Kelvin</span>
+                </label>
+
+                <label class="radio">
+                    <input type="radio" name="temp" id="ke" value="ke">
+                    <span class="radio__label">Kelvin → Fahrenheit</span>
+                </label>
+            </fieldset>
+
+            <div class="form__group">
+                <label class="form__label" for="num">Temperatura</label>
+                <input class="form__input" type="number" name="num" id="num" placeholder="Ex: 25" step="any">
+                <small class="form__hint">Em branco é reconhecido como 0.</small>
+            </div>
+
+            <button class="btn" type="submit">Converter</button>
+        </form>
+
+        <div id="resultado" class="resultado" aria-live="polite"></div>
+    </main>
 </body>
-<script src="script.js"></script>
 </html>
