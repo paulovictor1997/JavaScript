@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quiz sobre a história da Copa Libertadores da América com 5 perguntas">
+    <meta name="author" content="Paulo Victor">
     <title>Quiz Libertadores</title>
     <link rel="shortcut icon" href="imagens/Yingfengling-Fl-I-Love-Sports-Soccer.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>QUIZ LIBERTADORES</h1>    
-        <div id="quiz"></div>
-        <button id="finalizar">Finalizar Quiz</button>
-        <div id="resultado"></div>
-    </div>
-</body>
+    <main class="container">
+        <header class="quiz-header">
+            <h1>QUIZ LIBERTADORES</h1>
+            <p class="subtitle">Teste seus conhecimentos sobre a maior competição de clubes da América</p>
+        </header>
+
+        <section id="quiz" aria-label="Perguntas do quiz"></section>
+
+        <button id="finalizar" type="button">Finalizar Quiz</button>
+
+        <section id="resultado" aria-live="polite" aria-atomic="true"></section>
+
+        <button id="jogar-novamente" type="button" hidden>⚽ Jogar Novamente</button>
+    </main>
+
     <script src="script.js"></script>
+</body>
 </html>
