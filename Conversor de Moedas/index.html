@@ -2,34 +2,47 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Moedas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
+    <script src="atv5.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Conversor de Moedas</h1>
-    </header>
-    <p>
-        <h2>Selecione abaixo para a conversão</h2>
+    <main>
+        <header>
+            <h1>Conversor de Moedas</h1>
+        </header>
 
-        <br><input type="radio" name="din" id="dol" checked>
-        <label for="dol">Dólar</label>
-        
-        <br><br><input type="radio" name="din" id="eur">
-        <label for="eur">Euro</label>
+        <h2>Selecione a moeda para conversão</h2>
 
-        <br><br><input type="radio" name="din" id="lib">
-        <label for="lib">Libra</label>
+        <form onsubmit="event.preventDefault(); finalizar();">
+            <div class="radio-group" role="radiogroup" aria-label="Moeda de destino">
+                <label for="dol">
+                    <input type="radio" name="din" id="dol" value="Dólar" checked>
+                    <span>Dólar</span>
+                </label>
+                <label for="eur">
+                    <input type="radio" name="din" id="eur" value="Euro">
+                    <span>Euro</span>
+                </label>
+                <label for="lib">
+                    <input type="radio" name="din" id="lib" value="Libra">
+                    <span>Libra</span>
+                </label>
+            </div>
 
-        <br><br><input type="number" name="number" id="numero">
-        
-        <input type="button" value="Resultado" onclick="finalizar()">
-    </p>
+            <div class="input-group">
+                <label for="numero">Valor em Reais (R$)</label>
+                <input type="number" name="number" id="numero" placeholder="0,00" step="0.01" min="0">
+            </div>
 
-    <div id="resultado"></div>
-    
+            <button type="submit">Converter</button>
+        </form>
+
+        <div id="resultado" aria-live="polite"></div>
+    </main>
 </body>
-    <script src="atv5.js"></script>
 </html>
