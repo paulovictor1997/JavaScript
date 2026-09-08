@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model HealthCheck {
+  id            Int      @id @default(autoincrement())
+  machineId     String   @map("machine_id")
+  serviceName   String   @map("service_name")
+  status        String
+  diskSpace     String   @map("disk_space")
+  collectedAt   DateTime @default(now()) @map("collected_at")
+
+  @@map("health_checks")
+}
