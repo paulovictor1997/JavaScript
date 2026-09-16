@@ -1,25 +1,147 @@
-body{
-    background-color: rgb(10, 95, 206);
-    font: normal 15pt Arial;
+:root {
+    --bg-deep: #0f172a;
+    --bg-accent: #1e3a8a;
+    --card-bg: #f8fafc;
+    --card-border: #e2e8f0;
+    --text-primary: #0f172a;
+    --text-secondary: #64748b;
+    --brand: #2563eb;
+    --brand-hover: #1d4ed8;
+    --brand-soft: #dbeafe;
+    --shadow: 0 10px 25px rgba(15, 23, 42, 0.25);
+    --radius: 12px;
 }
 
-header{
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(160deg, var(--bg-deep) 0%, var(--bg-accent) 60%, #2563eb 100%);
+    font: normal 15pt "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    color: var(--text-primary);
+}
+
+header {
     color: white;
+    padding: 32px 16px 8px;
+    text-align: center;
 }
 
-section{
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+}
+
+header::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 4px;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+section {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    padding: 24px;
+    width: min(560px, 92vw);
+    margin: 16px auto;
+    box-shadow: var(--shadow);
+}
+
+section p {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+}
+
+label,
+p {
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+input[type="text"] {
+    font: inherit;
+    padding: 10px 14px;
+    border: 2px solid var(--card-border);
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
     background: white;
-    border-radius: 10px;
-    padding: 15px;
-    width: 500px;
-    margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.500);
-}
-select#flista{
-    width: 150px;
+    color: var(--text-primary);
 }
 
-footer{
+input[type="text"]:focus {
+    border-color: var(--brand);
+    box-shadow: 0 0 0 4px var(--brand-soft);
+}
+
+input[type="button"] {
+    font: inherit;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: var(--brand);
     color: white;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+input[type="button"]:hover {
+    background: var(--brand-hover);
+}
+
+input[type="button"]:active {
+    transform: scale(0.98);
+}
+
+select#flista {
+    width: 100%;
+    min-height: 140px;
+    font: inherit;
+    padding: 8px;
+    border: 2px solid var(--card-border);
+    border-radius: 8px;
+    background: white;
+    color: var(--text-secondary);
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    background: var(--brand-soft);
+    border-left: 5px solid var(--brand);
+    color: var(--text-primary);
+    line-height: 1.5;
+}
+
+#resultado:empty {
+    display: none;
+}
+
+#resultado p {
+    font-size: 1rem;
+    margin: 0 0 8px;
+}
+
+footer {
+    margin-top: auto;
+    padding: 16px;
+    color: rgba(255, 255, 255, 0.85);
     font-style: italic;
+    text-align: center;
+    font-size: 0.9rem;
 }
